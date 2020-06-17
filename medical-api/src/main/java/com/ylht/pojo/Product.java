@@ -14,9 +14,11 @@ import java.io.Serializable;
 public class Product  implements Serializable {
     private Integer pid;
     private Integer wid;
+    private Integer typeid;
     private String pname;
     private String coding;
     private String model;
     private String bomname;
+    private String inmoney;
 
 }

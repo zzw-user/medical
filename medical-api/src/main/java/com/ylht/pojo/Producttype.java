@@ -10,10 +10,8 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Accessors(chain = true)//链式写法
-public class Role  implements Serializable {
-    private Integer rid;
-    private String rname;
-    private String jurisdiction;
-    private Integer hierarchy;
+@Accessors(chain = true)//链式写法v
+public class Producttype implements Serializable {
+    private Integer id;
+    private String typename;
 }
