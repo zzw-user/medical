@@ -1,8 +1,17 @@
 package com.ylht.pojo;
 
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
-public class Maintainrecord {
+import java.io.Serializable;
+import java.util.Date;
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Accessors(chain = true)//链式写法
+public class Maintainrecord  implements Serializable {
     private Integer rid;
     private Integer operator;
     private String address;

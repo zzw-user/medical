@@ -1,8 +1,17 @@
 package com.ylht.pojo;
 
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
-public class Payareturnvisit {
+import java.io.Serializable;
+import java.util.Date;
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Accessors(chain = true)//链式写法
+public class Payareturnvisit  implements Serializable {
     private Integer pid;
     private String pname;
     private String way;

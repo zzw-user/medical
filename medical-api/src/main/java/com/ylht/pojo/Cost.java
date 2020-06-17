@@ -1,8 +1,17 @@
 package com.ylht.pojo;
 
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
-public class Cost {
+import java.io.Serializable;
+import java.util.Date;
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Accessors(chain = true)//链式写法
+public class Cost  implements Serializable {
     private Integer cid;
     private Integer operator;
     private String address;
