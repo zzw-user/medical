@@ -1,9 +1,11 @@
 package com.ylht.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -17,6 +19,8 @@ public class Amendrecord implements Serializable {
     private String address;
     private String beforeinstallation;
     private String afterinstallation;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date installationtime;
     private Integer status;
     private String arpartcoding;
@@ -25,4 +29,5 @@ public class Amendrecord implements Serializable {
     private Integer did;
     private String faulttype;
     private String faultdescription;
+    private String productcoding;
 }

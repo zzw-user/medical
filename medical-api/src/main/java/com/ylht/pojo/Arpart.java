@@ -18,6 +18,7 @@ public class Arpart implements Serializable {
     private Integer aid;
     private String coding;
     private String aname;
+    private String inmoney;
     private Integer wid;
     private String type;
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
