@@ -3,9 +3,9 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/v5
+    url: jdbc:mysql://localhost:3306/medical_product
     username: root
-    password: root
+    password: 123
     type: com.alibaba.druid.pool.DruidDataSource
   jackson:
     date-format: yyyy-MM-dd
