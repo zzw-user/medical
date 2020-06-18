@@ -47,4 +47,10 @@ public class ClientController {
         }
         return  false;
     }
+
+    @RequestMapping("getClientOne")
+    public Client get(Client client){
+        Client clients=clientService.getOne(client);
+        return clients;
+    }
 }

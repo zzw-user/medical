@@ -46,4 +46,11 @@ public class RoleController {
         }
         return  false;
     }
+
+
+    @RequestMapping("getRoleOne")
+    public Role getRoleone(Role role){
+        Role roles=roleService.getOne(role);
+        return  roles;
+    }
 }

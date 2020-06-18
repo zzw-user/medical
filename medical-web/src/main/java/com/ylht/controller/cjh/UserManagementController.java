@@ -47,4 +47,11 @@ public class UserManagementController {
         }
         return  false;
     }
+
+    @RequestMapping("getUserOne")
+    public Mpuser get(Mpuser mpuser){
+        Mpuser mpusers=mpuserService.getOne(mpuser);
+        return  mpusers;
+    }
+
 }
