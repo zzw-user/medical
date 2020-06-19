@@ -1,8 +1,10 @@
 package com.ylht.controller.cjh;
 
+import com.github.pagehelper.PageInfo;
 import com.ylht.pojo.Mpuser;
 import com.ylht.pojo.Role;
 import com.ylht.service.MpuserService;
+import com.ylht.service.UserService;
 import com.ylht.util.ResultMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,10 +18,19 @@ public class UserManagementController {
     @Autowired
     private MpuserService mpuserService;
 
+    @Autowired
+    private UserService userService;
+
     @RequestMapping("getUser")
     public ResultMap<List<Mpuser>> getRole(Mpuser mpuser){
         List<Mpuser> list=mpuserService.getData(mpuser);
         return  new ResultMap<List<Mpuser>>("",list,0,list.size());
+    }
+
+    @RequestMapping("getUserALL")
+    public ResultMap<List<Mpuser>> getRoles(String mname,Integer roleid,Integer page,Integer limit){
+        PageInfo<Mpuser> pages=userService.getUserAll(mname,roleid,page,limit);
+        return  new ResultMap<List<Mpuser>>("",pages.getList(),0,pages.getTotal());
     }
 
     @RequestMapping("addUser")
