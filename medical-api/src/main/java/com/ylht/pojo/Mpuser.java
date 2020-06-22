@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,6 +16,7 @@ import java.util.Date;
 @Data
 @Accessors(chain = true)//链式写法
 public class Mpuser  implements Serializable {
+    @Id
     private Integer mpid;
     private String mname;
     private String realname;
