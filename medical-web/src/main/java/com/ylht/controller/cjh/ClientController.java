@@ -1,8 +1,11 @@
 package com.ylht.controller.cjh;
 
+import com.github.pagehelper.PageInfo;
 import com.ylht.pojo.Client;
+import com.ylht.pojo.Mpuser;
 import com.ylht.pojo.Role;
 import com.ylht.service.ClientService;
+import com.ylht.service.ClientsService;
 import com.ylht.util.ResultMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +18,15 @@ import java.util.List;
 public class ClientController {
     @Autowired
     private ClientService clientService;
+
+    @Autowired
+    private ClientsService clientsService;
+
+    @RequestMapping("getClientALL")
+    public ResultMap<List<Client>> getRoles(String cname, Integer page, Integer limit){
+        PageInfo<Client> pages=clientsService.getClientAll(cname,page,limit);
+        return  new ResultMap<List<Client>>("",pages.getList(),0,pages.getTotal());
+    }
 
     @RequestMapping("getClient")
     public ResultMap<List<Client>> getRole(Client client){
