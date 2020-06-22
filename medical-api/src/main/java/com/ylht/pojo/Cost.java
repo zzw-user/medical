@@ -26,4 +26,6 @@ public class Cost  implements Serializable {
     private Integer aftertype;
     private Integer pid;
     private String phone;
+    private String mname;
+    private String pname;
 }
