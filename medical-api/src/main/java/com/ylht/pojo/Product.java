@@ -17,6 +17,7 @@ import java.util.Date;
 public class Product  implements Serializable {
     private Integer pid;
     private Integer wid;
+    private Integer operator;
     private Integer typeid;
     private String pname;
     private String coding;
@@ -24,7 +25,7 @@ public class Product  implements Serializable {
     private String bomname;
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
-    private Date operationtime;
+    private Date createtime;
     private String inmoney;
 
 }
