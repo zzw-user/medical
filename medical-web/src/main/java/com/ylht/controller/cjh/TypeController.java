@@ -3,10 +3,8 @@ package com.ylht.controller.cjh;
 import com.github.pagehelper.PageInfo;
 import com.ylht.pojo.Type;
 import com.ylht.service.TypeService;
-import com.ylht.service.TypesService;
 import com.ylht.util.ResultMap;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,15 +13,14 @@ import java.util.List;
 @RestController
 @RequestMapping("Type")
 public class TypeController {
-    @Autowired
-    private TypesService typesService;
+
 
     @Autowired
     private TypeService typeService;
 
     @RequestMapping("getTypeAll")
     public ResultMap<List<Type>> gettype(String tname, Integer page, Integer limit){
-        PageInfo<Type> pageInfo =typesService.getshow(tname, page, limit);
+        PageInfo<Type> pageInfo =typeService.getshow(tname, page, limit);
         return  new ResultMap<List<Type>>("",pageInfo.getList(),0,pageInfo.getTotal());
 
     }

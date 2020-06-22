@@ -1,5 +1,7 @@
 package com.ylht.serviceImpl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.ylht.mapper.MpuserMapper;
 import com.ylht.pojo.Mpuser;
 import com.ylht.service.MpuserService;
@@ -34,5 +36,12 @@ public class MpuserServiceImpl implements MpuserService {
 
     public Integer upd(Mpuser mpuser) {
         return mpuserMapper.updateByPrimaryKey(mpuser);
+    }
+
+    public PageInfo<Mpuser> getUserAll(String mname, Integer roleid, Integer pageNo, Integer pageSize) {
+        PageHelper.startPage(pageNo,pageSize);
+        List<Mpuser> list =mpuserMapper.getUserAll(mname,roleid);
+        PageInfo<Mpuser> pageInfo=new PageInfo<Mpuser>(list);
+        return pageInfo;
     }
 }
