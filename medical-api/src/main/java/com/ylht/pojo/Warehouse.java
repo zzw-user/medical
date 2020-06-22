@@ -15,7 +15,7 @@ public class Warehouse  implements Serializable {
     private Integer wid;
     private String wname;
     private String address;
-    private Integer creatorid;
+    private Integer pid;
     private Date creationtime;
-
+    private String  mname;
 }

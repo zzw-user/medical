@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
 <mapper namespace="com.ylht.mapper.xzh.ServicedeliveryMapper">
     <select id="seleServicedelivery" resultType="Delivery">
-        SELECT * FROM `delivery` where 1=1
+        SELECT * FROM `delivery` where aftertype=2
         <if test="wname !=''and wname !=null">
             and  wname like concat ('%',#{wname},'%')
         </if>
