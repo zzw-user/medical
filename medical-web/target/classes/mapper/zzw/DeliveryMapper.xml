@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ylht.mapper.DeliveryMapper">
     <select id="getDelivery" resultType="Delivery">
-        SELECT d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid
+        SELECT d.did,d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid
         <if test="aftertype!=0 and aftertype!=null">
             AND d.aftertype=#{aftertype}
         </if>
@@ -13,7 +13,7 @@
         </if>
     </select>
     <select id="getDeliveryOne" resultType="Delivery">
-        SELECT d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid
+        SELECT d.did,d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid
         <if test="aftertype!=0 and aftertype!=null">
             AND d.aftertype=#{aftertype}
         </if>
