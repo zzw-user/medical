@@ -1,5 +1,7 @@
 package com.ylht.serviceImpl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.ylht.mapper.TypeMapper;
 import com.ylht.pojo.Type;
 import com.ylht.service.TypeService;
@@ -34,5 +36,12 @@ public class TypeServiceImpl implements TypeService {
 
     public Integer upd(Type type) {
         return typeMapper.updateByPrimaryKey(type);
+    }
+
+    public PageInfo<Type> getshow(String tname, Integer pageNo, Integer pageSize) {
+        PageHelper.startPage(pageNo,pageSize);
+        List<Type>  list=typeMapper.getTypeAll(tname);
+        PageInfo<Type> pageInfo=new PageInfo<Type>(list);
+        return pageInfo;
     }
 }

@@ -1,5 +1,7 @@
 package com.ylht.serviceImpl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.ylht.mapper.RoleMapper;
 import com.ylht.pojo.Role;
 import com.ylht.service.RoleService;
@@ -34,5 +36,12 @@ public class RoleServiceImpl implements RoleService {
 
     public Integer upd(Role role) {
         return roleMapper.updateByPrimaryKey(role);
+    }
+
+    public PageInfo<Role> getRoleAll(String rname, Integer pageNo, Integer pageSize) {
+        PageHelper.startPage(pageNo,pageSize);
+        List<Role> list =roleMapper.getRoleAll(rname);
+        PageInfo<Role> page=new PageInfo<Role>(list);
+        return page;
     }
 }

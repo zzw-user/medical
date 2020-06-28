@@ -20,13 +20,13 @@ import java.util.Map;
 @RequestMapping("Delivery")
 public class DeliveryController {
     @Autowired
-    private DeliverysService services;
+    private DeliverysService deliverysService;
     @Autowired
-    private DeliveryService service;
+    private DeliveryService deliveryService;
 
     @RequestMapping("Tblist")
     public Map<String, Object> demo(String mname, String address, Integer limit, Integer page){
-        PageInfo<Delivery> pages=services.selectDelivery(mname,address,limit,page);
+        PageInfo<Delivery> pages=deliverysService.selectDelivery(mname,address,limit,page);
         System.out.println("我的值是"+pages);
         Map<String, Object> map=new HashMap<String, Object>();
         map.put("code", "0");
@@ -37,7 +37,7 @@ public class DeliveryController {
     }
     @RequestMapping("getDelivery")
     public ResultMap<List<Delivery>> getDelivery(Delivery delivery){
-        List<Delivery> list=service.getData(delivery);
+        List<Delivery> list=deliveryService.getData(delivery);
         return  new ResultMap<List<Delivery>>("",list,0,list.size());
     }
 

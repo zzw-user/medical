@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,20 +14,19 @@ import java.util.Date;
 @NoArgsConstructor
 @Data
 @Accessors(chain = true)//链式写法
-public class Mpuser  implements Serializable {
-    @Id
-    private Integer mpid;
-    private String mname;
-    private String realname;
-    private String password;
-    private String phone;
-    private String mailbox;
+public class Costs implements Serializable {
+    private Integer cid;
+    private Integer operator;
+    private String address;
+    private String cost;
+    private String sparepartcost;
+    private String dataentryclerk;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
-    private Date birthday;
-    private String wechatid;
-    private String qq;
-    private Integer sex;
-    private String address;
-    private Integer roleid;
+    private Date inputtime;
+    private Integer aftertype;
+    private String coding;
+    private String phone;
+    private String mname;
+    private String pname;
 }

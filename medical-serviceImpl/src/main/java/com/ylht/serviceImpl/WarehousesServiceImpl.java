@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.ylht.mapper.xzh.WarehousesMapper;
 import com.ylht.pojo.Warehouse;
+import com.ylht.pojo.Warehouses;
 import com.ylht.service.WarehousesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,10 +16,10 @@ public class WarehousesServiceImpl implements WarehousesService {
     public WarehousesMapper mapper;
 
 
-    public PageInfo<Warehouse> seleWarehouse(String wname, String address, Integer pageNo, Integer pageSize) {
+    public PageInfo<Warehouses> seleWarehouse(String wname, String address, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo, pageSize);
-        List<Warehouse> list=mapper.seleWarehouse(wname,address);
-        PageInfo<Warehouse> page=new PageInfo<Warehouse>(list);
+        List<Warehouses> list=mapper.seleWarehouse(wname,address);
+        PageInfo<Warehouses> page=new PageInfo<Warehouses>(list);
         return page;
     }
 
