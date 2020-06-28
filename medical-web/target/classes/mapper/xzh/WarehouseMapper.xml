@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ylht.mapper.xzh.WarehousesMapper">
+    <select id="seleWarehouse" resultType="Warehouse">
+        SELECT w.*,m.`mname` FROM `warehouse` w,`mpuser` m WHERE w.`pid`=m.`mpid`
+        <if test="wname!=null and  wname !=''">
+            and  wname like concat ('%',#{wname},'%')
+        </if>
+        <if test="address!=null and address!=''">
+            and  address like concat ('%',#{address},'%')
+        </if>
+    </select>
+</mapper>

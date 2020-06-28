@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ylht.mapper.CostsMapper">
+    <select id="selectCost" resultType="Costs">
+        SELECT c.*,mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid
+        <if test="mname!=null and mname!=''">
+            AND mname LIKE CONCAT('%',#{mname},'%')
+        </if>
+        <if test="address!=null and address!=''">
+            AND c.address LIKE CONCAT('%',#{address},'%')
+        </if>
+    </select>
+
+</mapper>
