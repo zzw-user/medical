@@ -2,6 +2,7 @@ package com.ylht.xzhcontroller;
 
 import com.github.pagehelper.PageInfo;
 import com.ylht.pojo.Warehouse;
+import com.ylht.pojo.Warehouses;
 import com.ylht.service.WarehouseService;
 import com.ylht.service.WarehousesService;
 import com.ylht.util.ResultMap;
@@ -21,9 +22,9 @@ public class WarehouseController {
     public WarehousesService services;
 
     @RequestMapping("seleWarehouse")
-    public ResultMap<List<Warehouse>> seleWarehouse(String wname, String address, Integer page, Integer limit){
-        PageInfo<Warehouse> pages=services.seleWarehouse(wname, address, page, limit);
-        return new ResultMap<List<Warehouse>>("",pages.getList(),0,pages.getTotal());
+    public ResultMap<List<Warehouses>> seleWarehouse(String wname, String address, Integer page, Integer limit){
+        PageInfo<Warehouses> pages=services.seleWarehouse(wname, address, page, limit);
+        return new ResultMap<List<Warehouses>>("",pages.getList(),0,pages.getTotal());
     }
 
 
@@ -48,7 +49,6 @@ public class WarehouseController {
     }
     @RequestMapping("delWarehouse")
     public boolean delWarehouse(Warehouse warehouse){
-        System.out.println(warehouse.getWid());
         Integer a=service.del(warehouse);
         if (a>0){
             return true;
