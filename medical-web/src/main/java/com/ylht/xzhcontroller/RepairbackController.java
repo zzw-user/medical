@@ -1,11 +1,7 @@
 package com.ylht.xzhcontroller;
 
 import com.github.pagehelper.PageInfo;
-import com.ylht.mapper.xzh.RepairbackMapper;
 import com.ylht.pojo.Payareturnvisit;
-import com.ylht.pojo.Payareturnvisits;
-import com.ylht.pojo.Warehouse;
-import com.ylht.pojo.Warehouses;
 import com.ylht.service.PayareturnvisitService;
 import com.ylht.service.RepairbackService;
 import com.ylht.util.ResultMap;
@@ -26,9 +22,9 @@ public class RepairbackController {
 
 
     @RequestMapping("selePayareturnvisit")
-    public ResultMap<List<Payareturnvisits>> selePayareturnvisit(String pname, String way, Integer page, Integer limit){
-        PageInfo<Payareturnvisits> pages=services.selePayareturnvisit(pname, way, page, limit);
-        return new ResultMap<List<Payareturnvisits>>("",pages.getList(),0,pages.getTotal());
+    public ResultMap<List<Payareturnvisit>> selePayareturnvisit(String pname, String way, Integer page, Integer limit){
+        PageInfo<Payareturnvisit> pages=services.selePayareturnvisit(pname, way, page, limit);
+        return new ResultMap<List<Payareturnvisit>>("",pages.getList(),0,pages.getTotal());
     }
 
 

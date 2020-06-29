@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -28,4 +29,8 @@ public class Cost  implements Serializable {
     private Integer aftertype;
     private String coding;
     private String phone;
+    @Transient
+    private String mname;
+    @Transient
+    private String pname;
 }
