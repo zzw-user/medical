@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,12 +16,13 @@ import java.util.Date;
 @Data
 @Accessors(chain = true)//链式写法
 public class Delivery  implements Serializable {
+    @Id
     private Integer did;
     private Integer operator;
     private String phone;
     private String address;
     private Integer aftertype;
-    private Integer coding;
+    private String coding;
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date deliverytime;
