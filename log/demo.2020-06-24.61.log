@@ -1,0 +1,8 @@
+2020-06-24 10:00:46,492 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer), 吉林 长春 朝阳区 长春才良公寓 高新区西部快速路(前进大街与卫星路交汇阳光经典)(String), 7441ce41a18f44a0aa498688d05640af_20200423234345.png(String), eaf1099e5bcd4450a6293845e61bb069_20200423234345.png(String), 2020-06-23 00:00:00.0(Timestamp), 福利(String), 1(Integer), KKN-KL(String), 3(Integer)
+2020-06-24 10:00:46,508 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-06-24 10:00:49,967 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-06-24 10:00:49,968 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-24 10:00:49,969 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-24 10:00:49,970 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-06-24 10:00:49,972 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-24 10:00:49,974 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4

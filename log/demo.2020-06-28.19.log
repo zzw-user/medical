@@ -1,0 +1,18 @@
+2020-06-28 10:13:13,609 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-06-28 10:13:13,617 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-28 10:13:13,619 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-28 10:13:13,620 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-06-28 10:13:13,621 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-28 10:13:13,624 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-06-28 10:13:22,213 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator AND i.address = ? 
+2020-06-28 10:13:22,221 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 重庆(String)
+2020-06-28 10:13:22,224 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-28 10:13:25,245 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator AND i.address = ? 
+2020-06-28 10:13:25,247 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 重庆(String)
+2020-06-28 10:13:25,251 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-28 10:13:57,237 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 9160 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-28 10:13:57,237 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-28 10:13:57,238 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-06-28 10:14:21,285 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 3736 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-28 10:14:21,294 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-28 10:14:21,299 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
