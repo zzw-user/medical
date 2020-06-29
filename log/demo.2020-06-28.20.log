@@ -1,0 +1,10 @@
+2020-06-28 10:14:31,742 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 12.889 seconds (JVM running for 17.803)
+2020-06-28 10:14:53,621 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-06-28 10:14:53,666 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-28 10:14:53,688 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-28 10:14:53,696 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-06-28 10:14:53,697 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-28 10:14:53,705 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-06-28 10:15:07,171 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator AND i.address LIKE concat('%', ?, '%') 
+2020-06-28 10:15:07,173 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 重庆(String)
+2020-06-28 10:15:07,231 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

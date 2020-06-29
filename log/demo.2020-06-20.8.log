@@ -1,0 +1,8 @@
+2020-06-20 15:49:40,413 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 27.981 seconds (JVM running for 31.869)
+2020-06-20 15:56:52,000 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 4500 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-20 15:56:52,000 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-20 15:56:52,001 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-06-20 15:56:56,377 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 4.585 seconds (JVM running for 467.832)
+2020-06-20 15:57:15,617 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 4500 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-20 15:57:15,617 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-20 15:57:15,618 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
