@@ -1,0 +1,7 @@
+2020-06-24 09:29:16,638 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE installrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
+2020-06-24 09:29:16,653 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer), 浙江 杭州 滨江区 杭州才云科技有限公司 六和路368号海创基地北楼B3082室(String), 3fb11a19062b4946864fbf2aa18aac89_20200423234345.png(String), 55336fd568b74b5fa93389b88a5eaafe_20200423234345.png(String), 2020-06-30 00:00:00.0(Timestamp), 我填(String), 1(Integer), null, 4(Integer)
+2020-06-24 09:29:16,704 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-06-24 09:29:20,475 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-06-24 09:29:20,592 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-24 09:29:20,691 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-24 09:29:20,693 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
