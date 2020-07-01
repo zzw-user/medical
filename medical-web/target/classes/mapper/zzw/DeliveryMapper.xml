@@ -14,14 +14,6 @@
     </select>
     <select id="getDeliveryOne" resultType="Delivery">
         SELECT d.did,d.phone,d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid
-        <if test="aftertype!=0 and aftertype!=null">
-            AND d.aftertype=#{aftertype}
-        </if>
-        <if test="did!=0 and did!=null">
-            AND d.did = #{did}
-        </if>
-        <if test="address!='' and address!=null">
-            OR d.address LIKE concat ('%',#{address},'%') OR m.realname LIKE concat ('%',#{address},'%')
-        </if>
+        AND d.did = #{did} AND d.aftertype=#{aftertype}
     </select>
 </mapper>

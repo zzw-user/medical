@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -12,6 +13,7 @@ import java.util.Date;
 @Data
 @Accessors(chain = true)//链式写法
 public class Maintainrecord  implements Serializable {
+    @Id
     private Integer rid;
     private Integer operator;
     private String address;
