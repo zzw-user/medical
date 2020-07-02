@@ -23,12 +23,10 @@ public class Delivery  implements Serializable {
     private String phone;
     private String address;
     private Integer aftertype;
-    private Integer coding;
+    private String coding;
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date deliverytime;
-    @Transient
-    private String pcoding;//产品编码 string 存储别表映射字段 原字段 coding
     @Transient
     private String moperator;//操作人 string 存储别表映射字段 原字段 operator
 }

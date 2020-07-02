@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ylht.mapper.DeliveryMapper">
-    <select id="getDelivery" resultType="Delivery">
-        SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid`
+<mapper namespace="com.ylht.mapper.CostMapper">
+    <select id="getCost" resultType="Cost">
+        SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid`
         <if test="aftertype!=0 and aftertype!=null">
             AND d.aftertype=#{aftertype}
         </if>
@@ -12,8 +12,8 @@
             OR d.address LIKE concat ('%',#{address},'%') OR m.realname LIKE concat ('%',#{address},'%')
         </if>
     </select>
-    <select id="getDeliveryOne" resultType="Delivery">
-        SELECT d.*,m.realname as moperator FROM delivery d,mpuser m WHERE d.operator=m.mpid
-        AND d.did = #{did}
+    <select id="getCostOne" resultType="Cost">
+        SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid`
+        AND c.cid=#{cid}
     </select>
 </mapper>

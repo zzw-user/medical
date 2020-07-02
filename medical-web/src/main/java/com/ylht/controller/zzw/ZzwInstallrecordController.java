@@ -1,7 +1,9 @@
 package com.ylht.controller.zzw;
 
 import com.ylht.pojo.Installrecord;
+import com.ylht.pojo.Mpuser;
 import com.ylht.service.InstallrecordService;
+import com.ylht.service.MpuserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +15,8 @@ import java.util.List;
 public class ZzwInstallrecordController {
     @Autowired
     private InstallrecordService installrecordService;
+    @Autowired
+    private MpuserService mpuserService;
 
     @RequestMapping("getRecord")
     public List<Installrecord> getRecord(Installrecord installrecord){
@@ -39,5 +43,9 @@ public class ZzwInstallrecordController {
         }else {
             return false;
         }
+    }
+    @RequestMapping("getMpuser")
+    public List<Mpuser> getMpuser(){
+        return mpuserService.getAll();
     }
 }
