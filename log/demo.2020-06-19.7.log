@@ -1,0 +1,7 @@
+2020-06-19 09:09:22,384 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, null
+2020-06-19 09:10:11,790 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 7360 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-19 09:10:11,791 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-19 09:10:11,792 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-06-19 09:10:40,039 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 13148 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-19 09:10:40,050 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-19 09:10:40,059 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

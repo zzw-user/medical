@@ -1,0 +1,8 @@
+2020-06-22 11:05:54,933 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-06-22 11:05:54,943 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-22 11:05:54,946 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-22 11:06:11,156 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO delivery ( did,operator,phone,address,aftertype,coding,deliverytime ) VALUES( ?,?,?,?,?,?,? ) 
+2020-06-22 11:06:11,186 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 15721414745(String), 浙江滨江区杭州南岸晶都花园 绿香街72号(String), 1(Integer), 875421(String), 2020-06-18 11:17:45.0(Timestamp)
+2020-06-22 11:06:11,272 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-06-22 11:06:14,826 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-06-22 11:06:14,828 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

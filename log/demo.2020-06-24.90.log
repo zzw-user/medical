@@ -1,0 +1,12 @@
+2020-06-24 10:24:06,295 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-24 10:24:06,305 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-24 10:24:18,005 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-06-24 10:24:18,009 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-24 10:24:18,011 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-24 10:24:18,012 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-06-24 10:24:18,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-24 10:24:18,016 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-06-24 10:25:40,960 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding FROM installrecord WHERE rid = ? 
+2020-06-24 10:25:40,978 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-06-24 10:25:40,982 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-24 10:25:41,059 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
