@@ -1,0 +1,10 @@
+2020-07-02 09:18:41,740 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-02 09:18:41,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 09:18:41,745 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 09:18:59,313 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-02 09:18:59,314 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 09:18:59,316 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 09:19:19,512 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-02 09:19:19,514 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 09:19:19,515 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 09:19:22,413 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` AND m.`realname` LIKE CONCAT ('%',?,'%') 

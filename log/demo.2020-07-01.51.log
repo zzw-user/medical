@@ -1,0 +1,10 @@
+2020-07-01 11:28:09,185 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 1.72 seconds (JVM running for 4532.181)
+2020-07-01 11:28:09,287 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` 
+2020-07-01 11:28:09,288 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-01 11:28:09,290 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-01 11:28:13,387 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.realname as moperator FROM delivery d,mpuser m WHERE d.operator=m.mpid AND d.did = ? 
+2020-07-01 11:28:13,388 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Integer)
+2020-07-01 11:28:13,391 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-01 11:28:14,564 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.realname as moperator FROM delivery d,mpuser m WHERE d.operator=m.mpid AND d.did = ? 
+2020-07-01 11:28:14,565 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(Integer)
+2020-07-01 11:28:14,568 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

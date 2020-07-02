@@ -1,0 +1,12 @@
+2020-07-02 08:45:22,783 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 08:45:22,795 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 08:45:24,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 08:45:24,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 08:45:24,687 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 08:45:24,706 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.realname as moperator FROM delivery d,mpuser m WHERE d.operator=m.mpid AND d.did = ? 
+2020-07-02 08:45:24,707 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Integer)
+2020-07-02 08:45:24,710 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 08:46:10,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 08:46:10,331 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 08:46:10,332 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 08:46:10,350 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.realname as moperator FROM delivery d,mpuser m WHERE d.operator=m.mpid AND d.did = ? 
