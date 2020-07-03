@@ -4,3 +4,12 @@
 2020-07-03 10:09:42,200 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.realname mname FROM `payareturnvisit` p, mpuser m WHERE p.`operator`=m.mpid AND p.aftertype=2 LIMIT ? 
 2020-07-03 10:09:42,201 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
 2020-07-03 10:09:42,201 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 11:15:23,534 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10688 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
+2020-07-03 11:15:23,534 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 11:15:23,534 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 11:15:37,794 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10688 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
+2020-07-03 11:15:37,794 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 11:15:37,794 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 11:15:43,230 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10688 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
+2020-07-03 11:15:43,230 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 11:15:43,230 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
