@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("zDelivery")
-class ZzwDeliveryController {
+public class ZzwDeliveryController {
     @Autowired
     private DeliveryService deliveryService;
     @Autowired

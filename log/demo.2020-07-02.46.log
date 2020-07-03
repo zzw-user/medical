@@ -1,0 +1,8 @@
+2020-07-02 10:22:12,554 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding FROM installrecord WHERE rid = ? 
+2020-07-02 10:22:12,557 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-07-02 10:22:12,558 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 10:22:12,665 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 10:22:12,666 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 10:22:12,668 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-07-02 10:22:15,345 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE installrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
+2020-07-02 10:22:15,347 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 浙江 杭州 滨江区 浙江康恩贝制药有限公司 滨康路568号2楼(String), hah.jpg(String), sq.jpg(String), 2020-07-02 00:00:00.0(Timestamp), null, 1(Integer), KKN-Kl(String), 4(Integer)

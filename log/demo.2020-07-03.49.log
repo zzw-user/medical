@@ -1,0 +1,8 @@
+2020-07-03 09:59:52,081 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-03 09:59:52,089 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-03 09:59:52,090 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-03 09:59:59,856 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-03 09:59:59,858 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: YYY-NX(String)
+2020-07-03 09:59:59,860 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 10:00:35,635 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,? ) 
+2020-07-03 10:00:35,636 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 0(Integer), 浙江 杭州 滨江区 江陵路(地铁站) (在建)6号线;1号线(String), 888(String), null, 呀呼,${{.uname}}(String), 2020-07-03 00:00:00.0(Timestamp), 1(Integer), YYY-NX(String), 18232422155(String)

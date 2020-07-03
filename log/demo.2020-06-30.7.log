@@ -1,0 +1,13 @@
+2020-06-30 09:51:16,211 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 09:51:16,219 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` LIMIT ? 
+2020-06-30 09:51:16,219 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-30 09:51:16,219 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 09:51:18,081 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-06-30 09:51:18,081 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-30 09:51:18,081 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-06-30 09:51:44,012 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(0) from product where coding=? 
+2020-06-30 09:51:44,020 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-06-30 09:51:44,020 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 09:55:20,304 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 1664 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
+2020-06-30 09:55:20,304 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-30 09:55:20,304 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

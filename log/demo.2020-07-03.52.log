@@ -1,0 +1,8 @@
+2020-07-03 10:01:42,715 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-03 10:01:42,727 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 10:01:42,729 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-07-03 10:01:42,738 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,coding,phone FROM cost WHERE cid = ? 
+2020-07-03 10:01:42,738 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18(Integer)
+2020-07-03 10:01:42,738 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:01:46,969 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE cost SET operator = ?,address = ?,cost = ?,sparepartcost = ?,dataentryclerk = ?,inputtime = ?,aftertype = ?,coding = ?,phone = ? WHERE cid = ? 
+2020-07-03 10:01:46,971 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 浙江 杭州 滨江区 江陵路(地铁站) (在建)6号线;1号线(String), 85(String), null, 好好(String), 2020-07-03 00:00:00.0(Timestamp), null, YYY-NX(String), 16535314588(String), 18(Integer)
