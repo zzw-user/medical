@@ -3,6 +3,7 @@ package com.ylht.controller.cjh;
 import com.ylht.pojo.Navigation;
 import com.ylht.service.NavigationService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cglib.core.Predicate;
 import org.springframework.data.domain.Sort;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 @RestController
@@ -31,24 +33,27 @@ public class NavgitonController {
     private Object fun(List<Navigation> navigation, List<HashMap<String, Object>> result) {
 
         for (Navigation d : navigation) {
-            if(d.getFatherid()==null) {
-                HashMap<String, Object> map = new HashMap<String, Object>();
+            HashMap<String, Object> map = new HashMap<String, Object>();
+            if (d.getFatherid() == null) {
                 map.put("id", d.getNid());
                 map.put("title", d.getNname());
-                map.put("spread", true);      //设置是否展开
-                List<HashMap<String, Object>> result1 = new ArrayList<HashMap<String, Object>>();
-                List<Navigation> children = d.getChildren();    //下级菜单
+                map.put("spread", true);
+                //设置是否展开
+                //下级菜单
                 //这里可以根据自己需求判断节点默认选中
         /*if(m.getParent() != null || m.getChildren().size() == 0){
             map.put("checked", true);    //设置为选中状态
         }*/
-                map.put("children",fun(children,result1));
-                result.add(map);
             }
+            if (d.getFatherid() == d.getNid()) {
+                HashMap<String, Object> map1 = new HashMap<String, Object>();
+                map1.put("name", d.getNname());
+                map.put("children", map1);
+            }
+            result.add(map);
         }
         return result;
     }
-
 
     @RequestMapping(value = "/show")
     public void show(Navigation form, ModelMap map) throws InstantiationException, IllegalAccessException {
