@@ -14,7 +14,7 @@
         </if>
     </select>
     
-    <select id="getproductByCoding" resultType="int">
-        select count(0) from product where coding=#{coding}
+    <select id="getproductByCoding" resultType="Product">
+        select * from product where coding=#{coding}
     </select>
 </mapper>

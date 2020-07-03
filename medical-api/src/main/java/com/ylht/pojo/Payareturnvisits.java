@@ -20,5 +20,5 @@ public class Payareturnvisits implements Serializable {
     private Integer  operator;
     private Date writetime;
     private Integer aftertype;
-    private String mname;
+    private String realname;
 }

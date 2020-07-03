@@ -5,6 +5,7 @@ import com.ylht.mapperzxz.DeliveryAndMpuserMapper;
 import com.ylht.pojo.Delivery;
 import com.ylht.pojo.DeliveryAndMpuser;
 import com.ylht.pojo.Mpuser;
+import com.ylht.pojo.Product;
 import com.ylht.service.DeliveryService;
 import com.ylht.service.MpuserService;
 import com.ylht.servicezxz.DeliveryAndMpuserService;
@@ -29,7 +30,7 @@ public class SendaSingleInstallationController {
     private DeliveryAndMpuserService deliveryAndMpuserService;
 
     @RequestMapping("/getproductByCoding")
-    public int getproductByCoding(String coding){
+    public Product getproductByCoding(String coding){
         return deliveryAndMpuserService.getproductByCoding(coding);
     }
 

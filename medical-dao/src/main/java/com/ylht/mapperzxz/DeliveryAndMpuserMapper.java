@@ -12,5 +12,5 @@ public interface DeliveryAndMpuserMapper {
     List<DeliveryAndMpuser> getDeliveryAndMpuser(@Param("realname") String realname,@Param("address") String address,
                                                  @Param("coding")String coding,
                                                  @Param("pageNo") Integer pageNo,@Param("pageSize") Integer pageSize);
-    int getproductByCoding(@Param("coding") String coding);
+    Product getproductByCoding(@Param("coding") String coding);
 }

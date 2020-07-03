@@ -6,7 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
 @Mapper
 public interface InstallationRecordEvaluationMapper {
     List<InstallationRecordEvaluation> getInstallationRecordEvaluation(@Param("address") String address, @Param("status") Integer status,

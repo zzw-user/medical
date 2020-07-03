@@ -12,5 +12,5 @@ public interface DeliveryAndMpuserService {
                                                  @Param("coding")String coding,
                                                  @Param("pageNo") Integer pageNo,@Param("pageSize") Integer pageSize);
     PageInfo<DeliveryAndMpuser> pageInfoDeliveryAndMpuser(String realname, String address, String coding, @Param("pageNo") Integer pageNo, @Param("pageSize") Integer pageSize);
-    int getproductByCoding(String coding);
+    Product getproductByCoding(String coding);
 }

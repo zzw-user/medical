@@ -9,5 +9,5 @@ import java.util.List;
 
 @Mapper
 public interface CostsMapper {
-    List<Cost> selectCost(@Param("mname")String mname , @Param("address") String address);
+    List<Cost> selectCost(@Param("realname")String mname , @Param("address") String address);
 }

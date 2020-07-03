@@ -28,7 +28,7 @@ public class DeliveryAndMpuserServiceImpl implements DeliveryAndMpuserService {
         return page;
     }
 
-    public int getproductByCoding(String coding) {
+    public Product getproductByCoding(String coding) {
         return deliveryAndMpuserMapper.getproductByCoding(coding);
     }
 
