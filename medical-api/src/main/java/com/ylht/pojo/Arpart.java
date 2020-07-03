@@ -20,7 +20,7 @@ public class Arpart implements Serializable {
     private String aname;
     private String inmoney;
     private Integer wid;
-    private String type;
+    private int tid;
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date intime;
