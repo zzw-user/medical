@@ -1,0 +1,10 @@
+2020-07-03 09:59:32,141 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:59:33,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-03 09:59:33,229 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:59:33,230 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-07-03 09:59:36,966 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-03 09:59:36,969 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-03 09:59:36,971 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-03 09:59:46,096 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-03 09:59:46,097 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-03 09:59:46,099 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0

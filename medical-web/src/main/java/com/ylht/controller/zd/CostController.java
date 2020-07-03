@@ -1,13 +1,11 @@
 package com.ylht.controller.zd;
 
 import com.github.pagehelper.PageInfo;
-import com.ylht.pojo.Cost;
-import com.ylht.pojo.Delivery;
-import com.ylht.pojo.Mpuser;
-import com.ylht.pojo.Role;
+import com.ylht.pojo.*;
 import com.ylht.service.CostService;
 import com.ylht.service.CostsSerivce;
 import com.ylht.service.MpuserService;
+import com.ylht.service.ProductService;
 import com.ylht.util.ResultMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,6 +26,8 @@ public class CostController {
     private CostsSerivce costsSerivce;
 @Autowired
 private MpuserService mpuserService;
+    @Autowired
+    public ProductService productService;
 
     @RequestMapping("getCost")
     public ResultMap<List<Cost>> demo(String mname, String address, Integer page, Integer limit){
@@ -38,6 +38,11 @@ private MpuserService mpuserService;
 
 
     }
+    @RequestMapping("/getMpuser")
+    public List<Mpuser> getMpuser(){
+        return mpuserService.getAll();
+    }
+
     @RequestMapping("addCost")
     public boolean addCost(Cost cost){
 
@@ -47,6 +52,11 @@ private MpuserService mpuserService;
             return true;
         }
         return  false;
+    }
+    @RequestMapping("getProductOne")
+    public Product getMpuserOne(Product product){
+        Product products=productService.getOne(product);
+        return products;
     }
     @RequestMapping("updateCost")
     public boolean updCost(Cost cost){
@@ -65,7 +75,11 @@ private MpuserService mpuserService;
         }
         return  false;
     }
-
+    @RequestMapping("getCostOne")
+    public Cost getCostOne(Cost cost){
+        Cost costs=costservice.getOne(cost);
+        return costs;
+    }
 
     @RequestMapping("getRoleOne")
     public Cost getCostone(Cost cost){

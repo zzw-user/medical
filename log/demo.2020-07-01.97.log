@@ -1,0 +1,8 @@
+2020-07-01 11:39:34,428 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? 
+2020-07-01 11:39:34,432 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 18073069251(String), 黑龙江 哈尔滨 松北区 南京同仁堂(世茂大道) 世茂大道263号附近(String), 1(Integer), KKN-KL(String), null, 7(Integer)
+2020-07-01 11:39:34,507 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-01 11:39:37,064 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-07-01 11:39:37,065 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-01 11:39:37,067 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-01 11:39:37,067 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` LIMIT ? 
+2020-07-01 11:39:37,068 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)

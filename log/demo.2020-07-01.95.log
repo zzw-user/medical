@@ -1,0 +1,8 @@
+2020-07-01 11:38:18,886 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,operator,phone,address,aftertype,coding,deliverytime FROM delivery WHERE did = ? 
+2020-07-01 11:38:18,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-01 11:38:18,893 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-01 11:38:35,239 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? 
+2020-07-01 11:38:35,240 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 18075232355(String), 浙江 杭州 滨江区 浙江警察学院 滨文路555号(String), 1(Integer), YYY-NX(String), null, 2(Integer)
+2020-07-01 11:38:35,432 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-01 11:39:21,851 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-07-01 11:39:21,852 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

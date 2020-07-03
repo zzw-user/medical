@@ -2,13 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
 <mapper namespace="com.ylht.mapper.CostsMapper">
     <select id="selectCost" resultType="Cost">
-        SELECT c.*,mname,pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`pid`=p.`pid`
+        SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid
         <if test="mname!=null and mname!=''">
-            AND mname LIKE CONCAT('%',#{mname},'%')
+            AND m.realname LIKE CONCAT('%',#{mname},'%')
         </if>
         <if test="address!=null and address!=''">
             AND c.address LIKE CONCAT('%',#{address},'%')
         </if>
     </select>
-
 </mapper>

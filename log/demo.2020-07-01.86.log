@@ -1,0 +1,8 @@
+2020-07-01 11:20:19,265 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-01 11:20:19,277 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-01 11:20:27,465 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET did = ?,operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? AND operator = ? AND phone = ? AND address = ? AND aftertype = ? AND coding = ? AND deliverytime = ? 
+2020-07-01 11:20:27,467 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 2(Integer), 18073069255(String), null, 1(Integer), YYY-NX(String), 2020-06-30 10:02:31.0(Timestamp), 2(Integer), 2(Integer), 18073069255(String), null, 1(Integer), YYY-NX(String), 2020-06-30 10:02:31.0(Timestamp)
+2020-07-01 11:20:27,469 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2020-07-01 11:23:47,239 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-07-01 11:23:47,240 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-01 11:23:47,241 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

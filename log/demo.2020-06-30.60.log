@@ -1,0 +1,12 @@
+2020-06-30 11:23:09,300 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-06-30 11:23:13,012 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-06-30 11:23:13,013 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-30 11:23:13,014 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 11:23:13,015 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` LIMIT ? 
+2020-06-30 11:23:13,015 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-30 11:23:13,016 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-06-30 11:25:09,262 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-06-30 11:25:09,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-30 11:25:09,268 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 11:25:09,268 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` LIMIT ? 
+2020-06-30 11:25:09,269 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
