@@ -1,0 +1,11 @@
+2020-06-23 11:03:28,352 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-23 11:03:28,416 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-23 11:03:28,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-06-23 11:03:28,418 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-23 11:03:28,425 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-06-23 11:08:03,230 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-06-23 11:08:03,308 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-23 11:08:03,351 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-23 11:08:03,359 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-06-23 11:08:03,361 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-23 11:08:03,402 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

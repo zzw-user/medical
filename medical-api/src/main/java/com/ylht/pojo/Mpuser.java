@@ -10,6 +10,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -29,7 +30,6 @@ public class Mpuser  implements Serializable {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date birthday;
-
     private String wechatid;
     private String qq;
     private Integer sex;

@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 
 @AllArgsConstructor
@@ -12,7 +13,8 @@ import java.io.Serializable;
 @Data
 @Accessors(chain = true)//链式写法
 public class Type  implements Serializable {
-    private Integer aid;
+    @Id
+    private Integer tid;
     private String tname;
     private String specification;
 

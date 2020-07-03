@@ -35,4 +35,12 @@ public class DeliveryServiceImpl implements DeliveryService {
     public Integer upd(Delivery delivery) {
         return deliveryMapper.updateByPrimaryKey(delivery);
     }
+
+    public List<Delivery> getDelivery(Delivery delivery) {
+        return deliveryMapper.getDelivery(delivery);
+    }
+
+    public Delivery getDeliveryOne(Delivery delivery) {
+        return deliveryMapper.getDeliveryOne(delivery);
+    }
 }

@@ -1,0 +1,12 @@
+2020-06-19 09:50:55,084 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-06-19 09:50:55,100 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-19 09:50:55,104 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-19 09:50:55,105 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` LIMIT ? 
+2020-06-19 09:50:55,106 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-19 09:50:55,109 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2020-06-19 09:51:23,484 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` AND d.`address` = ? AND d.`coding` = ? 
+2020-06-19 09:51:23,492 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 长沙大计(String), 长沙大计(String)
+2020-06-19 09:51:23,494 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-19 09:52:29,869 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 12116 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-19 09:52:29,870 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-19 09:52:29,871 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

@@ -1,0 +1,10 @@
+2020-06-22 09:27:00,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-22 09:27:00,541 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-22 09:28:03,821 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-06-22 09:28:03,843 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-22 09:28:03,850 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-22 09:29:15,860 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-06-22 09:29:15,861 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-22 09:29:15,872 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-22 09:29:31,856 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-06-22 09:29:31,858 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
