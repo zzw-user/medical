@@ -27,7 +27,5 @@ public class Amendrecord implements Serializable {
     private String assess;
     private String analyze;
     private Integer did;
-    private String faulttype;
-    private String faultdescription;
     private String productcoding;
 }
