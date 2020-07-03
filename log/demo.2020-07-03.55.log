@@ -1,0 +1,8 @@
+2020-07-03 10:02:18,826 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:02:25,010 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE cost SET operator = ?,address = ?,cost = ?,sparepartcost = ?,dataentryclerk = ?,inputtime = ?,aftertype = ?,coding = ?,phone = ? WHERE cid = ? 
+2020-07-03 10:02:25,011 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 河北 石家庄 长安区 石家庄市第四医院 中山东路206号(String), 6666.66(String), null, 团子(String), 2020-07-03 00:00:00.0(Timestamp), null, YYY-NX(String), 18076036155(String), 12(Integer)
+2020-07-03 10:02:25,052 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-03 10:02:26,415 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m WHERE c.`operator` = m.mpid 
+2020-07-03 10:02:26,417 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 10:02:26,419 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:02:26,419 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid LIMIT ? 

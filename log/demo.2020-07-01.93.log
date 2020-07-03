@@ -1,0 +1,8 @@
+2020-07-01 11:36:15,670 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-01 11:36:15,693 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-01 11:36:28,464 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET did = ?,operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? AND operator = ? AND phone = ? AND address = ? AND aftertype = ? AND coding = ? AND deliverytime = ? 
+2020-07-01 11:36:28,465 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 1(Integer), 18075232455(String), 浙江 杭州 滨江区 浙江警察学院 滨文路555号(String), 1(Integer), YYY-NX(String), null, 2(Integer), 1(Integer), 18075232455(String), 浙江 杭州 滨江区 浙江警察学院 滨文路555号(String), 1(Integer), YYY-NX(String), null
+2020-07-01 11:36:28,466 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2020-07-01 11:38:04,187 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10464 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
+2020-07-01 11:38:04,187 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-01 11:38:04,187 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

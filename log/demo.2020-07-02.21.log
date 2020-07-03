@@ -1,0 +1,10 @@
+2020-07-02 10:01:38,786 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-02 10:01:38,789 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 10:01:54,251 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 10:01:54,253 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 10:01:54,254 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-07-02 10:02:49,568 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(0) from product where coding=? 
+2020-07-02 10:02:49,570 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-Kl(String)
+2020-07-02 10:02:49,576 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 10:03:03,745 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO installrecord ( rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding ) VALUES( ?,?,?,?,?,?,?,?,? ) 
+2020-07-02 10:03:03,746 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 1(Integer), 浙江 杭州 滨江区 浙江康恩贝制药有限公司 滨康路568号2楼(String), f7682cb3dbd84b328386c75fd7f91c7e_hah.jpg(String), 1287e64bb24746499b2462f7dee8d595_sq.jpg(String), 2020-07-02 00:00:00.0(Timestamp), null, 2(Integer), KKN-Kl(String)

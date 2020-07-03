@@ -1,0 +1,11 @@
+2020-07-01 10:10:04,453 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-01 10:10:04,458 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-01 10:10:17,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-07-01 10:10:17,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-01 10:10:17,685 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-01 10:10:17,685 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` LIMIT ? 
+2020-07-01 10:10:17,686 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-01 10:10:17,687 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-01 10:10:25,027 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-01 10:10:25,028 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-01 10:10:25,029 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5

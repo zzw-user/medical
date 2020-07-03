@@ -1,0 +1,11 @@
+2020-07-03 09:56:13,041 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cost WHERE cid = ? 
+2020-07-03 09:56:13,041 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-03 09:56:13,110 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-03 09:56:16,060 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cost WHERE cid = ? 
+2020-07-03 09:56:16,061 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-07-03 09:56:16,133 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-03 09:56:17,774 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-03 09:56:17,775 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:56:17,780 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-07-03 09:56:42,746 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-03 09:56:42,747 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKK-KL(String)

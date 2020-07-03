@@ -1,0 +1,8 @@
+2020-07-02 09:57:13,459 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(0) from product where coding=? 
+2020-07-02 09:57:13,478 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-02 09:57:13,480 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 09:57:23,350 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO installrecord ( rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding ) VALUES( ?,?,?,?,?,?,?,?,? ) 
+2020-07-02 09:57:23,351 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 浙江 温州 鹿城区 江心屿景区售票处 望江东路与樊宅巷交叉口北50米(String), 6b81ef3375e94d0f80581b08c29d9ada_hah.jpg(String), 162a9697f74d48979ec2792006f57a64_xm.jpg(String), 2020-07-02 00:00:00.0(Timestamp), null, 3(Integer), KKN-KL(String)
+2020-07-02 09:57:23,398 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-02 09:57:24,785 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-07-02 09:57:24,789 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

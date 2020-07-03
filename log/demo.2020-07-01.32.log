@@ -1,0 +1,10 @@
+2020-07-01 10:19:00,534 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-07-01 10:19:02,596 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-01 10:19:02,597 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-01 10:19:02,599 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-07-01 10:19:14,190 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(0) from product where coding=? 
+2020-07-01 10:19:14,192 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-01 10:19:14,195 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-01 10:19:34,626 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO delivery ( did,operator,phone,address,aftertype,coding,deliverytime ) VALUES( ?,?,?,?,?,?,? ) 
+2020-07-01 10:19:34,628 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 15582809906(String), 浙江 杭州 滨江区 江陵路(地铁站) (在建)6号线;1号线(String), 1(Integer), KKN-KL(String), 2020-07-01 10:19:11.0(Timestamp)
+2020-07-01 10:19:34,675 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

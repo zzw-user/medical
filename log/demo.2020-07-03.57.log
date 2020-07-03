@@ -1,0 +1,12 @@
+2020-07-03 10:02:40,902 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 州(String), 8(Integer)
+2020-07-03 10:02:40,907 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:02:43,493 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m WHERE c.`operator` = m.mpid 
+2020-07-03 10:02:43,494 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 10:02:43,495 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:02:43,496 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid LIMIT ? 
+2020-07-03 10:02:43,496 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2020-07-03 10:02:43,497 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-03 10:02:47,353 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m WHERE c.`operator` = m.mpid AND m.realname LIKE CONCAT('%', ?, '%') 
+2020-07-03 10:02:47,354 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 子(String)
+2020-07-03 10:02:47,355 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:02:47,356 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid AND m.realname LIKE CONCAT('%',?,'%') LIMIT ? 
