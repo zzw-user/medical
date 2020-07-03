@@ -1,0 +1,13 @@
+2020-06-30 10:15:14,440 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(0) from product where coding=? 
+2020-06-30 10:15:14,462 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String)
+2020-06-30 10:15:14,483 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 10:15:42,423 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 9084 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-30 10:15:42,423 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-30 10:15:42,423 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-06-30 10:15:46,420 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 4.134 seconds (JVM running for 3850.298)
+2020-06-30 10:16:12,216 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 9084 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-30 10:16:12,216 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-30 10:16:12,217 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-06-30 10:16:18,406 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 9084 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-06-30 10:16:18,406 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-06-30 10:16:18,406 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

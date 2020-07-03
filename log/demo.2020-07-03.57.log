@@ -1,0 +1,10 @@
+2020-07-03 10:59:36,121 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 5.048 seconds (JVM running for 1951.845)
+2020-07-03 11:01:24,924 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `warehouse` w, `mpuser` m WHERE w.`pid` = m.`mpid` 
+2020-07-03 11:01:24,930 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 11:01:24,936 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 11:01:24,937 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT w.*,m.`realname` mname FROM `warehouse` w,`mpuser` m WHERE w.`pid`=m.`mpid` LIMIT ? 
+2020-07-03 11:01:24,938 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-03 11:01:24,940 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 11:03:11,622 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `warehouse` w, `mpuser` m WHERE w.`pid` = m.`mpid` 
+2020-07-03 11:03:11,829 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 11:03:11,853 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

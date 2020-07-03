@@ -1,0 +1,9 @@
+2020-06-30 10:53:33,002 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-06-30 10:53:33,354 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-30 10:53:33,449 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 10:53:37,550 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-06-30 10:53:37,551 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: YYY-NX(String)
+2020-06-30 10:53:37,554 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 10:54:09,405 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,pid,aftertype,phone ) VALUES( ?,?,?,?,?,?,?,?,?,? ) 
+2020-06-30 10:54:09,441 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 浙江 杭州 滨江区 长江小区(立业路) 南环路与立业路交汇处(String), 784(String), null, 未是(String), 2020-06-30 00:00:00.0(Timestamp), 1(Integer), 1(Integer), 15748754621(String)
+2020-06-30 10:54:09,523 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

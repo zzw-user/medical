@@ -1,0 +1,8 @@
+2020-07-03 10:52:05,025 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-03 10:52:05,052 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-03 10:52:05,083 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO delivery ( did,operator,phone,address,aftertype,coding,deliverytime ) VALUES( ?,?,?,?,?,?,? ) 
+2020-07-03 10:52:05,114 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 7(Integer), 15478476124(String), 浙江 杭州 滨江区 付小姐在成都(滨江店) 滨盛路1872新世界·铂悦轩1层(String), 2(Integer), KKN-KL(String), 2020-07-03 10:52:05.074(Timestamp)
+2020-07-03 10:52:05,120 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-03 10:52:08,905 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `delivery` d, `mpuser` m WHERE d.`operator` = m.`mpid` AND d.aftertype = 2 
+2020-07-03 10:52:08,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 10:52:08,909 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

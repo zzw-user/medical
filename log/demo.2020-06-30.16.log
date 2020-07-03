@@ -1,0 +1,12 @@
+2020-06-30 10:29:46,601 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-30 10:29:46,616 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 10:29:49,721 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-06-30 10:29:49,723 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String)
+2020-06-30 10:29:49,729 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-06-30 10:29:52,218 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-06-30 10:29:52,219 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-06-30 10:29:52,222 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-06-30 10:30:03,196 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-06-30 10:30:03,199 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: YYY-NX(String)
+2020-06-30 10:30:03,202 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 10:32:16,344 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`pid` = p.`pid` 

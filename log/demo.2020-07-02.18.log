@@ -1,0 +1,12 @@
+2020-07-02 10:07:37,863 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-02 10:07:40,554 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-07-02 10:07:40,558 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-02 10:07:40,580 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-02 10:07:45,416 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-07-02 10:07:45,418 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-02 10:07:45,455 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 10:08:23,844 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 10:08:23,991 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 10:08:24,038 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 10:08:33,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 10:08:33,421 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

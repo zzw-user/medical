@@ -1,0 +1,10 @@
+2020-06-30 10:46:40,396 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-06-30 10:46:40,440 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-06-30 10:46:40,441 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-06-30 10:46:51,302 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-06-30 10:46:51,303 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: YYY-NX(String)
+2020-06-30 10:46:51,305 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 10:47:12,318 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-06-30 10:47:12,319 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: YYY-NX(String)
+2020-06-30 10:47:12,321 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 10:47:12,375 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,pid,aftertype,phone ) VALUES( ?,?,?,?,?,?,?,?,?,? ) 

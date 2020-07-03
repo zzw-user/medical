@@ -1,0 +1,8 @@
+2020-07-03 10:53:28,106 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(Integer)
+2020-07-03 10:53:28,124 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:53:28,129 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
+2020-07-03 10:53:28,131 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-07-03 10:53:28,135 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:53:39,500 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? 
+2020-07-03 10:53:39,502 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer), 15478476124(String), 浙江 杭州 拱墅区 富越·香郡 杭行路与湖州街交汇处(String), 2(Integer), KKN-KL(String), 2020-07-03 10:52:05.0(Timestamp), 15(Integer)
+2020-07-03 10:53:39,507 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

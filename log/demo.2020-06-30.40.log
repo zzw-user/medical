@@ -1,0 +1,9 @@
+2020-06-30 11:06:03,903 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,realname,pname,coding FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`pid`=p.`pid` LIMIT ? 
+2020-06-30 11:06:03,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-06-30 11:06:03,910 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-06-30 11:06:06,096 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,pid,aftertype,phone FROM cost WHERE cid = ? 
+2020-06-30 11:06:06,099 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-06-30 11:06:06,101 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-06-30 11:06:06,104 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-06-30 11:06:06,105 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-06-30 11:06:06,109 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

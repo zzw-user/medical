@@ -1,0 +1,8 @@
+2020-07-02 10:27:59,797 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 10:28:50,914 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
+2020-07-02 10:28:50,929 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), (String), 666(String), null, 这些(String), 2020-07-02 00:00:00.0(Timestamp), 1(Integer), (String), (String), KKN-KL(String), 15478467241(String)
+2020-07-02 10:28:51,010 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-02 10:31:11,176 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 10:31:11,229 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 10:31:11,254 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 10:31:58,038 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
