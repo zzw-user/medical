@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
 <mapper namespace="com.ylht.mapper.xzh.MaintenancerecordMapper">
-    <select id="seleMaintenancerecord" resultType="Amendrecord">
-        SELECT * FROM `payareturnvisit` where 1=1
-        <if test="wname !=''and wname !=null">
-            and  wname like concat ('%',#{wname},'%')
+    <select id="seleAmendrecord" resultType="Amendrecord">
+        SELECT a.*,m.realname FROM `amendrecord` a,mpuser m WHERE m.`mpid`=a.operator
+        <if test="address!=null and address!=''">
+            and a.address like concat('%',#{address},'%')
         </if>
-        <if test="address !=''and address !=null">
-            and  address like concat ('%',#{address},'%')
+        <if test="status!=null and status!=0">
+            and a.status=#{status}
         </if>
-        limit #{index},#{pagesize}
+        <if test="productcoding!=null and productcoding!=''">
+            and a.productcoding like concat('%',#{productcoding},'%')
+        </if>
+        <if test="realname!=null and realname!=''">
+            and m.realname like concat('%',#{realname},'%')
+        </if>
     </select>
 </mapper>
