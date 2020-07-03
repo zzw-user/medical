@@ -1,0 +1,10 @@
+2020-07-02 11:03:00,980 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` 
+2020-07-02 11:03:00,987 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 11:03:00,988 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 11:03:00,989 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` LIMIT ? 
+2020-07-02 11:03:00,989 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-02 11:03:00,995 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-07-02 11:03:04,941 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 11:03:04,943 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 11:03:04,944 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-07-02 11:03:05,976 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding FROM installrecord WHERE rid = ? 

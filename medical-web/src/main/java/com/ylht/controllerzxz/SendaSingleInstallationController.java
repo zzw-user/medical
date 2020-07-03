@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -43,6 +44,7 @@ public class SendaSingleInstallationController {
     @RequestMapping("/addDeliveryByAid")
     public String addDeliveryByAid(Delivery delivery,String sj) throws ParseException {
         SimpleDateFormat s= new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        delivery.setDeliverytime(new Date());
         if(sj!=null && sj!=""){
             delivery.setDeliverytime(s.parse(sj));
         }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ylht.mapper.xzh.RepairbackMapper">
+    <select id="selePayareturnvisit" resultType="Payareturnvisits">
+        SELECT p.*,m.realname mname FROM `payareturnvisit` p, mpuser m WHERE p.`operator`=m.mpid  AND p.aftertype=2
+        <if test="pname!=null and  pname !=''">
+            and  pname like concat ('%',#{pname},'%')
+        </if>
+        <if test="way!=null and way!=''">
+            and  way like concat ('%',#{way},'%')
+        </if>
+    </select>
+</mapper>
