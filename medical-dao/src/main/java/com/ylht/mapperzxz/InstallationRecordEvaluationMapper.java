@@ -10,7 +10,6 @@ import java.util.List;
 @Mapper
 public interface InstallationRecordEvaluationMapper {
     List<InstallationRecordEvaluation> getInstallationRecordEvaluation(@Param("address") String address, @Param("status") Integer status,
-                                                                       @Param("coding") String coding, @Param("realname") String realname,
-                                                                       @Param("pageNo") Integer pageNo, @Param("pageSize") Integer pageSize);
+                                                                       @Param("coding") String coding, @Param("realname") String realname);
     int updateInstallrecordByRid(Installrecord installrecord);
 }

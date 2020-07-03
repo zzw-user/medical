@@ -17,13 +17,10 @@ public class InstallationRecordEvaluationServiceImpl implements InstallationReco
    private InstallationRecordEvaluationMapper installationRecordEvaluationMapper;
 
 
-    public List<InstallationRecordEvaluation> getInstallationRecordEvaluation(String address, Integer status, String coding, String realname, Integer pageNo, Integer pageSize) {
-        return installationRecordEvaluationMapper.getInstallationRecordEvaluation(address, status, coding, realname, pageNo, pageSize);
-    }
 
     public PageInfo<InstallationRecordEvaluation> pageInstallationRecordEvaluation(String address, Integer status, String coding, String realname, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo,pageSize);
-        List<InstallationRecordEvaluation> list = installationRecordEvaluationMapper.getInstallationRecordEvaluation(address, status, coding, realname, pageNo, pageSize);
+        List<InstallationRecordEvaluation> list = installationRecordEvaluationMapper.getInstallationRecordEvaluation(address, status, coding, realname);
         PageInfo<InstallationRecordEvaluation> pageInfo = new PageInfo<InstallationRecordEvaluation>(list);
         return pageInfo;
     }
