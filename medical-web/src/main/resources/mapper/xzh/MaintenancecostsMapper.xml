@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
 <mapper namespace="com.ylht.mapper.xzh.MaintenancecostsMapper">
     <select id="seleCost" resultType="Cost">
-    SELECT c.*,m.`realname` mname,p.pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding` and c.aftertype=2
+    SELECT c.*,m.`realname`,p.pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding` and c.aftertype=2
     <if test="mname!=null and mname!=''">
         AND m.`realname` LIKE CONCAT('%',#{mname},'%')
     </if>
