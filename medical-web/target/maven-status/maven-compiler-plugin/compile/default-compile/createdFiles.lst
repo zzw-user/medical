@@ -1,5 +1,7 @@
-com\ylht\liujiancontroller\ProductandWarehouseController.class
-com\ylht\controllerzxz\InstallationRecordEvaluationController.class
 com\ylht\controllerzxz\SendaSingleInstallationController.class
 com\ylht\controller\Demo.class
+com\ylht\controllerzxz\InstallationRecordEvaluationController.class
+com\ylht\liujiancontroller\ProductandWarehouseController.class
+com\ylht\controller\cjh\TypeController.class
+com\ylht\controller\zzw\ZzwDeliveryController.class
 com\ylht\MedicalApplication.class
