@@ -9,6 +9,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -27,4 +28,6 @@ public class Payareturnvisit  implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date writetime;
     private Integer aftertype;
+    @Transient
+    private String mname;
 }

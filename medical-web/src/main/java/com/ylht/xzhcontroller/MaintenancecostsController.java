@@ -2,7 +2,6 @@ package com.ylht.xzhcontroller;
 
 import com.github.pagehelper.PageInfo;
 import com.ylht.pojo.Cost;
-import com.ylht.pojo.Costs;
 import com.ylht.pojo.Mpuser;
 import com.ylht.pojo.Product;
 import com.ylht.service.CostService;
@@ -30,9 +29,9 @@ public class MaintenancecostsController {
     public ProductService productService;
 
     @RequestMapping("getCost")
-    public ResultMap<List<Costs>> demo(String mname, String address, Integer page, Integer limit){
-        PageInfo<Costs> pages=servic.seleCost(mname,address,page,limit);
-        return new ResultMap<List<Costs>>("",pages.getList(),0,pages.getTotal());
+    public ResultMap<List<Cost>> demo(String mname, String address, Integer page, Integer limit){
+        PageInfo<Cost> pages=servic.seleCost(mname,address,page,limit);
+        return new ResultMap<List<Cost>>("",pages.getList(),0,pages.getTotal());
 
     }
 

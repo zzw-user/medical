@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -14,6 +17,7 @@ import java.util.Date;
 @Data
 @Accessors(chain = true)//链式写法
 public class Amendrecord implements Serializable {
+    @Id
     private Integer rid;
     private Integer operator;
     private String address;
@@ -22,12 +26,16 @@ public class Amendrecord implements Serializable {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date installationtime;
+    @Column(name = "`status`")
     private Integer status;
     private String arpartcoding;
     private String assess;
+    @Column(name="`analyze`")
     private String analyze;
     private Integer did;
     private String faulttype;
     private String faultdescription;
     private String productcoding;
+    @Transient
+    private String realname;
 }
