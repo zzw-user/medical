@@ -1,0 +1,10 @@
+2020-07-02 21:31:21,431 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.`realname` AS moperator FROM payareturnvisit p,mpuser m WHERE p.operator=m.`mpid` 
+2020-07-02 21:31:21,435 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 21:31:21,437 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-02 21:31:25,473 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM payareturnvisit WHERE pid = ? 
+2020-07-02 21:31:25,474 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-02 21:31:25,477 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-02 21:31:25,489 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.`realname` AS moperator FROM payareturnvisit p,mpuser m WHERE p.operator=m.`mpid` 
+2020-07-02 21:31:25,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 21:31:25,492 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 21:31:43,079 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.`realname` AS moperator FROM payareturnvisit p,mpuser m WHERE p.operator=m.`mpid` AND p.pid=? 

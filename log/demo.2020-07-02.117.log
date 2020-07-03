@@ -1,0 +1,8 @@
+2020-07-02 20:46:29,748 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 20:46:29,983 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? OR c.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
+2020-07-02 20:46:29,984 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 长(String), 长(String)
+2020-07-02 20:46:29,985 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 20:46:30,186 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? OR c.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
+2020-07-02 20:46:30,187 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 长(String), 长(String)
+2020-07-02 20:46:30,192 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 20:46:30,444 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? OR c.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 

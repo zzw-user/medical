@@ -1,0 +1,11 @@
+2020-07-02 10:46:22,629 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 2.186 seconds (JVM running for 343.642)
+2020-07-02 10:51:21,652 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 
+2020-07-02 10:51:21,655 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-02 10:51:21,659 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 10:51:22,817 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-E0OONUJ with PID 2448 (E:\IDEAProject\medical\medical-web\target\classes started by ZZW in E:\IDEAProject\medical)
+2020-07-02 10:51:22,818 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-02 10:51:22,819 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-02 10:51:24,787 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 2.045 seconds (JVM running for 645.801)
+2020-07-02 10:51:24,844 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` 
+2020-07-02 10:51:24,846 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 10:51:24,847 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

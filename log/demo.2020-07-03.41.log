@@ -1,0 +1,8 @@
+2020-07-03 11:38:23,911 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 3.164 seconds (JVM running for 3097.554)
+2020-07-03 11:39:31,707 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE password = ? AND phone = ? 
+2020-07-03 11:39:31,708 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 122(String), 15588856652(String)
+2020-07-03 11:39:31,710 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-03 11:39:45,857 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE password = ? AND phone = ? 
+2020-07-03 11:39:45,859 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 122(String), 18244726551(String)
+2020-07-03 11:39:45,861 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-03 11:39:50,889 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE password = ? AND phone = ? 
