@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -23,4 +24,6 @@ public class Maintainrecord  implements Serializable {
     private String assess;
     private Integer status;
     private String coding;
+    @Transient
+    private String moperator;//操作人员姓名
 }

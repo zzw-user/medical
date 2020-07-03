@@ -1,3 +1,4 @@
+com\ylht\pojo\Payareturnvisits.class
 com\ylht\pojo\Producttype.class
 com\ylht\util\XslxUtil.class
 com\ylht\pojo\Amendrecord.class
@@ -12,7 +13,9 @@ com\ylht\pojo\Type.class
 com\ylht\util\CrosFilter.class
 com\ylht\pojo\Warehouse.class
 com\ylht\pojo\Arpart.class
+com\ylht\pojo\Warehouses.class
 com\ylht\pojo\Navigation.class
+com\ylht\pojo\Costs.class
 com\ylht\pojo\InstallationRecordEvaluation.class
 com\ylht\pojo\Maintainrecord.class
 com\ylht\pojo\Installrecord.class

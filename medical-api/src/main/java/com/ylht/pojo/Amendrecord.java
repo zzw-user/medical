@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -30,4 +31,6 @@ public class Amendrecord implements Serializable {
     private String faulttype;
     private String faultdescription;
     private String productcoding;
+    @Transient
+    private String moperator;//操作人员姓名
 }

@@ -33,6 +33,14 @@ public class AmendrecordServiceImpl implements AmendrecordService {
     }
 
     public Integer upd(Amendrecord amendrecord) {
-        return amendrecordMapper.updateByPrimaryKey(amendrecord);
+        return amendrecordMapper.updateByPrimaryKeySelective(amendrecord);
+    }
+
+    public List<Amendrecord> getRecord(Amendrecord amendrecord) {
+        return amendrecordMapper.getRecord(amendrecord);
+    }
+
+    public Amendrecord getRecordOne(Amendrecord amendrecord) {
+        return amendrecordMapper.getRecordOne(amendrecord);
     }
 }

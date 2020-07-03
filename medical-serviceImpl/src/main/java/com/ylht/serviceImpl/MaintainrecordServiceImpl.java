@@ -33,6 +33,14 @@ public class MaintainrecordServiceImpl implements MaintainrecordService {
     }
 
     public Integer upd(Maintainrecord maintainrecord) {
-        return maintainrecordMapper.updateByPrimaryKey(maintainrecord);
+        return maintainrecordMapper.updateByPrimaryKeySelective(maintainrecord);
+    }
+
+    public List<Maintainrecord> getRecord(Maintainrecord maintainrecord) {
+        return maintainrecordMapper.getRecord(maintainrecord);
+    }
+
+    public Maintainrecord getRecordOne(Maintainrecord maintainrecord) {
+        return maintainrecordMapper.getRecordOne(maintainrecord);
     }
 }

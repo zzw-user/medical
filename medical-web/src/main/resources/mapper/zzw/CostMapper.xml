@@ -6,10 +6,10 @@
     <select id="getCost" resultType="Cost">
         SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid`
         <if test="aftertype!=0 and aftertype!=null">
-            AND d.aftertype=#{aftertype}
+            AND c.aftertype=#{aftertype}
         </if>
         <if test="address!='' and address!=null">
-            OR d.address LIKE concat ('%',#{address},'%') OR m.realname LIKE concat ('%',#{address},'%')
+            OR c.address LIKE concat ('%',#{address},'%') OR m.realname LIKE concat ('%',#{address},'%')
         </if>
     </select>
     <select id="getCostOne" resultType="Cost">
