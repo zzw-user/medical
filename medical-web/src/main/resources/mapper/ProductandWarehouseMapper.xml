@@ -2,12 +2,51 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.ylht.mapper.ProductandWarehouseMapper">
 <select id="selectproduct" resultType="Product">
-    select p.*,p1.operationtime as operationtime from product p,productrecord p1 where p.pid=p1.pid ;
+    SELECT p.*,p1.typename AS typename,w.`wname` AS wname,w.`creationtime` FROM product p,producttype p1,warehouse w WHERE p.typeid=p1.id AND p.wid=w.wid
     <if test="pname!=null and pname!=''">
-        and p.pname=#{pname}
+        and p.pname  like concat('%',#{pname},'%')
     </if>
     <if test="coding!=null and coding!=''">
-        and p.coding=#{coding}
+        and p.coding  like concat('%',#{coding},'%')
+    </if>
+    <if test="typeid!=null and typeid!=0">
+        and p.typeid=#{typeid}
+    </if>
+    <if test="wid!=null and wid!=0">
+        and p.wid=#{wid}
     </if>
 </select>
+    <update id="updProduct" parameterType="Product">
+        update product set wid=#{wid},typeid=#{typeid},pname=#{pname},coding=#{coding},model=#{model},bomname=#{bomname},inmoney=#{inmoney},createtime=#{createtime} where pid=#{pid}
+    </update>
+    <insert id="addProduct" parameterType="Product">
+        insert into product(wid,typeid,pname,coding,model,bomname,inmoney,createtime) values(#{wid},#{typeid},#{pname},#{coding},#{model},#{bomname},#{inmoney},#{createtime})
+    </insert>
+    <select id="selectProductOne" resultType="Product">
+        select * from product where pid=#{pid}
+    </select>
+    <select id="selectOrderform" resultType="Orderforms">
+        select * from orderform o,mpuser m where o.operator=m.mpid
+        <if test="serialnumber!=null and serialnumber!=''">
+            and o.serialnumber=#{serialnumber}
+        </if>
+        <if test="operator!=null and operator!=0">
+            and o.operator=#{operator}
+        </if>
+        <if test="coding!=null and coding!=''">
+            and o.coding=#{coding}
+        </if>
+    </select>
+    <select id="productAndInventory" resultType="Product">
+        SELECT COUNT(*)AS quantity,pname as pname,pid as pid FROM `product` GROUP BY pname
+        <if test="pname!=null and pname!=''">
+            having pname  like concat('%',#{pname},'%')
+        </if>
+    </select>
+    <select id="arpartAndInventory" resultType="Arparts">
+        SELECT COUNT(*)AS quantity,aname,aid FROM `arpart` GROUP BY aname
+        <if test="aname!=null and aname!=''">
+            having aname  like concat('%',#{aname},'%')
+        </if>
+    </select>
 </mapper>

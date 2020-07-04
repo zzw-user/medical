@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ylht.mapper.CostsMapper">
+    <select id="costselect" resultType="Costs">
+        select c.*,m.mname as mname from cost c,mpuser m where  c.operator=m.mpid
+        <if test="inputtime!=null">
+           and c.inputtime=#{inputtime}
+        </if>
+        <if test="aftertype!=null and aftertype!=0">
+            and c.aftertype=#{aftertype }
+        </if>
+    </select>
+
+</mapper>

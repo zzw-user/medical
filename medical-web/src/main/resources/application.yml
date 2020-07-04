@@ -1,9 +1,9 @@
 server:
-  port: 8081
+  port: 8080
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/v5
+    url: jdbc:mysql://localhost:3306/medical_product
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource

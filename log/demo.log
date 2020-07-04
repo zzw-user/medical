@@ -1,0 +1,2 @@
+2020-07-01 11:25:43,080 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-01 11:25:43,083 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

@@ -24,7 +24,6 @@ public class Mpuser  implements Serializable {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date birthday;
-
     private String wechatid;
     private String qq;
     private Integer sex;
