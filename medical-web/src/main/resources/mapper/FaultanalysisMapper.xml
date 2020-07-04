@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ylht.mapper.FaultanalysisMapper">
+<select id="selectfau" resultType="Faultanalysis">
+    SELECT a.installationtime AS installationtime,f1.faulttype AS faulttype,
+    f.`analyze`,f.`faultdescription`,f.fid FROM Faultanalysis f ,faulttype f1,amendrecord a WHERE f.faulttypeid=f1.id AND f.aid=a.rid
+    <if test="installationtime!=null">
+     and   a.installationtime=#{installationtime}
+    </if>
+    <if test="id!=null and id!=0">
+     and   f1.id=#{id}
+    </if>
+</select>
+    <delete id="delOne">
+        delete from Faultanalysis where fid=#{fid}
+    </delete>
+    <select id="selectOne" resultType="Faultanalysis">
+        select * from Faultanalysis where fid=#{fid}
+    </select>
+    <update id="uodfau" parameterType="Faultanalysis">
+        update Faultanalysis set faulttypeid=#{faulttypeid},`analyze`=#{analyze},faultdescription=#{faultdescription},aid=#{aid} where fid=#{fid}
+    </update>
+
+    <insert id="addFau" parameterType="Faultanalysis">
+        insert into Faultanalysis(`analyze`,faulttypeid,faultdescription,aid) values(#{analyze},#{faulttypeid},#{faultdescription},#{aid})
+    </insert>
+    <select id="areaselectfau" resultType="Areafaultanalysis">
+        SELECT a.installationtime AS installationtime,f1.faulttype AS faulttype,
+        f.`analyze`,f.`faultdescription`,f.fid,d.dname as dname FROM Faultanalysis f ,faulttype f1,amendrecord a,district d WHERE f.faulttypeid=f1.id AND f.aid=a.rid and d.did=a.did
+        <if test="installationtime!=null">
+            and   a.installationtime=#{installationtime}
+        </if>
+        <if test="id!=null and id!=0">
+            and   f1.id=#{id}
+        </if>
+        <if test="did!=null and did!=0">
+            and a.did=#{did}
+        </if>
+    </select>
+</mapper>

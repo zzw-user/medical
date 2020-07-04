@@ -1,6 +1,9 @@
 package com.ylht.serviceImpl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.ylht.mapper.CostMapper;
+import com.ylht.pojo.Areafaultanalysis;
 import com.ylht.pojo.Cost;
 import com.ylht.service.CostService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,5 +37,12 @@ public class CostServiceImpl implements CostService {
 
     public Integer upd(Cost cost) {
         return costMapper.updateByPrimaryKey(cost);
+    }
+
+    public PageInfo<Cost> costpage(Integer pageNum, Integer pageSize, Cost cost) {
+        PageHelper.startPage(pageNum,pageSize);
+        List<Cost> list=costMapper.select(cost);
+        PageInfo<Cost> page=new PageInfo<Cost>(list);
+        return page;
     }
 }
