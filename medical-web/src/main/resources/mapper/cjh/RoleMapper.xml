@@ -6,5 +6,9 @@
         <if test="rname!=null and rname!=''">
             and rname like concat('%',#{rname},'%')
         </if>
+        <if test="hierarchy!=null and hierarchy!=0">
+            and hierarchy=#{hierarchy}
+        </if>
+
     </select>
 </mapper>

@@ -6,6 +6,10 @@
         <if test="mname!=null and mname!=''">
             and a.mname like concat('%',#{mname},'%')
         </if>
+        <if test="realname!=null and realname!=''">
+            and a.realname like concat('%',#{realname},'%')
+        </if>
+
         <if test="roleid!=null and roleid>0">
             and a.roleid like concat('%',#{roleid},'%')
         </if>

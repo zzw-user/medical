@@ -38,9 +38,9 @@ public class TypeServiceImpl implements TypeService {
         return typeMapper.updateByPrimaryKey(type);
     }
 
-    public PageInfo<Type> getshow(String tname, Integer pageNo, Integer pageSize) {
+    public PageInfo<Type> getshow(String tname,String specification, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo,pageSize);
-        List<Type>  list=typeMapper.getTypeAll(tname);
+        List<Type>  list=typeMapper.getTypeAll(tname,specification);
         PageInfo<Type> pageInfo=new PageInfo<Type>(list);
         return pageInfo;
     }

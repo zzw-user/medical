@@ -1,9 +1,8 @@
-2020-07-03 10:08:07,195 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,pname,way,`describe`,operator,writetime,aftertype FROM payareturnvisit WHERE pid = ? 
-2020-07-03 10:08:07,199 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
-2020-07-03 10:08:07,200 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 10:08:20,073 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE payareturnvisit SET pname = ?,way = ?,`describe` = ?,operator = ?,writetime = ?,aftertype = ? WHERE pid = ? 
-2020-07-03 10:08:20,074 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 呼呼(String), 电话(String), 搞(String), 2(Integer), 2020-06-29 00:00:00.0(Timestamp), 2(Integer), 8(Integer)
-2020-07-03 10:08:20,211 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-03 10:08:21,507 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = 2 
-2020-07-03 10:08:21,508 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 10:08:21,509 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 17:07:33,895 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 17:08:06,800 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 14708 (D:\medical\medical-web\target\classes started by PC in D:\medical)
+2020-07-03 17:08:06,800 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 17:08:06,800 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 17:08:11,416 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 4.719 seconds (JVM running for 60.574)
+2020-07-03 17:08:21,489 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 16352 (D:\medical\medical-web\target\classes started by PC in D:\medical)
+2020-07-03 17:08:21,816 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 17:08:21,827 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

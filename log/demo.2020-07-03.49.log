@@ -1,8 +1,12 @@
-2020-07-03 09:59:52,081 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-03 09:59:52,089 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
-2020-07-03 09:59:52,090 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
-2020-07-03 09:59:59,856 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-03 09:59:59,858 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: YYY-NX(String)
-2020-07-03 09:59:59,860 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-03 10:00:35,635 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,? ) 
-2020-07-03 10:00:35,636 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 0(Integer), 浙江 杭州 滨江区 江陵路(地铁站) (在建)6号线;1号线(String), 888(String), null, 呀呼,${{.uname}}(String), 2020-07-03 00:00:00.0(Timestamp), 1(Integer), YYY-NX(String), 18232422155(String)
+2020-07-03 16:47:12,107 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:47:12,111 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:47:12,115 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:48:25,494 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:48:25,496 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:48:25,499 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:48:25,500 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:48:25,500 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:48:25,519 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 16:48:29,573 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:48:29,575 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:48:29,580 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78

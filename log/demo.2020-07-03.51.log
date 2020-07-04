@@ -1,9 +1,13 @@
-2020-07-03 10:01:21,621 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,? ) 
-2020-07-03 10:01:21,625 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 2(Integer), 浙江 杭州 滨江区 江陵路(地铁站) (在建)6号线;1号线(String), 85(String), null, 好好,${{.uname}}(String), 2020-07-03 00:00:00.0(Timestamp), 1(Integer), YYY-NX(String), 16535314588(String)
-2020-07-03 10:01:21,697 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-03 10:01:23,036 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m WHERE c.`operator` = m.mpid 
-2020-07-03 10:01:23,037 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 10:01:23,038 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 10:01:23,039 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid LIMIT ? 
-2020-07-03 10:01:23,039 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
-2020-07-03 10:01:23,040 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 16:51:25,364 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 16:51:25,458 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:51:25,459 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:51:25,461 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:51:27,778 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:51:27,779 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:51:27,782 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:52:01,515 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:52:01,532 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:52:01,536 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:52:01,536 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:52:01,537 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 16:52:01,538 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78

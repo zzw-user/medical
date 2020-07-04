@@ -35,12 +35,12 @@ public class RoleServiceImpl implements RoleService {
     }
 
     public Integer upd(Role role) {
-        return roleMapper.updateByPrimaryKey(role);
+        return roleMapper.updateByPrimaryKeySelective(role);
     }
 
-    public PageInfo<Role> getRoleAll(String rname, Integer pageNo, Integer pageSize) {
+    public PageInfo<Role> getRoleAll(String rname,Integer hierarchy, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo,pageSize);
-        List<Role> list =roleMapper.getRoleAll(rname);
+        List<Role> list =roleMapper.getRoleAll(rname,hierarchy);
         PageInfo<Role> page=new PageInfo<Role>(list);
         return page;
     }

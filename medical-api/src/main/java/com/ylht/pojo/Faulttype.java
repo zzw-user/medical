@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -13,5 +14,4 @@ import java.io.Serializable;
 public class Faulttype implements Serializable {
     private Integer id;
     private String faulttype;
-
 }

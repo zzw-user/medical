@@ -1,8 +1,0 @@
-2020-06-28 09:26:08,995 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
-2020-06-28 09:26:09,021 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-06-28 09:26:29,565 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(0) from product where coding=? 
-2020-06-28 09:26:29,566 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-06-28 09:26:29,567 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-06-28 09:26:42,938 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO installrecord ( rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding ) VALUES( ?,?,?,?,?,?,?,?,? ) 
-2020-06-28 09:26:42,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 浙江 杭州 滨江区 东冠社区 (String), 02bba23947334da7baba4b154c015de4_20200423234345.png(String), d57ea18de3c740dc834ba5f234eb7773_20200423234345.png(String), 2020-06-28 00:00:00.0(Timestamp), null, 1(Integer), KKN-KL(String)
-2020-06-28 09:26:42,962 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

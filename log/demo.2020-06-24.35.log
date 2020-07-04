@@ -1,8 +1,0 @@
-2020-06-24 09:34:10,447 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding FROM installrecord WHERE rid = ? 
-2020-06-24 09:34:10,450 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
-2020-06-24 09:34:10,453 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-06-24 09:34:10,482 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-06-24 09:34:10,483 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-06-24 09:34:10,484 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-06-24 09:34:23,706 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE installrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
-2020-06-24 09:34:23,732 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer), 青海 null null 青海西宁人才金港 南大街18号锦园大厦7楼727室(String), 66.jpg(String), 66.jpg(String), 2020-06-16 00:00:00.0(Timestamp), 还行(String), 3(Integer), KKN-KL(String), 1(Integer)
