@@ -1,10 +1,13 @@
 package com.ylht.controller.zzw;
 
+import com.ylht.cos.biz.ITencentCosBizService;
+import com.ylht.cos.dto.ImageObjectRuten;
 import com.ylht.pojo.Amendrecord;
 import com.ylht.pojo.Installrecord;
 import com.ylht.service.AmendrecordService;
 import com.ylht.service.InstallrecordService;
 import com.ylht.service.MpuserService;
+import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,6 +27,8 @@ import java.util.UUID;
 public class ZzwAmendrecordController {
     @Autowired
     private AmendrecordService amendrecordService;
+    @Autowired
+    private ITencentCosBizService cosBizService;
 
     @RequestMapping("getRecord")
     public List<Amendrecord> getRecord(Amendrecord amendrecord){
@@ -53,24 +58,27 @@ public class ZzwAmendrecordController {
     }
     @RequestMapping("updRecordImg")
     public Object updateImg(MultipartFile file, MultipartFile filetwo, String time, Amendrecord amendrecord) throws IOException, ParseException {
-        String pufimg=null;
-        String suximg =null;
         Date date=null;
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         date = dateFormat.parse(time);
         amendrecord.setInstallationtime(date);
-        String path = "E:\\file\\img";
+        String pufimg=null;
+        String suximg =null;
         if(file!=null){
             if (!file.isEmpty()){
                 String name=file.getOriginalFilename();
                 String newFileName= UUID.randomUUID().toString();
                 String suffix=name.substring(name.lastIndexOf("."));
-                String newpath=path+"\\"+newFileName+suffix;
-                if(suffix.equals(".png") || suffix.equals(".jpg") || suffix.equals(".jpeg")){
-                    File nfile = new File(newpath);
-                    file.transferTo(nfile);
-                    pufimg =newFileName+suffix;
+                pufimg =newFileName+suffix;
+                File  fi=new File(file.getOriginalFilename());
+                try {
+                    FileUtils.copyInputStreamToFile(file.getInputStream(), fi);
+                    amendrecord.setBeforeinstallation(pufimg);
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
+                ImageObjectRuten setObjectUpload = cosBizService.setObjectUpload(pufimg, fi);
+                setObjectUpload.setLocation(setObjectUpload.getLocation().substring(7));//去掉http前缀
             }
         }
         if(filetwo!=null){
@@ -78,16 +86,18 @@ public class ZzwAmendrecordController {
                 String name=filetwo.getOriginalFilename();
                 String newFileName= UUID.randomUUID().toString();
                 String suffix=name.substring(name.lastIndexOf("."));
-                String newpath=path+"\\"+newFileName+suffix;
-                if(suffix.equals(".png") || suffix.equals(".jpg") || suffix.equals(".jpeg")){
-                    File nfile = new File(newpath);
-                    filetwo.transferTo(nfile);
-                    suximg = newFileName+suffix;
+                suximg = newFileName+suffix;
+                File  fi=new File(filetwo.getOriginalFilename());
+                try {
+                    FileUtils.copyInputStreamToFile(filetwo.getInputStream(), fi);
+                    amendrecord.setAfterinstallation(suximg);
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
+                ImageObjectRuten setObjectUpload = cosBizService.setObjectUpload(suximg, fi);
+                setObjectUpload.setLocation(setObjectUpload.getLocation().substring(7));//去掉http前缀
             }
         }
-        amendrecord.setBeforeinstallation(pufimg);
-        amendrecord.setAfterinstallation(suximg);
         int result = amendrecordService.upd(amendrecord);
         if (result>0){
             return true;

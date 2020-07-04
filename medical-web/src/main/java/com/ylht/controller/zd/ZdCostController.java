@@ -19,7 +19,7 @@ import java.util.Map;
 
 @RestController("zdcostcontroller")
 @RequestMapping("Cost")
-public class CostController {
+public class ZdCostController {
     @Autowired
     private CostService costservice;
     @Autowired
