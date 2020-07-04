@@ -1,4 +1,5 @@
 com\ylht\mapper\ArpartrecordMapper.class
+com\ylht\mapper\BjMapper.class
 com\ylht\mapper\ProductMapper.class
 com\ylht\mapper\FaulttypeMapper.class
 com\ylht\mapper\OrderformMapper.class

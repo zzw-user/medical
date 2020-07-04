@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@RestController
+@RestController("zdcostcontroller")
 @RequestMapping("Cost")
 public class ZdCostController {
     @Autowired
