@@ -32,7 +32,7 @@ public class NavgitonController {
             HashMap<String, Object> map = new HashMap<String, Object>();
             if (d.getFatherid() == null) {
                 map.put("id", d.getNid());
-                map.put("title", d.getNname());
+                map.put("title", d.getTitle());
                 map.put("spread", true);
                 //设置是否展开
                 //下级菜单
@@ -43,7 +43,7 @@ public class NavgitonController {
             }
             if (d.getFatherid() == d.getNid()) {
                 HashMap<String, Object> map1 = new HashMap<String, Object>();
-                map1.put("name", d.getNname());
+                map1.put("name", d.getTitle());
                 map.put("children", map1);
             }
             result.add(map);
