@@ -12,6 +12,7 @@
         <if test="coding!=null and coding!=''">
             AND d.`coding` = #{coding}
         </if>
+        and d.aftertype = #{aftertype}
     </select>
     
     <select id="getproductByCoding" resultType="Product">

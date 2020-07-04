@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ylht.mapperzxz.FullMapper">
+    <select id="getFull" resultType="FullMaintainrecord">
+        SELECT i.*,m.realname FROM maintainrecord i,mpuser m WHERE m.`mpid`=i.operator
+        <if test="address!=null and address!=''">
+            and i.address like concat('%',#{address},'%')
+        </if>
+        <if test="status!=null and status!=0">
+            and i.status=#{status}
+        </if>
+        <if test="coding!=null and coding!=''">
+            and i.coding=#{coding}
+        </if>
+        <if test="realname!=null and realname!=''">
+            and m.realname=#{realname}
+        </if>
+    </select>
+    <update id="updateMaintainrecordByRid" parameterType="Maintainrecord">
+        update maintainrecord set assess=#{assess} where rid=#{rid}
+    </update>
+</mapper>

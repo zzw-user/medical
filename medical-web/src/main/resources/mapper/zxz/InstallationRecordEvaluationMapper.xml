@@ -13,7 +13,7 @@
             and i.coding=#{coding}
         </if>
         <if test="realname!=null and realname!=''">
-            and m.realname=#{realname}
+            and m.realname like concat('%',#{realname},'%')
         </if>
     </select>
     <update id="updateInstallrecordByRid" parameterType="Installrecord">

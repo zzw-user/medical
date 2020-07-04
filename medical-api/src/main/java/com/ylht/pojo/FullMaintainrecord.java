@@ -7,15 +7,13 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Id;
-import java.io.Serializable;
 import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Accessors(chain = true)//链式写法
-public class Maintainrecord  implements Serializable {
-    @Id
+public class FullMaintainrecord {
     private Integer rid;
     private Integer operator;
     private String address;
@@ -27,4 +25,5 @@ public class Maintainrecord  implements Serializable {
     private String assess;
     private Integer status;
     private String coding;
+    private String realname;
 }

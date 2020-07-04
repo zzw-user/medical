@@ -3,8 +3,8 @@
 <mapper namespace="com.ylht.mapper.xzh.RepairbackMapper">
     <select id="selePayareturnvisit" resultType="Payareturnvisit">
         SELECT p.*,m.realname FROM `payareturnvisit` p, mpuser m WHERE p.`operator`=m.mpid
-        <if test="realname!=null and  realname !=''">
-            and  realname like concat ('%',#{realname},'%')
+        <if test="pname!=null and  pname !=''">
+            and  pname like concat ('%',#{pname},'%')
         </if>
         <if test="way!=null and way!=''">
             and  way like concat ('%',#{way},'%')

@@ -31,7 +31,6 @@ public class RepairbackController {
 
     @RequestMapping("addPayareturnvisit")
     public boolean addPayareturnvisit(Payareturnvisit payareturnvisit){
-        payareturnvisit.setWritetime(new Date());
         Integer a=service.add(payareturnvisit);
         if (a>0){
             return true;

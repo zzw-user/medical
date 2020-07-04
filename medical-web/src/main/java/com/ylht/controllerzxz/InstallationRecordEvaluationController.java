@@ -86,10 +86,12 @@ public class InstallationRecordEvaluationController {
     @RequestMapping("/upload")
     public Object uploadaaa(MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IllegalStateException, IOException {
         //上传的位置
-        String path =  request.getSession().getServletContext().getRealPath("/img/");
-        System.out.println("path"+path);
+        //String path =  request.getSession().getServletContext().getRealPath("E:/IdeaProjects/medicalfrontend/static/img/");
+        String path;
+        //File f = new File("E:/IdeaProjects/medicalfrontend/static/img/");
+        //System.out.println("path"+path);
         //判断该路径是否存在
-        File file1 = new File(path);
+        File file1 = new File("E:/IdeaProjects/medicalfrontend/static/img/");
         if (!file1.exists()) {
             file1.mkdirs();
         }
@@ -98,7 +100,7 @@ public class InstallationRecordEvaluationController {
         String uuid = UUID.randomUUID().toString().replace("-", "");
         String saveName = uuid + "_" + filename.substring(filename.lastIndexOf(File.separator) + 1);
         //file.transferTo(new File(path, saveName));
-        uploadImg(file,path,saveName);
+        uploadImg(file,"E:/IdeaProjects/medicalfrontend/static/img/",saveName);
         return "{\"code\":0,\"msg\":\""+saveName+"\"}";
     }
 }
