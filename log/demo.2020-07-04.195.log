@@ -1,0 +1,10 @@
+2020-07-04 19:20:34,554 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `amendrecord` a, mpuser m WHERE m.`mpid` = a.operator 
+2020-07-04 19:20:34,659 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 19:20:34,676 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 19:20:34,681 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.*,m.realname FROM `amendrecord` a,mpuser m WHERE m.`mpid`=a.operator LIMIT ? 
+2020-07-04 19:20:34,683 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 19:20:34,691 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 19:20:36,138 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,dname FROM district 
+2020-07-04 19:20:36,150 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 19:20:36,156 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-04 19:20:36,169 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 

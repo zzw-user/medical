@@ -1,0 +1,10 @@
+2020-07-04 20:38:50,742 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` mname FROM `delivery` d,`mpuser` m WHERE d.`operator`=m.`mpid` AND d.aftertype=2 LIMIT ? 
+2020-07-04 20:38:50,751 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 20:38:50,760 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 20:38:53,314 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `delivery` d, `mpuser` m WHERE d.`operator` = m.`mpid` AND d.aftertype = 2 
+2020-07-04 20:38:53,319 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 20:38:53,326 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 20:38:53,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` mname FROM `delivery` d,`mpuser` m WHERE d.`operator`=m.`mpid` AND d.aftertype=2 LIMIT ? 
+2020-07-04 20:38:53,332 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 20:38:53,336 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 20:39:18,147 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `delivery` d, `mpuser` m WHERE d.`operator` = m.`mpid` AND d.aftertype = 2 

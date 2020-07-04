@@ -1,0 +1,12 @@
+2020-07-04 11:41:59,147 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-07-04 11:41:59,152 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-04 11:41:59,156 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 11:45:29,054 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM maintainrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-07-04 11:45:29,056 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 11:45:29,062 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 11:45:31,468 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-04 11:45:31,471 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 11:45:31,474 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 11:45:41,998 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-07-04 11:45:42,000 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-04 11:45:42,002 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0

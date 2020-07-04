@@ -1,0 +1,8 @@
+2020-07-05 03:24:32,934 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,operator,phone,address,aftertype,coding,deliverytime FROM delivery WHERE did = ? 
+2020-07-05 03:24:32,930 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
+2020-07-05 03:24:32,937 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-07-05 03:24:32,937 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 19(Integer)
+2020-07-05 03:24:32,938 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:24:32,938 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:24:43,862 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? 
+2020-07-05 03:24:43,871 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer), 15487457548(String), 浙江 杭州 滨江区 杭州Alice的秘密基地酒店式公寓 浦沿路773号江南商业大厦1幢902(String), 2(Integer), KKN-KL(String), 2020-07-05 03:24:42.0(Timestamp), 19(Integer)

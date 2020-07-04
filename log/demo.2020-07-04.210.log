@@ -1,0 +1,10 @@
+2020-07-04 19:49:28,034 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 6.029 seconds (JVM running for 8996.872)
+2020-07-04 19:49:29,530 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = ? 
+2020-07-04 19:49:29,537 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-04 19:49:29,547 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 19:49:29,548 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.realname FROM `payareturnvisit` p, mpuser m WHERE p.`operator`=m.mpid AND p.aftertype=? LIMIT ? 
+2020-07-04 19:49:29,549 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer)
+2020-07-04 19:49:29,550 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-04 19:50:43,229 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = ? 
+2020-07-04 19:50:43,274 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-04 19:50:43,277 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

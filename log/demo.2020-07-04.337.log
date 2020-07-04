@@ -1,0 +1,9 @@
+2020-07-04 22:18:57,834 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-04 22:18:57,845 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 22:18:57,859 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 22:19:10,219 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-04 22:19:10,225 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-04 22:19:15,778 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-04 22:19:15,782 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-04 22:19:24,567 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
+2020-07-04 22:19:24,571 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 浙江 杭州 滨江区 康恩贝大厦A座 江南大道288号(String), 12(String), null, KKN-KL(String), 2020-07-04 00:00:00.0(Timestamp), 1(Integer), null, null, KKN-KL(String), 15478475442(String)

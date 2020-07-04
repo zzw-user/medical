@@ -1,0 +1,5 @@
+2020-07-05 03:13:13,509 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-05 03:13:13,521 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:13:22,405 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE amendrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,`status` = ?,arpartcoding = ?,assess = ?,`analyze` = ?,did = ?,faulttype = ?,faultdescription = ?,productcoding = ? WHERE rid = ? 
+2020-07-05 03:13:22,410 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer), 浙江 杭州 滨江区 猫山王(龙湖杭州滨江天街) 江汉路1515号龙湖杭州滨江天街F4层(String), f2cfb616fe5947b9bbe164132b50791b_20200423234345.png(String), 36b545745f8343e685488696ee6f5388_20200423234345.png(String), 2020-07-03 00:00:00.0(Timestamp), 2(Integer), YYN-NNS(String), null, 坏了(String), 2(Integer), 坏了(String), 坏了(String), KKN-KL(String), 3(Integer)
+2020-07-05 03:13:22,425 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

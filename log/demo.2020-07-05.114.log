@@ -1,0 +1,10 @@
+2020-07-05 03:31:37,976 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 7(Integer), 浙江 杭州 滨江区 浙江大学医学院附属儿童医院滨江院区 滨盛路3333号(String), (String), (String), 2020-07-05 00:00:00.0(Timestamp), null, 1(Integer), KKN-KL(String)
+2020-07-05 03:31:37,987 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-05 03:31:41,443 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM maintainrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-07-05 03:31:41,445 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 03:31:41,447 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:31:41,449 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM maintainrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-07-05 03:31:41,450 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-05 03:31:41,456 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-05 03:32:33,102 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM maintainrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-07-05 03:32:33,105 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

@@ -1,0 +1,9 @@
+2020-07-05 00:04:39,833 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 郑小珍(String), 10(Integer)
+2020-07-05 00:04:39,843 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-05 00:05:24,436 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 4372 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-05 00:05:24,436 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 00:05:24,437 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-05 00:05:31,127 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 6.981 seconds (JVM running for 5344.613)
+2020-07-05 00:06:21,695 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-07-05 00:06:21,706 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 00:06:21,713 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

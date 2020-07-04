@@ -1,0 +1,10 @@
+2020-07-04 23:13:45,443 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2020-07-04 23:13:48,138 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-04 23:13:48,921 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 23:13:48,940 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 23:14:13,904 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-04 23:14:13,908 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-04 23:14:18,777 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-04 23:14:18,779 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-04 23:14:45,107 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
+2020-07-04 23:14:45,112 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 浙江 杭州 滨江区 儿康路 (String), 1(String), null, 1(String), 2020-07-04 00:00:00.0(Timestamp), 1(Integer), 120.175980(String), 30.191923(String), KKN-KL(String), 12121212111(String)

@@ -1,0 +1,10 @@
+2020-07-05 03:31:10,991 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-05 03:31:10,999 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 03:31:11,004 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-05 03:31:18,045 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-07-05 03:31:18,054 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-05 03:31:18,057 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-05 03:31:30,396 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-07-05 03:31:30,399 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-05 03:31:30,401 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:31:37,960 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO maintainrecord ( rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding ) VALUES( ?,?,?,?,?,?,?,?,? ) 

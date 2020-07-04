@@ -1,0 +1,12 @@
+2020-07-04 21:19:13,952 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `warehouse` w, `mpuser` m WHERE w.`pid` = m.`mpid` 
+2020-07-04 21:19:13,959 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 21:19:13,960 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:19:13,961 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT w.*,m.`realname` mname FROM `warehouse` w,`mpuser` m WHERE w.`pid`=m.`mpid` LIMIT ? 
+2020-07-04 21:19:13,964 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-04 21:19:13,967 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 21:19:39,923 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` AND c.aftertype = 2 
+2020-07-04 21:19:39,925 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 21:19:39,926 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:19:39,927 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname`,p.pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding` and c.aftertype=2 LIMIT ? 
+2020-07-04 21:19:39,928 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 21:19:39,943 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

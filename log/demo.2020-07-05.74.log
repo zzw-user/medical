@@ -1,0 +1,8 @@
+2020-07-05 03:08:56,506 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone FROM cost WHERE cid = ? 
+2020-07-05 03:08:56,493 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
+2020-07-05 03:08:56,513 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-07-05 03:08:56,514 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-07-05 03:08:56,514 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:08:56,516 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:09:06,434 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE cost SET operator = ?,address = ?,cost = ?,sparepartcost = ?,dataentryclerk = ?,inputtime = ?,aftertype = ?,longitude = ?,latitude = ?,coding = ?,phone = ? WHERE cid = ? 
+2020-07-05 03:09:06,436 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer), 浙江 杭州 滨江区 付小姐在成都(滨江店) 滨盛路1872新世界·铂悦轩1层(String), 66(String), 5(String), 张某(String), 2020-07-03 00:00:00.0(Timestamp), 2(Integer), (String), (String), KKN-KL(String), 15478476124(String), 5(Integer)

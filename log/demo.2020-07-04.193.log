@@ -1,0 +1,10 @@
+2020-07-04 19:07:31,552 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `amendrecord` a, mpuser m WHERE m.`mpid` = a.operator AND m.realname LIKE concat('%', ?, '%') 
+2020-07-04 19:07:31,560 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 郑(String)
+2020-07-04 19:07:31,575 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 19:07:34,948 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `amendrecord` a, mpuser m WHERE m.`mpid` = a.operator 
+2020-07-04 19:07:34,951 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 19:07:34,952 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 19:07:34,954 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.*,m.realname FROM `amendrecord` a,mpuser m WHERE m.`mpid`=a.operator LIMIT ? 
+2020-07-04 19:07:34,955 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 19:07:34,960 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 19:16:57,534 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,dname FROM district 

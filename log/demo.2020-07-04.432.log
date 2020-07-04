@@ -1,0 +1,12 @@
+2020-07-04 23:59:34,294 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator AND i.address LIKE concat('%', ?, '%') 
+2020-07-04 23:59:34,299 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 万(String)
+2020-07-04 23:59:34,300 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 23:59:34,302 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator and i.address like concat('%',?,'%') LIMIT ? 
+2020-07-04 23:59:34,302 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 万(String), 10(Integer)
+2020-07-04 23:59:34,304 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 23:59:35,207 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator AND i.address LIKE concat('%', ?, '%') 
+2020-07-04 23:59:35,211 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 万(String)
+2020-07-04 23:59:35,213 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 23:59:35,214 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator and i.address like concat('%',?,'%') LIMIT ? 
+2020-07-04 23:59:35,215 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 万(String), 10(Integer)
+2020-07-04 23:59:35,217 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

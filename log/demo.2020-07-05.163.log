@@ -1,0 +1,8 @@
+2020-07-05 04:46:21,581 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE installrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
+2020-07-05 04:46:21,591 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer), 湖南 长沙 岳麓区 岳麓山国家重点风景名胜区 登高路58号(String), 527707a8874b4a6cbeda226c192f1a6f_20200423234345.png(String), 63a792a24ff14e7ca1c37ed62f99249b_20200423234345.png(String), 2020-06-23 00:00:00.0(Timestamp), 我的妈呀(String), 1(Integer), KKN-KL(String), 7(Integer)
+2020-07-05 04:46:21,596 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-05 04:46:25,043 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-07-05 04:46:25,045 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 04:46:25,049 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 04:46:25,050 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-07-05 04:46:25,051 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)

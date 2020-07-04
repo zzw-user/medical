@@ -1,0 +1,11 @@
+2020-07-05 03:19:58,434 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-05 03:19:58,457 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-05 03:20:06,269 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `delivery` d, `mpuser` m WHERE d.`operator` = m.`mpid` AND d.aftertype = 2 AND m.`realname` LIKE CONCAT('%', ?, '%') 
+2020-07-05 03:20:06,273 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 郑(String)
+2020-07-05 03:20:06,282 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:20:12,699 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `delivery` d, `mpuser` m WHERE d.`operator` = m.`mpid` AND d.aftertype = 2 AND d.address LIKE CONCAT('%', ?, '%') 
+2020-07-05 03:20:12,702 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 浙江(String)
+2020-07-05 03:20:12,705 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:20:12,706 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` mname FROM `delivery` d,`mpuser` m WHERE d.`operator`=m.`mpid` AND d.aftertype=2 AND d.address LIKE CONCAT('%',?,'%') LIMIT ? 
+2020-07-05 03:20:12,708 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 浙江(String), 10(Integer)
+2020-07-05 03:20:12,738 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3

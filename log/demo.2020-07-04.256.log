@@ -1,0 +1,12 @@
+2020-07-04 21:10:27,591 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-04 21:10:27,647 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 21:10:52,802 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `warehouse` w, `mpuser` m WHERE w.`pid` = m.`mpid` 
+2020-07-04 21:10:52,805 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 21:10:52,806 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:10:52,807 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT w.*,m.`realname` mname FROM `warehouse` w,`mpuser` m WHERE w.`pid`=m.`mpid` LIMIT ? 
+2020-07-04 21:10:52,809 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-04 21:10:52,814 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 21:16:51,633 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `warehouse` w, `mpuser` m WHERE w.`pid` = m.`mpid` 
+2020-07-04 21:16:51,744 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 21:16:51,761 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:16:51,768 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT w.*,m.`realname` mname FROM `warehouse` w,`mpuser` m WHERE w.`pid`=m.`mpid` LIMIT ? 

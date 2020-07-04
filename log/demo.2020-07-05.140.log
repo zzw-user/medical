@@ -1,0 +1,10 @@
+2020-07-05 04:06:54,471 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2020-07-05 04:06:54,519 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 04:08:53,929 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = ? 
+2020-07-05 04:08:53,936 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2020-07-05 04:08:53,938 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 04:09:15,078 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO payareturnvisit ( pid,pname,way,`describe`,operator,writetime,aftertype ) VALUES( ?,?,?,?,?,?,? ) 
+2020-07-05 04:09:15,099 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 1(String), 短信(String), 2(String), 2(Integer), 2020-07-05 00:00:00.0(Timestamp), null
+2020-07-05 04:09:15,120 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-05 04:09:18,164 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = ? 
+2020-07-05 04:09:18,168 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null

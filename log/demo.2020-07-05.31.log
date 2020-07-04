@@ -1,0 +1,7 @@
+2020-07-05 00:26:45,592 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` AND m.`realname` LIKE concat('%', ?, '%') AND d.aftertype = ? 
+2020-07-05 00:26:45,600 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 郑(String), 1(Integer)
+2020-07-05 00:26:45,600 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 00:26:45,602 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` AND m.`realname` like concat('%',?,'%') and d.aftertype = ? LIMIT ? 
+2020-07-05 00:26:45,604 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 郑(String), 1(Integer), 10(Integer)
+2020-07-05 00:26:45,606 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-05 00:26:52,204 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` AND m.`realname` LIKE concat('%', ?, '%') AND d.`address` LIKE concat('%', ?, '%') AND d.aftertype = ? 

@@ -1,0 +1,10 @@
+2020-07-04 21:17:50,072 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:17:50,076 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT w.*,m.`realname` mname FROM `warehouse` w,`mpuser` m WHERE w.`pid`=m.`mpid` and wname like concat ('%',?,'%') LIMIT ? 
+2020-07-04 21:17:50,077 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 我(String), 3(Integer)
+2020-07-04 21:17:50,234 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:18:08,525 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `warehouse` w, `mpuser` m WHERE w.`pid` = m.`mpid` 
+2020-07-04 21:18:08,527 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 21:18:08,528 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:18:08,530 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT w.*,m.`realname` mname FROM `warehouse` w,`mpuser` m WHERE w.`pid`=m.`mpid` LIMIT ? 
+2020-07-04 21:18:08,531 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-04 21:18:08,533 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

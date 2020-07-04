@@ -1,0 +1,11 @@
+2020-07-05 03:29:42,821 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-05 03:29:42,828 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:29:52,619 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding FROM maintainrecord WHERE rid = ? 
+2020-07-05 03:29:52,621 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-05 03:29:52,635 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:29:52,655 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-05 03:29:52,655 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 03:29:52,657 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-05 03:29:59,821 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update maintainrecord set assess=? where rid=? 
+2020-07-05 03:29:59,823 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 评论(String), 2(Integer)
+2020-07-05 03:29:59,825 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

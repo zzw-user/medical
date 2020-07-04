@@ -1,0 +1,10 @@
+2020-07-05 04:34:46,679 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 9.809 seconds (JVM running for 616.168)
+2020-07-05 04:34:48,799 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-07-05 04:34:48,800 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 04:34:48,803 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 04:34:48,804 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-07-05 04:34:48,805 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-05 04:34:48,807 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-05 04:34:50,493 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-05 04:34:50,494 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 04:34:50,497 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

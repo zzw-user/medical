@@ -1,0 +1,11 @@
+2020-07-04 22:01:34,488 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-04 22:01:34,491 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 22:01:34,492 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 22:01:42,888 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-07-04 22:01:42,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-04 22:01:42,892 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-04 22:01:47,026 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
+2020-07-04 22:01:47,026 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
+2020-07-04 22:01:47,029 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 22:02:41,731 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` AND d.aftertype = ? 
+2020-07-04 22:02:41,732 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)

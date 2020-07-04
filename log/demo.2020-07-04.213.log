@@ -1,0 +1,9 @@
+2020-07-04 19:53:59,304 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,pname,way,`describe`,operator,writetime,aftertype FROM payareturnvisit WHERE pid = ? 
+2020-07-04 19:53:59,311 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(Integer)
+2020-07-04 19:53:59,312 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 19:54:01,573 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE payareturnvisit SET pname = ?,way = ?,`describe` = ?,operator = ?,writetime = ?,aftertype = ? WHERE pid = ? 
+2020-07-04 19:54:01,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 想(String), 这些(String), 学习(String), 7(Integer), 2020-07-03 00:00:00.0(Timestamp), 2(Integer), 11(Integer)
+2020-07-04 19:54:01,992 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-04 19:54:04,526 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = ? 
+2020-07-04 19:54:04,527 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-04 19:54:04,529 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

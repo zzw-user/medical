@@ -1,0 +1,6 @@
+2020-07-05 04:01:17,678 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE cost SET operator = ?,address = ?,cost = ?,sparepartcost = ?,dataentryclerk = ?,inputtime = ?,aftertype = ?,longitude = ?,latitude = ?,coding = ?,phone = ? WHERE cid = ? 
+2020-07-05 04:01:17,685 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer), 浙江 杭州 滨江区 杭州Alice的秘密基地酒店式公寓 浦沿路773号江南商业大厦1幢902(String), 123(String), null, KKN-KL(String), 2020-07-05 00:00:00.0(Timestamp), null, 120.146505(String), 30.162450(String), KKN-KL(String), 12154784575(String), 24(Integer)
+2020-07-05 04:01:17,694 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-05 04:01:21,353 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` 
+2020-07-05 04:01:21,355 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 04:01:21,358 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

@@ -1,0 +1,11 @@
+2020-07-04 17:44:40,496 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 杭州(String)
+2020-07-04 17:44:40,554 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 17:44:40,556 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname`,p.pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding` and c.aftertype=2 AND c.address LIKE CONCAT('%',?,'%') LIMIT ? 
+2020-07-04 17:44:40,557 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 杭州(String), 10(Integer)
+2020-07-04 17:44:40,564 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 17:44:49,491 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` AND c.aftertype = 2 AND c.address LIKE CONCAT('%', ?, '%') 
+2020-07-04 17:44:49,494 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 湖南(String)
+2020-07-04 17:44:49,497 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 17:44:54,533 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
+2020-07-04 17:44:54,535 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-07-04 17:44:54,540 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

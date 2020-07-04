@@ -1,0 +1,10 @@
+2020-07-05 03:59:21,928 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 03:59:21,938 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:59:21,940 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,realname,pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding` LIMIT ? 
+2020-07-05 03:59:21,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2020-07-05 03:59:21,943 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2020-07-05 03:59:26,549 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cost WHERE cid = ? 
+2020-07-05 03:59:26,551 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 23(Integer)
+2020-07-05 03:59:26,554 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-05 03:59:33,038 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-05 03:59:33,039 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

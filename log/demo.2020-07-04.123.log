@@ -1,0 +1,10 @@
+2020-07-04 17:02:19,837 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 15252 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-04 17:02:19,855 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-04 17:02:19,858 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-04 17:02:46,378 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 35.26 seconds (JVM running for 46.581)
+2020-07-04 17:06:00,236 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` AND d.aftertype = ? 
+2020-07-04 17:06:00,275 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-04 17:06:00,294 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 17:06:00,299 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` and d.aftertype = ? LIMIT ? 
+2020-07-04 17:06:00,300 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer)
+2020-07-04 17:06:00,309 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4

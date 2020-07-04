@@ -1,0 +1,11 @@
+2020-07-04 22:06:58,303 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 10(Integer)
+2020-07-04 22:06:58,309 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 22:07:01,159 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-04 22:07:01,163 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 22:07:01,164 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 22:07:01,187 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,operator,phone,address,aftertype,coding,deliverytime FROM delivery WHERE did = ? 
+2020-07-04 22:07:01,190 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Integer)
+2020-07-04 22:07:01,192 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 22:07:02,275 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? 
+2020-07-04 22:07:02,277 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer), 15478472154(String), 浙江 杭州 滨江区 东冠社区 (String), 3(Integer), KKN-KL(String), 2020-07-04 00:00:00.0(Timestamp), 22(Integer)
+2020-07-04 22:07:02,295 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

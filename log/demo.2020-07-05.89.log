@@ -1,0 +1,12 @@
+2020-07-05 03:16:10,454 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = ? 
+2020-07-05 03:16:10,461 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-05 03:16:10,479 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:16:10,480 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.realname FROM `payareturnvisit` p, mpuser m WHERE p.`operator`=m.mpid AND p.aftertype=? LIMIT ? 
+2020-07-05 03:16:10,481 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer)
+2020-07-05 03:16:10,486 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-05 03:16:24,189 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND pname LIKE concat('%', ?, '%') AND p.aftertype = ? 
+2020-07-05 03:16:24,190 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 想(String), 2(Integer)
+2020-07-05 03:16:24,192 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:16:24,193 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.realname FROM `payareturnvisit` p, mpuser m WHERE p.`operator`=m.mpid and pname like concat ('%',?,'%') AND p.aftertype=? LIMIT ? 
+2020-07-05 03:16:24,194 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 想(String), 2(Integer), 10(Integer)
+2020-07-05 03:16:24,196 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

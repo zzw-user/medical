@@ -1,0 +1,12 @@
+2020-07-05 03:03:30,555 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Integer)
+2020-07-05 03:03:30,584 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:04:10,687 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` AND d.aftertype = ? 
+2020-07-05 03:04:10,692 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-05 03:04:10,695 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:04:10,696 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` and d.aftertype = ? LIMIT ? 
+2020-07-05 03:04:10,699 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer)
+2020-07-05 03:04:10,701 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-05 03:04:13,085 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,operator,phone,address,aftertype,coding,deliverytime FROM delivery WHERE did = ? 
+2020-07-05 03:04:13,086 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer)
+2020-07-05 03:04:13,090 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 03:04:13,101 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 

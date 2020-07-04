@@ -1,0 +1,9 @@
+2020-07-05 02:38:12,594 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-05 02:38:12,701 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-05 02:38:26,886 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
+2020-07-05 02:38:26,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-07-05 02:38:26,898 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 02:38:29,621 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-05 02:38:29,628 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2020-07-05 02:38:40,279 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
+2020-07-05 02:38:40,280 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)

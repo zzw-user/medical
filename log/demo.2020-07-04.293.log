@@ -1,0 +1,11 @@
+2020-07-04 21:47:04,492 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 21:47:04,499 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:47:28,905 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM maintainrecord i, mpuser m WHERE m.`mpid` = i.operator 
+2020-07-04 21:47:28,910 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 21:47:28,913 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:47:28,914 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM maintainrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
+2020-07-04 21:47:28,915 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 21:47:28,920 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:47:43,501 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM maintainrecord i, mpuser m WHERE m.`mpid` = i.operator AND m.realname = ? 
+2020-07-04 21:47:43,508 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 郑(String)
+2020-07-04 21:47:43,600 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

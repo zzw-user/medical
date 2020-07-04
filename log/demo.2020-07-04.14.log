@@ -1,0 +1,10 @@
+2020-07-04 11:57:37,910 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 11:57:37,955 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 11:58:08,744 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-04 11:58:08,748 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 11:58:08,749 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 11:58:09,702 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding FROM maintainrecord WHERE rid = ? 
+2020-07-04 11:58:09,704 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-04 11:58:09,714 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 11:58:15,024 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE maintainrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
+2020-07-04 11:58:15,035 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer), 浙江 杭州 滨江区 想堂摄影 庙后王路251号全量科创园301(String), 8c7aac1514534eccbff94fd5bc2297ba_20200423234345.png(String), fe4e33ea3e614490bbce8e3fb6d41af0_20200423234345.png(String), 2020-07-04 00:00:00.0(Timestamp), null, 2(Integer), KKN-KL(String), 2(Integer)

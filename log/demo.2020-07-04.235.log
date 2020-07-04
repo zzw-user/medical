@@ -1,0 +1,9 @@
+2020-07-04 20:46:12,497 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 20:46:12,501 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 20:46:15,403 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
+2020-07-04 20:46:15,408 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-07-04 20:46:15,415 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 20:47:29,592 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 1836 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-04 20:47:29,592 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-04 20:47:29,593 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-04 20:47:42,569 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 13.144 seconds (JVM running for 571.064)

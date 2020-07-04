@@ -1,0 +1,9 @@
+2020-07-04 14:41:59,459 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` 
+2020-07-04 14:41:59,472 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 14:41:59,474 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 14:41:59,474 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,realname,pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding` LIMIT ? 
+2020-07-04 14:41:59,475 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2020-07-04 14:41:59,538 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-04 14:42:47,095 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` AND realname LIKE CONCAT('%', ?, '%') 
+2020-07-04 14:42:47,105 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 郑(String)
+2020-07-04 14:42:47,147 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

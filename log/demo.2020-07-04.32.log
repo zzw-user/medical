@@ -1,0 +1,10 @@
+2020-07-04 12:55:10,832 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` 
+2020-07-04 12:55:10,840 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 12:55:10,841 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 12:55:10,842 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,realname,pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding` LIMIT ? 
+2020-07-04 12:55:10,843 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2020-07-04 12:55:10,846 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-04 12:55:24,316 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-04 12:55:24,320 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 12:55:24,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-04 12:55:38,770 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM maintainrecord i, mpuser m WHERE m.`mpid` = i.operator 

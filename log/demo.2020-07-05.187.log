@@ -1,0 +1,9 @@
+2020-07-05 05:28:00,459 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding FROM installrecord WHERE rid = ? 
+2020-07-05 05:28:00,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-07-05 05:28:00,494 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 05:28:00,537 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-05 05:28:00,542 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-05 05:28:00,544 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-05 05:40:11,242 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 10200 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-05 05:40:11,243 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 05:40:11,243 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

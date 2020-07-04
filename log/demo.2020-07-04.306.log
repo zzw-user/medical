@@ -1,0 +1,8 @@
+2020-07-04 21:56:40,471 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 15478457845(String), 浙江 杭州 滨江区 浙江大学医学院附属儿童医院滨江院区 滨盛路3333号(String), 1(Integer), KKN-KL(String), 2020-07-04 00:00:00.0(Timestamp)
+2020-07-04 21:56:40,509 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-07-04 21:56:44,126 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM mpuser m, delivery d WHERE m.`mpid` = d.`operator` AND d.aftertype = ? 
+2020-07-04 21:56:44,129 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-04 21:56:44,135 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:56:44,136 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator` and d.aftertype = ? LIMIT ? 
+2020-07-04 21:56:44,139 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer)
+2020-07-04 21:56:44,141 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
