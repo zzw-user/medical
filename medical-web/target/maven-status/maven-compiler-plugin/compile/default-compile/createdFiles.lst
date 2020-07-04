@@ -36,5 +36,6 @@ com\ylht\cos\dao\TencentCosDao.class
 com\ylht\controller\cjh\TypeController.class
 com\ylht\liujiancontroller\FaultanalysisController.class
 com\ylht\controller\zzw\ZzwDeliveryController.class
+com\ylht\controller\cyh\BjController.class
 com\ylht\controller\zzw\ZzwMaintainrecordContrller.class
 com\ylht\schedule\SaticScheduleTask.class
