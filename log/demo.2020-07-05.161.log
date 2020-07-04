@@ -1,8 +1,0 @@
-2020-07-05 04:45:45,455 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-07-05 04:45:45,462 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-05 04:45:45,484 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-05 04:46:00,224 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE installrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
-2020-07-05 04:46:00,228 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer), 重庆 重庆 渝中区 渝中·万科中心 (String), 00e25d004b3f420ba0a4107615e9cdbc_20200423234345.png(String), 60f8546d5f6e4d23b7417d8b0bcac248_20200423234345.png(String), 2020-06-16 00:00:00.0(Timestamp), 还行。(String), 3(Integer), KKN-KL(String), 6(Integer)
-2020-07-05 04:46:00,238 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-05 04:46:03,686 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
-2020-07-05 04:46:03,687 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

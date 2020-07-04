@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,6 +18,8 @@ import java.util.Date;
 @Data
 @Accessors(chain = true)//链式写法
 public class Product  implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer pid;
     private Integer wid;
     private Integer operator;
@@ -25,7 +30,12 @@ public class Product  implements Serializable {
     private String bomname;
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
-    private Date createtime;
+    private Date operationtime;
     private String inmoney;
-
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private Date createtime;
+    private String wname;
+    private String typename;
+    private Integer quantity;
 }

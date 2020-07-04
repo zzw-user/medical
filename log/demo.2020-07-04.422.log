@@ -1,8 +1,0 @@
-2020-07-04 23:52:12,442 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-07-04 23:52:12,470 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-04 23:52:12,478 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-04 23:52:25,556 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
-2020-07-04 23:52:25,561 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 23:52:25,665 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 23:53:06,150 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
-2020-07-04 23:53:06,190 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 7(Integer), 浙江 杭州 滨江区 浙江艺术职业学院 滨文路518号(String), 123(String), null, 123(String), 2020-07-04 00:00:00.0(Timestamp), 1(Integer), 120.146505(String), 30.162450(String), KKN-KL(String), 12121212121(String)

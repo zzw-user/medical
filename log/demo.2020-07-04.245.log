@@ -1,8 +1,0 @@
-2020-07-04 20:57:42,047 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 8.349 seconds (JVM running for 1170.541)
-2020-07-04 20:58:10,116 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-04 20:58:10,131 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-04 20:58:10,141 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 20:58:23,474 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-04 20:58:23,475 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 20:58:28,118 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO delivery ( did,operator,phone,address,aftertype,coding,deliverytime ) VALUES( ?,?,?,?,?,?,? ) 
-2020-07-04 20:58:28,122 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 7(Integer), 15487457548(String), 浙江 杭州 滨江区 杭州Alice的秘密基地酒店式公寓 浦沿路773号江南商业大厦1幢902(String), 2(Integer), KKN-KL(String), 2020-07-04 20:58:28.117(Timestamp)

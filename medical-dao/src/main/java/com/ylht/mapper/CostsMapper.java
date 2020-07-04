@@ -1,13 +1,14 @@
 package com.ylht.mapper;
 
 import com.ylht.pojo.Cost;
-import com.ylht.pojo.Delivery;
-import org.apache.ibatis.annotations.Mapper;
+import com.ylht.pojo.Costs;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.Date;
 import java.util.List;
 
-@Mapper
 public interface CostsMapper {
-    List<Cost> selectCost(@Param("realname")String mname , @Param("address") String address);
+    List<Costs> costselect(@Param("inputtime")Date inputtime,@Param("aftertype")Integer aftertype);
+    List<Cost> selectCost(@Param("mname")String mname , @Param("address") String address);
+
 }

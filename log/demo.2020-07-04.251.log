@@ -1,9 +1,0 @@
-2020-07-04 21:03:53,085 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,operator,phone,address,aftertype,coding,deliverytime FROM delivery WHERE did = ? 
-2020-07-04 21:03:53,081 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-04 21:03:53,091 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
-2020-07-04 21:03:53,091 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-04 21:03:53,093 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 21:03:53,095 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 21:03:56,985 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? 
-2020-07-04 21:03:56,996 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer), 15478476124(String), 浙江 杭州 滨江区 杭州才云科技有限公司 六和路368号海创基地北楼B3082室(String), 2(Integer), KKN-KL(String), 2020-07-03 10:43:58.0(Timestamp), null
-2020-07-04 21:03:57,001 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0

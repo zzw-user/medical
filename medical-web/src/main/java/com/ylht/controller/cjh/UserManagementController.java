@@ -24,8 +24,8 @@ public class UserManagementController {
     }
 
     @RequestMapping("getUserALL")
-    public ResultMap<List<Mpuser>> getRoles(String mname,Integer roleid,Integer page,Integer limit){
-        PageInfo<Mpuser> pages=mpuserService.getUserAll(mname,roleid,page,limit);
+    public ResultMap<List<Mpuser>> getRoles(String mname,Integer roleid,String realname,Integer page,Integer limit){
+        PageInfo<Mpuser> pages=mpuserService.getUserAll(mname,roleid,realname,page,limit);
         return  new ResultMap<List<Mpuser>>("",pages.getList(),0,pages.getTotal());
     }
 

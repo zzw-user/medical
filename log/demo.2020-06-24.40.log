@@ -1,6 +1,0 @@
-2020-06-24 09:36:31,695 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-06-24 09:36:31,699 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-06-24 09:36:49,843 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE installrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
-2020-06-24 09:36:49,849 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer), 浙江 湖州 吴兴区 好又多超市(赵湾三路) 赵湾三路30号(String), 3fb11a19062b4946864fbf2aa18aac89_20200423234345.png(String), 55336fd568b74b5fa93389b88a5eaafe_20200423234345.png(String), 2020-06-30 00:00:00.0(Timestamp), 我填(String), 1(Integer), KKN-KL(String), 4(Integer)
-2020-06-24 09:36:49,859 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-06-24 09:36:53,007 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE installrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 

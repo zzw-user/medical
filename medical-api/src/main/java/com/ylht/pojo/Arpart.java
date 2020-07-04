@@ -7,6 +7,10 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,14 +19,20 @@ import java.util.Date;
 @Data
 @Accessors(chain = true)//链式写法v
 public class Arpart implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer aid;
     private String coding;
     private String aname;
     private String inmoney;
+    @Transient
+    private String wname;
+    @Transient
+    private String tname;
     private Integer wid;
-    private int tid;
-    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
-    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    private Integer tid;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date intime;
 
 

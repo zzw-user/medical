@@ -7,9 +7,13 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Transient;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.Id;
-import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -18,6 +22,7 @@ import java.util.Date;
 @Accessors(chain = true)//链式写法
 public class Amendrecord implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer rid;
     private Integer operator;
     private String address;
@@ -38,4 +43,6 @@ public class Amendrecord implements Serializable {
     private String productcoding;
     @Transient
     private String realname;
+    @Transient
+    private String moperator;//操作人员姓名
 }

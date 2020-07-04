@@ -7,6 +7,6 @@ import tk.mybatis.mapper.common.Mapper;
 import java.util.List;
 
 public interface RoleMapper extends Mapper<Role> {
-    List<Role> getRoleAll(@Param("rname")String rname);
+    List<Role> getRoleAll(@Param("rname")String rname,@Param("hierarchy")Integer hierarchy);
 
 }

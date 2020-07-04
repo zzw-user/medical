@@ -17,8 +17,8 @@ public class ClientController {
     private ClientService clientService;
 
     @RequestMapping("getClientALL")
-    public ResultMap<List<Client>> getRoles(String cname, Integer page, Integer limit){
-        PageInfo<Client> pages=clientService.getClientAll(cname,page,limit);
+    public ResultMap<List<Client>> getRoles(String cname,String phone, Integer page, Integer limit){
+        PageInfo<Client> pages=clientService.getClientAll(cname,phone,page,limit);
         return  new ResultMap<List<Client>>("",pages.getList(),0,pages.getTotal());
     }
 

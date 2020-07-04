@@ -1,9 +1,0 @@
-2020-07-02 10:22:01,295 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE installrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
-2020-07-02 10:22:01,299 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 浙江 杭州 滨江区 浙江康恩贝制药有限公司 滨康路568号2楼(String), hah.jpg(String), sq.jpg(String), 2020-07-02 00:00:00.0(Timestamp), null, 3(Integer), KKN-Kl(String), 4(Integer)
-2020-07-02 10:22:01,343 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-02 10:22:04,795 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
-2020-07-02 10:22:04,797 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-02 10:22:04,798 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-02 10:22:04,800 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
-2020-07-02 10:22:04,800 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
-2020-07-02 10:22:04,802 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

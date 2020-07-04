@@ -1,8 +1,0 @@
-2020-07-04 22:32:05,332 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-04 22:32:11,755 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-04 22:32:11,756 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-04 22:32:11,758 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 22:32:17,638 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-04 22:32:17,640 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 22:32:49,870 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
-2020-07-04 22:32:49,880 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 7(Integer), 浙江 杭州 滨江区 浙江大学医学院附属儿童医院滨江院区(东北1门) 儿康路与滨盛路交叉口南150米(String), 5(String), 1(String), 1(String), 2020-07-04 22:32:49.865(Timestamp), 3(Integer), (String), (String), KKN-KL(String), 15487457777(String)

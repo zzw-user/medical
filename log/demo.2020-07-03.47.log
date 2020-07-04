@@ -1,8 +1,0 @@
-2020-07-03 10:50:23,368 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-03 10:50:23,380 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-03 10:50:23,386 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 10:50:37,492 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-03 10:50:37,498 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-03 10:50:37,548 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO delivery ( did,operator,phone,address,aftertype,coding,deliverytime ) VALUES( ?,?,?,?,?,?,? ) 
-2020-07-03 10:50:37,555 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 0(Integer), 15478476124(String), 浙江 杭州 滨江区 (String), 2(Integer), KKN-KL(String), 2020-07-03 10:50:37.545(Timestamp)
-2020-07-03 10:50:37,566 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

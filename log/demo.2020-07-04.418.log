@@ -1,8 +1,0 @@
-2020-07-04 23:48:57,327 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 23:48:57,342 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 23:48:57,470 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO installrecord ( rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding ) VALUES( ?,?,?,?,?,?,?,?,? ) 
-2020-07-04 23:48:57,472 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 7(Integer), 浙江 杭州 滨江区 浙江大学医学院附属儿童医院滨江院区 滨盛路3333号(String), (String), (String), 2020-07-04 00:00:00.0(Timestamp), null, 1(Integer), KKN-KL(String)
-2020-07-04 23:48:57,498 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-04 23:48:59,578 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 
-2020-07-04 23:48:59,581 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-04 23:48:59,584 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

@@ -1,8 +1,0 @@
-2020-07-04 22:56:47,742 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
-2020-07-04 22:56:56,631 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
-2020-07-04 22:56:56,634 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 22:56:56,635 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 22:57:12,009 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
-2020-07-04 22:57:12,012 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 浙江 杭州 滨江区 s(String), 1(String), null, 1(String), 2020-07-04 00:00:00.0(Timestamp), 1(Integer), 120.146505(String), 30.162450(String), KKN-KL(String), 12121212121(String)
-2020-07-04 22:57:12,032 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-04 22:57:15,519 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` 

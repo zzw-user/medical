@@ -1,9 +1,0 @@
-2020-07-04 20:53:45,353 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-04 20:53:45,364 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-04 20:53:45,370 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 20:53:59,858 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-04 20:53:59,868 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
-2020-07-04 20:54:06,512 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-04 20:54:06,668 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 20:54:14,929 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO delivery ( did,operator,phone,address,aftertype,coding,deliverytime ) VALUES( ?,?,?,?,?,?,? ) 
-2020-07-04 20:54:14,955 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, null, null, null, 2(Integer), null, null

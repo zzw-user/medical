@@ -1,8 +1,0 @@
-2020-06-30 11:20:11,040 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 8.445 seconds (JVM running for 11.205)
-2020-06-30 11:20:19,711 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`pid` = p.`pid` 
-2020-06-30 11:20:19,732 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-06-30 11:22:03,707 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 5588 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
-2020-06-30 11:22:03,708 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-06-30 11:22:03,709 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-06-30 11:22:07,192 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 3.644 seconds (JVM running for 127.357)
-2020-06-30 11:22:46,571 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` 

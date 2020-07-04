@@ -1,8 +1,0 @@
-2020-07-04 23:01:50,916 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 浙江 杭州 滨江区 浙江大学医学院附属儿童医院滨江院区 滨盛路3333号(String), 12(String), null, 12(String), 2020-07-04 00:00:00.0(Timestamp), 1(Integer), 120.174830(String), 30.190281(String), KKN-KL(String), 12121212121(String)
-2020-07-04 23:01:50,926 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-04 23:01:54,419 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`coding` = p.`coding` 
-2020-07-04 23:01:54,421 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-04 23:01:54,435 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 23:01:54,442 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,realname,pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding` LIMIT ? 
-2020-07-04 23:01:54,445 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
-2020-07-04 23:01:54,453 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10

@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,12 +17,12 @@ import java.util.List;
 @Accessors(chain = true)//链式写法
 public class Navigation  implements Serializable {
     private Integer nid;
-    private String nname;
-    private String address;
-    @JsonIgnore
-    private Navigation parent;
+    private String title;
+    private String href;
     private Integer fatherid;
     @JsonIgnore
     private List<Navigation> children = new ArrayList<Navigation>();
-
+    @JsonIgnore
+    private Navigation parent;
+    private List<Navigation> child;
 }

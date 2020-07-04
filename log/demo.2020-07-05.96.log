@@ -1,9 +1,0 @@
-2020-07-05 03:22:49,036 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-05 03:22:49,041 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-05 03:22:49,045 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-05 03:22:49,050 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,operator,phone,address,aftertype,coding,deliverytime FROM delivery WHERE did = ? 
-2020-07-05 03:22:49,054 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
-2020-07-05 03:22:49,082 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-05 03:22:59,123 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-05 03:22:59,126 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-05 03:22:59,127 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

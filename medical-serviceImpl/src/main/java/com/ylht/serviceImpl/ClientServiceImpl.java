@@ -38,9 +38,9 @@ public class ClientServiceImpl implements ClientService {
         return clientMapper.updateByPrimaryKey(client);
     }
 
-    public PageInfo<Client> getClientAll(String cname, Integer pageNo, Integer pageSize) {
+    public PageInfo<Client> getClientAll(String cname,String phone, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo,pageSize);
-        List<Client> list =clientMapper.getClientAll(cname);
+        List<Client> list =clientMapper.getClientAll(cname,phone);
         PageInfo<Client> pageInfo=new PageInfo<Client>(list);
         return pageInfo;
     }

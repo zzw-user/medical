@@ -1,8 +1,0 @@
-2020-07-03 10:03:17,489 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
-2020-07-03 10:03:17,500 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 10:03:19,045 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-03 10:03:19,046 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-03 10:03:19,054 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 10:03:26,930 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
-2020-07-03 10:03:26,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 0(Integer), 浙江 杭州 滨江区 (String), (String), (String), 张某(String), 2020-07-03 10:03:26.924(Timestamp), 2(Integer), null, null, (String), 15478476124(String)
-2020-07-03 10:03:26,951 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

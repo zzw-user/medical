@@ -19,8 +19,8 @@ public class TypeController {
     private TypeService typeService;
 
     @RequestMapping("getTypeAll")
-    public ResultMap<List<Type>> gettype(String tname, Integer page, Integer limit){
-        PageInfo<Type> pageInfo =typeService.getshow(tname, page, limit);
+    public ResultMap<List<Type>> gettype(String tname,String specification, Integer page, Integer limit){
+        PageInfo<Type> pageInfo =typeService.getshow(tname,specification, page, limit);
         return  new ResultMap<List<Type>>("",pageInfo.getList(),0,pageInfo.getTotal());
 
     }

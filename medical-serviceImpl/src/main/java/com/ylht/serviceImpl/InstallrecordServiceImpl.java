@@ -33,6 +33,14 @@ public class InstallrecordServiceImpl implements InstallrecordService {
     }
 
     public Integer upd(Installrecord installrecord) {
-        return installrecordMapper.updateByPrimaryKey(installrecord);
+        return installrecordMapper.updateByPrimaryKeySelective(installrecord);
+    }
+
+    public List<Installrecord> getRecord(Installrecord installrecord) {
+        return installrecordMapper.getRecord(installrecord);
+    }
+
+    public Installrecord getRecordOne(Installrecord installrecord) {
+        return installrecordMapper.getRecordOne(installrecord);
     }
 }

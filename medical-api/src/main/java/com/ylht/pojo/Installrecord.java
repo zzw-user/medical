@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -27,4 +28,6 @@ public class Installrecord  implements Serializable {
     private String assess;
     private Integer status;
     private String coding;
+    @Transient
+    private String moperator;//操作人员姓名
 }

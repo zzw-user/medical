@@ -33,7 +33,7 @@ public class DeliveryServiceImpl implements DeliveryService {
     }
 
     public Integer upd(Delivery delivery) {
-        return deliveryMapper.updateByPrimaryKey(delivery);
+        return deliveryMapper.updateByPrimaryKeySelective(delivery);
     }
 
     public List<Delivery> getDelivery(Delivery delivery) {

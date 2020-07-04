@@ -1,8 +1,0 @@
-2020-07-04 19:20:36,174 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-04 19:20:36,185 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 19:21:43,425 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT aid,coding,aname,inmoney,wid,intime FROM arpart WHERE coding = ? 
-2020-07-04 19:21:43,429 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: YYN-NNS(String)
-2020-07-04 19:21:43,447 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 19:21:47,811 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-04 19:21:47,815 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 19:21:51,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO amendrecord ( rid,operator,address,beforeinstallation,afterinstallation,installationtime,`status`,arpartcoding,assess,`analyze`,did,faulttype,faultdescription,productcoding ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,? ) 

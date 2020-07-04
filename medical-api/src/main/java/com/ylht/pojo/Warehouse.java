@@ -22,7 +22,7 @@ public class Warehouse  implements Serializable {
     private Integer wid;
     private String wname;
     private String address;
-    private Integer pid;
+    private Integer creatorid;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date creationtime;

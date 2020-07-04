@@ -1,9 +1,0 @@
-2020-07-04 23:49:43,497 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-04 23:49:43,861 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-04 23:50:03,627 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
-2020-07-04 23:50:03,629 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 23:50:03,857 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 23:50:03,865 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO installrecord ( rid,operator,address,beforeinstallation,afterinstallation,installationtime,assess,status,coding ) VALUES( ?,?,?,?,?,?,?,?,? ) 
-2020-07-04 23:50:03,867 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 浙江 杭州 滨江区 滨江区图书馆 泰安路200号滨江区文化中心3层(String), (String), (String), 2020-07-04 00:00:00.0(Timestamp), null, 1(Integer), KKN-KL(String)
-2020-07-04 23:50:03,872 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-04 23:50:07,318 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM installrecord i, mpuser m WHERE m.`mpid` = i.operator 

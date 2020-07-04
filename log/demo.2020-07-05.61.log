@@ -1,8 +1,0 @@
-2020-07-05 02:56:38,291 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
-2020-07-05 02:56:38,296 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
-2020-07-05 02:56:38,297 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-05 02:56:47,037 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND pname LIKE concat('%', ?, '%') AND p.aftertype = ? 
-2020-07-05 02:56:47,040 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 张(String), 1(Integer)
-2020-07-05 02:56:47,053 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-05 02:56:47,054 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.realname FROM `payareturnvisit` p, mpuser m WHERE p.`operator`=m.mpid and pname like concat ('%',?,'%') AND p.aftertype=? LIMIT ? 
-2020-07-05 02:56:47,056 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 张(String), 1(Integer), 10(Integer)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ylht.mapper.NavMapper">
+    <!--查询用户权限-->
+    <select id="getJurisdictionByUserid" resultType="String">
+       SELECT r.jurisdiction AS jurisdiction FROM mpuser u ,role  r WHERE u.roleid = r.rid and u.mpid=#{userid}
+    </select>
+    <!--查询用户权限的父级导航-->
+    <select id="getFatherByNid" resultType="Navigation">
+        SELECT * FROM navigation n WHERE  fatherid=0 AND nid=#{nid}
+    </select>
+    <!--查询用户权限的子级导航-->
+    <select id="getChildByFatherid" resultType="Navigation">
+        SELECT * FROM navigation n WHERE  fatherid=#{fatherid} and nid in
+        <foreach collection="sz" separator="," open="(" close=")" item="i">
+            #{i}
+        </foreach>
+
+    </select>
+</mapper>

@@ -1,8 +1,0 @@
-2020-07-04 18:20:13,246 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 18:20:14,380 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE roleid = ? 
-2020-07-04 18:20:14,384 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
-2020-07-04 18:20:14,387 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 18:28:18,584 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-04 18:28:18,586 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 18:28:49,210 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
-2020-07-04 18:28:49,375 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 7(Integer), 浙江 杭州 滨江区 杭州Alice的秘密基地酒店式公寓 浦沿路773号江南商业大厦1幢902(String), 777(String), 4(String), 1(String), 2020-07-04 18:28:49.186(Timestamp), 1(Integer), (String), (String), KKN-KL(String), 15478475411(String)

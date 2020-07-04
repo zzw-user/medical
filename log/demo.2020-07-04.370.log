@@ -1,8 +1,0 @@
-2020-07-04 22:48:16,568 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-07-04 22:48:16,593 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-04 22:48:16,598 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-04 22:48:18,993 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from product where coding=? 
-2020-07-04 22:48:18,999 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKN-KL(String)
-2020-07-04 22:48:19,003 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 22:48:56,734 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cost ( cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,longitude,latitude,coding,phone ) VALUES( ?,?,?,?,?,?,?,?,?,?,?,? ) 
-2020-07-04 22:48:56,738 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 6(Integer), 内蒙古 呼和浩特 新城区 f(String), 77(String), null, 77(String), 2020-07-04 00:00:00.0(Timestamp), 1(Integer), (String), (String), KKN-KL(String), 11111111111(String)

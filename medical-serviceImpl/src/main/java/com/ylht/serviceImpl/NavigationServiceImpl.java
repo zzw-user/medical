@@ -35,4 +35,8 @@ public class NavigationServiceImpl implements NavigationService {
     public Integer upd(Navigation navigation) {
         return navigationMapper.updateByPrimaryKey(navigation);
     }
+
+    public List<Navigation> getNavsss() {
+        return navigationMapper.getNavsss();
+    }
 }

@@ -1,9 +1,0 @@
-2020-07-05 03:30:12,135 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE maintainrecord SET operator = ?,address = ?,beforeinstallation = ?,afterinstallation = ?,installationtime = ?,assess = ?,status = ?,coding = ? WHERE rid = ? 
-2020-07-05 03:30:12,144 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer), 浙江 杭州 滨江区 想堂摄影 庙后王路251号全量科创园301(String), 66.jpg(String), 66.jpg(String), 2020-07-04 00:00:00.0(Timestamp), null, 3(Integer), KKN-KL(String), 2(Integer)
-2020-07-05 03:30:12,149 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-05 03:30:15,638 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM maintainrecord i, mpuser m WHERE m.`mpid` = i.operator 
-2020-07-05 03:30:15,642 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-05 03:30:15,644 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-05 03:30:15,645 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.realname FROM maintainrecord i,mpuser m WHERE m.`mpid`=i.operator LIMIT ? 
-2020-07-05 03:30:15,646 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
-2020-07-05 03:30:15,647 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

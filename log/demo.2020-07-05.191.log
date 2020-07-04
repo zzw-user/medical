@@ -1,9 +1,0 @@
-2020-07-05 05:43:15,605 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `amendrecord` a, mpuser m WHERE m.`mpid` = a.operator 
-2020-07-05 05:43:15,633 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-05 05:43:15,634 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-05 05:43:15,638 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.*,m.realname FROM `amendrecord` a,mpuser m WHERE m.`mpid`=a.operator LIMIT ? 
-2020-07-05 05:43:15,639 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
-2020-07-05 05:43:15,642 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-05 05:43:19,213 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,operator,address,beforeinstallation,afterinstallation,installationtime,`status`,arpartcoding,assess,`analyze`,did,faulttype,faultdescription,productcoding FROM amendrecord WHERE rid = ? 
-2020-07-05 05:43:19,219 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
-2020-07-05 05:43:19,225 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

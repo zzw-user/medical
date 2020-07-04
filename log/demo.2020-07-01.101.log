@@ -1,8 +1,0 @@
-2020-07-01 11:41:15,320 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-07-01 11:41:15,325 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-01 11:41:15,327 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
-2020-07-01 11:41:16,794 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,operator,phone,address,aftertype,coding,deliverytime FROM delivery WHERE did = ? 
-2020-07-01 11:41:16,795 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
-2020-07-01 11:41:16,796 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-01 11:41:24,164 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? 
-2020-07-01 11:41:24,165 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 18073069251(String), 黑龙江 哈尔滨 松北区 南京同仁堂(世茂大道) 世茂大道263号附近(String), 1(Integer), KKN-KL(String), 2020-07-01 11:41:23.0(Timestamp), 7(Integer)

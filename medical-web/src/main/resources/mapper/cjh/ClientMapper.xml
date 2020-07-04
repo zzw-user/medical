@@ -4,7 +4,11 @@
     <select id="getClientAll" resultType="Client">
         select * from client where 1=1
         <if test="cname!=null and cname!=''">
-            and cname like concat('%',#{cname},'%')
+        and cname like concat('%',#{cname},'%')
+    </if>
+        <if test="phone!=null and phone!=''">
+            and phone like concat('%',#{phone},'%')
         </if>
+
     </select>
 </mapper>

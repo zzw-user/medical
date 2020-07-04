@@ -1,8 +1,0 @@
-2020-07-03 09:59:40,198 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO payareturnvisit ( pid,pname,way,`describe`,operator,writetime,aftertype ) VALUES( ?,?,?,?,?,?,? ) 
-2020-07-03 09:59:40,207 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, (String), (String), (String), 1(Integer), 2020-07-03 09:59:40.187(Timestamp), 2(Integer)
-2020-07-03 09:59:40,217 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-03 09:59:42,189 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = ? 
-2020-07-03 09:59:42,190 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
-2020-07-03 09:59:42,195 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 10:00:03,936 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO payareturnvisit ( pid,pname,way,`describe`,operator,writetime,aftertype ) VALUES( ?,?,?,?,?,?,? ) 
-2020-07-03 10:00:03,937 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, (String), (String), (String), 1(Integer), 2020-07-03 10:00:03.935(Timestamp), 2(Integer)

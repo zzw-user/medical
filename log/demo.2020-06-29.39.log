@@ -1,8 +1,0 @@
-2020-06-29 10:49:28,695 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer)
-2020-06-29 10:49:28,731 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-06-29 10:50:12,899 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO payareturnvisit ( pid,pname,way,`describe`,operator,writetime,aftertype ) VALUES( ?,?,?,?,?,?,? ) 
-2020-06-29 10:50:12,947 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 张三(String), 短信(String), 无语(String), 6(Integer), 2020-06-29 10:50:12.588(Timestamp), 1(Integer)
-2020-06-29 10:50:13,045 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-06-29 10:50:13,083 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO payareturnvisit ( pid,pname,way,`describe`,operator,writetime,aftertype ) VALUES( ?,?,?,?,?,?,? ) 
-2020-06-29 10:50:13,086 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 张三(String), 短信(String), 无语(String), 6(Integer), 2020-06-29 10:50:13.076(Timestamp), 1(Integer)
-2020-06-29 10:50:13,230 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

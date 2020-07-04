@@ -3,7 +3,6 @@ package com.ylht.controller.zzw;
 import com.ylht.pojo.Delivery;
 import com.ylht.pojo.Mpuser;
 import com.ylht.service.DeliveryService;
-import com.ylht.service.DeliverysService;
 import com.ylht.service.MpuserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -49,6 +48,5 @@ class ZzwDeliveryController {
             return false;
         }
     }
-
 
 }

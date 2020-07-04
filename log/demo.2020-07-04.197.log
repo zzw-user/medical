@@ -1,8 +1,0 @@
-2020-07-04 19:21:51,341 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 7(Integer), 浙江 杭州 滨江区 杭州才云科技有限公司 六和路368号海创基地北楼B3082室(String), (String), (String), 2020-07-03 00:00:00.0(Timestamp), 1(Integer), YYN-NNS(String), null, 坏了(String), 1(Integer), 坏了(String), 坏了(String), KKN-KL(String)
-2020-07-04 19:21:51,372 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-04 19:21:54,830 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `amendrecord` a, mpuser m WHERE m.`mpid` = a.operator 
-2020-07-04 19:21:54,833 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-04 19:21:54,844 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 19:21:54,846 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.*,m.realname FROM `amendrecord` a,mpuser m WHERE m.`mpid`=a.operator LIMIT ? 
-2020-07-04 19:21:54,847 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
-2020-07-04 19:21:54,853 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
