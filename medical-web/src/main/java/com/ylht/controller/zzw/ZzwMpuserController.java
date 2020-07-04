@@ -13,12 +13,20 @@ public class ZzwMpuserController {
     private MpuserService mpuserService;
 
     @RequestMapping("login")
-    public boolean login(Mpuser mpuser){
+    public Mpuser login(Mpuser mpuser){
         Mpuser mpuser1 = mpuserService.getOne(mpuser);
         if (mpuser1!=null){
             if (mpuser1.getPassword().equals(mpuser.getPassword())){
-                return true;
+                return mpuser1;
             }
+        }
+        return null;
+    }
+    @RequestMapping("updPwd")
+    public boolean updPwd(Mpuser mpuser){
+        int result = mpuserService.upd(mpuser);
+        if (result>0){
+            return true;
         }
         return false;
     }

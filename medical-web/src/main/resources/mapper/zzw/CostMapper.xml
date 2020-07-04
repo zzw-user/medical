@@ -4,16 +4,16 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ylht.mapper.CostMapper">
     <select id="getCost" resultType="Cost">
-        SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid`
+        SELECT c.*,m.`realname` AS mname FROM cost c,mpuser m WHERE c.operator = m.`mpid`
         <if test="aftertype!=0 and aftertype!=null">
             AND c.aftertype=#{aftertype}
         </if>
         <if test="address!='' and address!=null">
-            OR c.address LIKE concat ('%',#{address},'%') OR m.realname LIKE concat ('%',#{address},'%')
+            AND c.address LIKE concat ('%',#{address},'%') OR c.`aftertype`=#{aftertype} AND m.realname LIKE concat ('%',#{address},'%')
         </if>
     </select>
     <select id="getCostOne" resultType="Cost">
-        SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid`
+        SELECT c.*,m.`realname` AS mname FROM cost c,mpuser m WHERE c.operator = m.`mpid`
         AND c.cid=#{cid}
     </select>
 </mapper>

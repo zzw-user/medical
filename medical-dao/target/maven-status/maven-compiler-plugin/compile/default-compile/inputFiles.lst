@@ -5,6 +5,7 @@ E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\MpuserMapper.ja
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapperzxz\DeliveryAndMpuserMapper.java
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\CostMapper.java
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\OrderformMapper.java
+E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\InformationMapper.java
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\DistrictMapper.java
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\AmendrecordMapper.java
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\ArpartrecordMapper.java
@@ -27,3 +28,4 @@ E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\xzh\Maintenance
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\ArpartMapper.java
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\xzh\ServicedeliveryMapper.java
 E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\WarehouseMapper.java
+E:\IDEAProject\medical\medical-dao\src\main\java\com\ylht\mapper\NavMapper.java

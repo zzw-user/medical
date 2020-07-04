@@ -35,7 +35,7 @@ public class MpuserServiceImpl implements MpuserService {
     }
 
     public Integer upd(Mpuser mpuser) {
-        return mpuserMapper.updateByPrimaryKey(mpuser);
+        return mpuserMapper.updateByPrimaryKeySelective(mpuser);
     }
 
     public PageInfo<Mpuser> getUserAll(String mname, Integer roleid, Integer pageNo, Integer pageSize) {

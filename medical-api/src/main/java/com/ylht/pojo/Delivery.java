@@ -23,7 +23,7 @@ public class Delivery  implements Serializable {
     private String phone;
     private String address;
     private Integer aftertype;
-    private Integer coding;
+    private String coding;
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date deliverytime;

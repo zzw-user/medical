@@ -9,6 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -35,7 +39,12 @@ public class ZzwCostController {
         }
     }
     @RequestMapping("updCost")
-    public boolean updPay(Cost cost){
+    public boolean updPay(Cost cost,String time) throws ParseException {
+        Date date=null;
+        System.out.println(time);
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        date = dateFormat.parse(time);
+        cost.setInputtime(date);
         int result = costService.upd(cost);
         if (result>0){
             return true;

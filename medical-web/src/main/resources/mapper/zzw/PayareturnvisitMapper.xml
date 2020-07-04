@@ -9,7 +9,7 @@
             AND p.aftertype=#{aftertype}
         </if>
         <if test="pname!='' and pname!=null">
-            OR p.pname LIKE concat ('%',#{pname},'%') OR p.way LIKE concat ('%',#{pname},'%')
+            AND p.pname LIKE concat ('%',#{pname},'%') OR p.`aftertype`=#{aftertype} AND p.way LIKE concat ('%',#{pname},'%')
         </if>
     </select>
     <select id="getPayareOne" resultType="Payareturnvisit">

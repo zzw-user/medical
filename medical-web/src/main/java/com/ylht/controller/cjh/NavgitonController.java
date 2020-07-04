@@ -3,16 +3,12 @@ package com.ylht.controller.cjh;
 import com.ylht.pojo.Navigation;
 import com.ylht.service.NavigationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.core.Predicate;
-import org.springframework.data.domain.Sort;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 @RestController
@@ -36,7 +32,7 @@ public class NavgitonController {
             HashMap<String, Object> map = new HashMap<String, Object>();
             if (d.getFatherid() == null) {
                 map.put("id", d.getNid());
-                map.put("title", d.getNname());
+//                map.put("title", d.getNname());
                 map.put("spread", true);
                 //设置是否展开
                 //下级菜单
@@ -47,7 +43,7 @@ public class NavgitonController {
             }
             if (d.getFatherid() == d.getNid()) {
                 HashMap<String, Object> map1 = new HashMap<String, Object>();
-                map1.put("name", d.getNname());
+//                map1.put("name", d.getNname());
                 map.put("children", map1);
             }
             result.add(map);

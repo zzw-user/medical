@@ -1,5 +1,6 @@
-2020-07-03 11:39:50,890 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 123456(String), 18244726551(String)
-2020-07-03 11:39:50,894 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
-2020-07-03 11:40:49,312 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE password = ? AND phone = ? 
-2020-07-03 11:40:49,314 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 123456(String), 18256962352(String)
-2020-07-03 11:40:49,315 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:20:44,814 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.*,m.`realname` AS moperator FROM amendrecord a,mpuser m WHERE a.operator=m.`mpid` 
+2020-07-04 21:20:44,817 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 21:20:44,819 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-04 21:21:06,319 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT ma.*,m.`realname` AS moperator FROM maintainrecord ma,mpuser m WHERE ma.operator=m.`mpid` 
+2020-07-04 21:21:06,320 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-04 21:21:06,322 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

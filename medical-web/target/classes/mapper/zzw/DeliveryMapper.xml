@@ -9,7 +9,7 @@
             AND d.aftertype=#{aftertype}
         </if>
         <if test="address!='' and address!=null">
-            OR d.address LIKE concat ('%',#{address},'%') OR m.realname LIKE concat ('%',#{address},'%')
+            AND d.address LIKE concat ('%',#{address},'%') OR d.`aftertype`=#{aftertype} AND m.realname LIKE concat ('%',#{address},'%')
         </if>
     </select>
     <select id="getDeliveryOne" resultType="Delivery">

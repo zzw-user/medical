@@ -2,7 +2,9 @@ E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\Maintenanc
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\DeliveryService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\TypeService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\ArpartService.java
+E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\NavService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\CostsSerivce.java
+E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\InformationService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\NavigationService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\MaintainrecordService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\PayareturnvisitService.java
@@ -16,6 +18,7 @@ E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\Amendrecor
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\MpuserService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\ClientService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\InstallrecordService.java
+E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\MaintenancerecordService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\OrderformService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\servicezxz\InstallationRecordEvaluationService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\RoleService.java
@@ -24,4 +27,5 @@ E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\ProductSer
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\ProductandWarehouseService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\RepairbackService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\ArpartrecordService.java
+E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\ServicedeliveryService.java
 E:\IDEAProject\medical\medical-service\src\main\java\com\ylht\service\ProductrecordService.java

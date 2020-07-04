@@ -10,6 +10,6 @@
         </if>
     </select>
     <select id="getRecordOne" resultType="Amendrecord">
-        SELECT a.*,m.`realname` AS moperator FROM amendrecord a,mpuser m WHERE a.operator=m.`mpid` AND i.rid=#{rid}
+        SELECT a.*,m.`realname` AS moperator FROM amendrecord a,mpuser m WHERE a.operator=m.`mpid` AND a.rid=#{rid}
     </select>
 </mapper>
