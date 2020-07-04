@@ -1,5 +1,6 @@
 com\ylht\serviceImpl\Demo.class
 com\ylht\serviceImpl\MaintainrecordServiceImpl.class
+com\ylht\serviceImpl\ProducttypeServiceImpl.class
 com\ylht\serviceImplzxz\DeliveryAndMpuserServiceImpl.class
 com\ylht\serviceImpl\RepairbackServiceImpl.class
 com\ylht\serviceImpl\AmendrecordServiceImpl.class
@@ -12,8 +13,10 @@ com\ylht\serviceImpl\InformationServiceImpl.class
 com\ylht\serviceImpl\ServicedeliveryServiceImpl.class
 com\ylht\serviceImpl\ArpartServiceImpl.class
 com\ylht\serviceImpl\WarehousesServiceImpl.class
+com\ylht\serviceImpl\FaultanalysisServiceImpl.class
 com\ylht\serviceImpl\ProductandWarehouseServiceImpl.class
 com\ylht\serviceImpl\InstallrecordServiceImpl.class
+com\ylht\serviceImpl\CostsServiceImpl.class
 com\ylht\serviceImpl\RoleServiceImpl.class
 com\ylht\serviceImpl\DeliveryServiceImpl.class
 com\ylht\serviceImpl\TypeServiceImpl.class
@@ -27,5 +30,6 @@ com\ylht\serviceImpl\ArpartrecordServiceImpl.class
 com\ylht\serviceImpl\CostsSerivceImpl.class
 com\ylht\serviceImpl\WarehouseServiceImpl.class
 com\ylht\serviceImpl\ProductrecordServiceImpl.class
+com\ylht\serviceImpl\FaulttypeServiceImpl.class
 com\ylht\serviceImpl\MaintenancecostsServicImpl.class
 com\ylht\serviceImplzxz\InstallationRecordEvaluationServiceImpl.class

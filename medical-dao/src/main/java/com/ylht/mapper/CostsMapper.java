@@ -1,5 +1,6 @@
 package com.ylht.mapper;
 
+import com.ylht.pojo.Cost;
 import com.ylht.pojo.Costs;
 import org.apache.ibatis.annotations.Param;
 

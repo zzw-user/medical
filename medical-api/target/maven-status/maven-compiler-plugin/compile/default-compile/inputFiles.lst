@@ -3,6 +3,7 @@ E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\util\JwtUtil.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\District.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Faultanalysis.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Producttype.java
+E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Areafaultanalysis.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\DeliveryAndMpuser.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Maintainrecord.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Orderform.java
@@ -10,10 +11,12 @@ E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Arpart.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\util\HttpClientUtil.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Product.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\interceptor\TokenInterceptor.java
+E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Arparts.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\util\ApiResponseUtil.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Delivery.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\enums\ApiResponseEnum.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Arpartrecord.java
+E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Costs.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Mpuser.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Payareturnvisit.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\util\XslxUtil.java
@@ -32,3 +35,4 @@ E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Type.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\util\CrosFilter.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Faulttype.java
 E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Navigation.java
+E:\IDEAProject\medical\medical-api\src\main\java\com\ylht\pojo\Orderforms.java

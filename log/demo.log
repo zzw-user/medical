@@ -1,6 +1,2 @@
-2020-07-04 21:20:44,814 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.*,m.`realname` AS moperator FROM amendrecord a,mpuser m WHERE a.operator=m.`mpid` 
-2020-07-04 21:20:44,817 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-04 21:20:44,819 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-04 21:21:06,319 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT ma.*,m.`realname` AS moperator FROM maintainrecord ma,mpuser m WHERE ma.operator=m.`mpid` 
-2020-07-04 21:21:06,320 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-04 21:21:06,322 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 02:50:32,972 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-05 02:50:33,065 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
