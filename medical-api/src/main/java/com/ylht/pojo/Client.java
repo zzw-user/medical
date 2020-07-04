@@ -18,4 +18,5 @@ public class Client  implements Serializable {
     private String cname;
     private String phone;
     private String address;
+    private String ip;
 }

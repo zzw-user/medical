@@ -1,8 +1,34 @@
-2020-07-03 08:51:07,787 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10688 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
-2020-07-03 08:51:07,833 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-07-03 08:51:07,849 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-07-03 08:51:23,740 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 19.562 seconds (JVM running for 25.474)
-2020-07-03 08:58:23,897 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`pid` = p.`pid` 
-2020-07-03 08:58:23,926 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 08:58:50,545 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m, product p WHERE c.`operator` = m.mpid AND c.`pid` = p.`pid` 
-2020-07-03 08:58:50,546 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 08:51:53,450 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 10256 (D:\medical\medical-web\target\classes started by PC in D:\medical)
+2020-07-03 08:51:53,513 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 08:51:53,598 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 08:52:22,738 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 35.441 seconds (JVM running for 48.625)
+2020-07-03 08:58:59,927 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,pid,phone,longitude,latitude FROM cost
+2020-07-03 08:58:59,959 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters:
+2020-07-03 08:59:00,060 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-07-03 11:18:09,525 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 2908 (D:\medical\medical-web\target\classes started by PC in D:\medical)
+2020-07-03 11:18:09,527 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 11:18:09,528 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 10:09:42,193 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM `payareturnvisit` p, mpuser m WHERE p.`operator` = m.mpid AND p.aftertype = 2
+2020-07-03 10:09:42,198 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters:
+2020-07-03 10:09:42,199 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 10:09:42,200 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.realname mname FROM `payareturnvisit` p, mpuser m WHERE p.`operator`=m.mpid AND p.aftertype=2 LIMIT ?
+2020-07-03 10:09:42,201 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-03 10:09:42,201 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 11:15:23,534 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10688 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
+2020-07-03 11:15:23,534 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 11:15:23,534 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 11:15:37,794 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10688 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
+2020-07-03 11:15:37,794 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 11:15:37,794 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 11:15:43,230 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10688 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
+2020-07-03 11:15:43,230 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 11:15:43,230 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 11:39:59,616 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 2908 (D:\medical\medical-web\target\classes started by PC in D:\medical)
+2020-07-03 11:39:59,620 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 11:39:59,620 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 13:01:30,121 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 2908 (D:\medical\medical-web\target\classes started by PC in D:\medical)
+2020-07-03 13:01:30,121 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 13:01:30,122 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 13:01:45,687 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 2908 (D:\medical\medical-web\target\classes started by PC in D:\medical)
+2020-07-03 13:01:45,687 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 13:01:45,687 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

@@ -35,12 +35,12 @@ public class MpuserServiceImpl implements MpuserService {
     }
 
     public Integer upd(Mpuser mpuser) {
-        return mpuserMapper.updateByPrimaryKey(mpuser);
+        return mpuserMapper.updateByPrimaryKeySelective(mpuser);
     }
 
-    public PageInfo<Mpuser> getUserAll(String mname, Integer roleid, Integer pageNo, Integer pageSize) {
+    public PageInfo<Mpuser> getUserAll(String mname, Integer roleid,String realname, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo,pageSize);
-        List<Mpuser> list =mpuserMapper.getUserAll(mname,roleid);
+        List<Mpuser> list =mpuserMapper.getUserAll(mname,roleid,realname);
         PageInfo<Mpuser> pageInfo=new PageInfo<Mpuser>(list);
         return pageInfo;
     }

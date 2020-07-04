@@ -1,3 +1,4 @@
+com\ylht\enums\ApiResponseEnum.class
 com\ylht\pojo\Producttype.class
 com\ylht\util\XslxUtil.class
 com\ylht\pojo\Amendrecord.class
@@ -12,15 +13,22 @@ com\ylht\pojo\Type.class
 com\ylht\util\CrosFilter.class
 com\ylht\pojo\Warehouse.class
 com\ylht\pojo\Arpart.class
+com\ylht\util\JwtUtil.class
 com\ylht\pojo\Navigation.class
 com\ylht\pojo\InstallationRecordEvaluation.class
+com\ylht\interceptor\TokenInterceptor.class
 com\ylht\pojo\Maintainrecord.class
+com\ylht\pojo\Faulttype.class
+com\ylht\pojo\Faultanalysis.class
 com\ylht\pojo\Installrecord.class
+com\ylht\util\ApiResponseUtil.class
 com\ylht\pojo\Delivery.class
 com\ylht\pojo\Payareturnvisit.class
 com\ylht\pojo\Product.class
 com\ylht\util\HttpClientUtil.class
 com\ylht\pojo\Arpartrecord.class
+com\ylht\pojo\Information.class
 com\ylht\pojo\District.class
+com\ylht\util\ApiResponse.class
 com\ylht\service\DataService.class
 com\ylht\pojo\Cost.class

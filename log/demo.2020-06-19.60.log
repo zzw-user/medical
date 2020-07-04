@@ -1,9 +1,0 @@
-2020-06-19 10:29:40,040 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT did,operator,phone,address,aftertype,coding,deliverytime FROM delivery WHERE did = ? 
-2020-06-19 10:29:40,044 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
-2020-06-19 10:29:40,046 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-06-19 10:29:40,071 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-06-19 10:29:40,073 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-06-19 10:29:40,074 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-06-19 10:29:51,034 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET did = ?,operator = ?,phone = ?,address = ?,aftertype = ?,coding = ?,deliverytime = ? WHERE did = ? AND operator = ? AND phone = ? AND address = ? AND aftertype = ? AND coding = ? AND deliverytime = ? 
-2020-06-19 10:29:51,036 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), null, 15748486511(String), 北京(String), null, 56231(String), 2020-06-18 11:17:45.0(Timestamp), 3(Integer), null, 15748486511(String), 北京(String), null, 56231(String), 2020-06-18 11:17:45.0(Timestamp)
-2020-06-19 10:29:51,039 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0

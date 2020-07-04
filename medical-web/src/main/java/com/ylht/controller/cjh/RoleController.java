@@ -23,8 +23,8 @@ public class RoleController {
     }
 
     @RequestMapping("getRolesALL")
-    public ResultMap<List<Role>> getRoles(String rname,Integer page,Integer limit){
-        PageInfo<Role> pages=roleService.getRoleAll(rname,page,limit);
+    public ResultMap<List<Role>> getRoles(String rname,Integer hierarchy,Integer page,Integer limit){
+        PageInfo<Role> pages=roleService.getRoleAll(rname,hierarchy,page,limit);
         return  new ResultMap<List<Role>>("",pages.getList(),0,pages.getTotal());
     }
     @RequestMapping("addRole")

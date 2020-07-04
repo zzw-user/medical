@@ -6,5 +6,8 @@
         <if test="tname!=null and tname!=''">
             and tname like concat('%',#{tname},'%')
         </if>
+        <if test="specification!=null and specification!=''">
+            and specification like concat('%',#{specification},'%')
+        </if>
     </select>
 </mapper>

@@ -1,10 +1,12 @@
-2020-07-03 09:58:02,678 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 09:58:02,682 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
-2020-07-03 09:58:11,738 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT pid,wid,operator,typeid,pname,coding,model,bomname,createtime,inmoney FROM product WHERE coding = ? 
-2020-07-03 09:58:11,739 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: KKK-KL(String)
-2020-07-03 09:58:11,740 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
-2020-07-03 09:59:32,115 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m WHERE c.`operator` = m.mpid 
-2020-07-03 09:59:32,117 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 09:59:32,134 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 09:59:32,138 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid LIMIT ? 
-2020-07-03 09:59:32,139 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2020-07-03 16:43:36,582 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:43:36,588 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:43:36,602 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:43:36,617 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:43:36,617 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 16:43:36,623 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:44:10,309 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:44:10,310 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:44:10,314 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:44:10,353 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:44:10,354 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:44:10,356 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4

@@ -5,9 +5,12 @@ com\ylht\service\ClientService.class
 com\ylht\servicezxz\InstallationRecordEvaluationService.class
 com\ylht\service\WarehousesService.class
 com\ylht\service\DeliverysService.class
+com\ylht\service\MaintenancerecordService.class
 com\ylht\service\MaintainrecordService.class
+com\ylht\service\InformationService.class
 com\ylht\service\RoleService.class
 com\ylht\service\ArpartrecordService.class
+com\ylht\service\NavService.class
 com\ylht\service\ProductrecordService.class
 com\ylht\service\OrderformService.class
 com\ylht\service\ArpartService.class

@@ -1,11 +1,12 @@
-2020-07-03 09:51:24,662 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
-2020-07-03 09:51:24,667 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
-2020-07-03 09:51:28,560 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-07-03 09:51:28,561 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 09:51:28,562 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
-2020-07-03 09:51:47,880 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-07-03 09:51:47,881 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 09:51:47,884 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
-2020-07-03 09:53:38,281 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-7084R6L with PID 10688 (C:\Users\admin\IdeaProjects\medical\medical-web\target\classes started by admin in C:\Users\admin\IdeaProjects\medical)
-2020-07-03 09:53:38,281 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-07-03 09:53:38,281 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 16:18:55,777 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:18:55,784 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:18:55,786 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:18:55,806 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:18:55,807 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:18:55,808 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 16:19:09,664 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:19:09,665 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:19:09,667 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:19:09,718 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:19:09,719 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:19:09,720 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4

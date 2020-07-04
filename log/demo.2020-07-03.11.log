@@ -1,11 +1,12 @@
-2020-07-03 09:23:02,663 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
-2020-07-03 09:23:02,668 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-03 09:23:03,855 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
-2020-07-03 09:23:03,856 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 09:23:03,859 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
-2020-07-03 09:23:25,289 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m WHERE c.`operator` = m.mpid 
-2020-07-03 09:23:25,290 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 09:23:25,291 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 09:23:25,292 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid LIMIT ?, ? 
-2020-07-03 09:23:25,293 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 2(Integer)
-2020-07-03 09:23:25,294 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 15:30:42,600 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 15:30:42,650 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 15:30:42,651 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 15:30:42,653 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 15:31:56,940 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 15:31:56,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 15:31:56,942 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 15:31:56,947 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 15:31:56,948 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 15:31:56,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 15:31:58,340 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 15:31:58,341 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

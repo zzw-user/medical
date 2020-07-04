@@ -1,10 +1,11 @@
-2020-07-03 09:26:16,873 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m WHERE c.`operator` = m.mpid 
-2020-07-03 09:26:16,877 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 09:26:16,878 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 09:26:16,879 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid LIMIT ? 
-2020-07-03 09:26:16,879 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
-2020-07-03 09:26:16,880 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-03 09:26:19,424 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM cost c, mpuser m WHERE c.`operator` = m.mpid 
-2020-07-03 09:26:19,426 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 09:26:19,426 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-03 09:26:19,427 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.realname mname FROM cost c,mpuser m WHERE c.`operator`=m.mpid LIMIT ?, ? 
+2020-07-03 15:47:52,040 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 15:47:52,057 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 15:47:52,058 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 15:47:52,059 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 15:47:59,067 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 15:47:59,068 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 15:47:59,071 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 15:47:59,085 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 15:47:59,218 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 15:47:59,224 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 15:48:05,464 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
