@@ -5,6 +5,7 @@ import com.ylht.mapperzxz.DeliveryAndMpuserMapper;
 import com.ylht.pojo.Delivery;
 import com.ylht.pojo.DeliveryAndMpuser;
 import com.ylht.pojo.Mpuser;
+import com.ylht.pojo.Product;
 import com.ylht.service.DeliveryService;
 import com.ylht.service.MpuserService;
 import com.ylht.servicezxz.DeliveryAndMpuserService;
@@ -30,19 +31,19 @@ public class SendaSingleInstallationController {
     private DeliveryAndMpuserService deliveryAndMpuserService;
 
     @RequestMapping("/getproductByCoding")
-    public int getproductByCoding(String coding){
+    public Product getproductByCoding(String coding){
         return deliveryAndMpuserService.getproductByCoding(coding);
     }
 
     @RequestMapping("/getDeliveryByAid")
     public ResultMap<List<DeliveryAndMpuser>> getDeliveryByAid(DeliveryAndMpuser deliveryAndMpuser,Integer page,Integer limit){
 
-        PageInfo<DeliveryAndMpuser> pageInfo =deliveryAndMpuserService.pageInfoDeliveryAndMpuser(deliveryAndMpuser.getRealname(),deliveryAndMpuser.getAddress(),deliveryAndMpuser.getCoding(),page,limit);
+        PageInfo<DeliveryAndMpuser> pageInfo =deliveryAndMpuserService.pageInfoDeliveryAndMpuser(deliveryAndMpuser.getAftertype(),deliveryAndMpuser.getRealname(),deliveryAndMpuser.getAddress(),deliveryAndMpuser.getCoding(),page,limit);
         return new ResultMap<List<DeliveryAndMpuser>>("",pageInfo.getList(),0,pageInfo.getTotal());
     }
     @RequestMapping("/addDeliveryByAid")
     public String addDeliveryByAid(Delivery delivery,String sj) throws ParseException {
-        SimpleDateFormat s= new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        SimpleDateFormat s= new SimpleDateFormat("yyyy-MM-dd");
         delivery.setDeliverytime(new Date());
         if(sj!=null && sj!=""){
             delivery.setDeliverytime(s.parse(sj));
@@ -57,7 +58,7 @@ public class SendaSingleInstallationController {
     @RequestMapping("/updateDeliveryByAid")
     public String updateDeliveryByAid(Delivery delivery,String sj) throws ParseException {
         System.out.println(delivery);
-        SimpleDateFormat s= new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        SimpleDateFormat s= new SimpleDateFormat("yyyy-MM-dd");
         if(sj!=null && sj!=""){
             delivery.setDeliverytime(s.parse(sj));
         }

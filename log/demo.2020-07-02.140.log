@@ -1,9 +1,0 @@
-2020-07-02 20:58:06,430 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? 
-2020-07-02 20:58:06,441 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
-2020-07-02 20:58:06,449 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-02 20:58:08,967 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? 
-2020-07-02 20:58:08,968 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
-2020-07-02 20:58:08,969 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-02 20:58:28,758 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? 
-2020-07-02 20:58:28,758 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
-2020-07-02 20:58:28,760 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

@@ -1,8 +1,0 @@
-2020-07-01 10:28:47,901 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-01 10:28:51,566 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` AND i.rid=? 
-2020-07-01 10:28:51,567 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
-2020-07-01 10:28:51,569 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-01 10:28:53,816 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.did,d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid 
-2020-07-01 10:28:53,817 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-01 10:28:53,819 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-01 10:28:54,776 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.did,d.phone,d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid AND d.did = ? AND d.aftertype=? 

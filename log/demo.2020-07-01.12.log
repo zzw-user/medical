@@ -1,9 +1,0 @@
-2020-07-01 10:29:03,800 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.did,d.phone,d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid AND d.did = ? AND d.aftertype=? 
-2020-07-01 10:29:03,803 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Integer), 1(Integer)
-2020-07-01 10:29:03,804 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-01 10:29:04,270 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.did,d.phone,d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid AND d.did = ? AND d.aftertype=? 
-2020-07-01 10:29:04,271 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Integer), 1(Integer)
-2020-07-01 10:29:04,273 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-01 10:29:05,839 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.did,d.address,d.deliverytime,p.coding as pcoding,m.realname as moperator FROM delivery d,product p,mpuser m WHERE d.coding=p.pid AND d.operator=m.mpid 
-2020-07-01 10:29:05,840 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-01 10:29:05,842 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

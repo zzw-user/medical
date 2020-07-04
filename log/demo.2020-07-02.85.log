@@ -1,8 +1,0 @@
-2020-07-02 11:42:35,246 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 2.03 seconds (JVM running for 3716.26)
-2020-07-02 11:43:32,829 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-E0OONUJ with PID 16964 (E:\IDEAProject\medical\medical-web\target\classes started by ZZW in E:\IDEAProject\medical)
-2020-07-02 11:43:32,833 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-07-02 11:43:32,835 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-07-02 11:43:38,101 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 6.028 seconds (JVM running for 7.65)
-2020-07-02 11:44:12,954 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
-2020-07-02 11:44:12,972 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-02 11:44:12,989 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

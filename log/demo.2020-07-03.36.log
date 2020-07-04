@@ -1,8 +1,0 @@
-2020-07-03 10:46:03,329 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
-2020-07-03 10:46:03,333 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 10:46:03,336 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-03 10:46:49,878 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-E0OONUJ with PID 10888 (E:\IDEAProject\medical\medical-web\target\classes started by ZZW in E:\IDEAProject\medical)
-2020-07-03 10:46:49,883 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-07-03 10:46:49,885 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-07-03 10:46:56,141 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 7.264 seconds (JVM running for 9.783)
-2020-07-03 10:47:27,316 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 

@@ -1,8 +1,0 @@
-2020-07-02 09:35:23,324 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-02 09:35:26,302 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? OR d.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
-2020-07-02 09:35:26,303 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 长沙(String), 长沙(String)
-2020-07-02 09:35:26,305 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-02 09:35:26,763 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? OR d.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
-2020-07-02 09:35:26,764 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 长沙(String), 长沙(String)
-2020-07-02 09:35:26,766 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-02 09:35:26,973 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? OR d.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 

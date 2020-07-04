@@ -1,8 +1,0 @@
-2020-07-02 08:53:15,809 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 2.196 seconds (JVM running for 499.375)
-2020-07-02 08:53:41,510 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,coding = ? WHERE did = ? 
-2020-07-02 08:53:41,512 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 1245631472(String), 打发打发(String), YYY-NN(String), 16(Integer)
-2020-07-02 08:53:41,516 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-02 08:54:33,455 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,coding = ? WHERE did = ? 
-2020-07-02 08:54:33,456 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 18244759984(String), 打发打发(String), YYY-NN(String), 16(Integer)
-2020-07-02 08:54:33,461 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
-2020-07-02 09:04:58,468 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE delivery SET operator = ?,phone = ?,address = ?,coding = ? WHERE did = ? 

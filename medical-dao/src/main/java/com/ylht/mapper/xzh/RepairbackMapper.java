@@ -8,6 +8,6 @@ import java.util.List;
 
 @Mapper
 public interface RepairbackMapper {
-    List<Payareturnvisit> selePayareturnvisit(@Param("pname") String pname, @Param("way") String way);
+    List<Payareturnvisit> selePayareturnvisit(@Param("pname") String pname, @Param("way") String way, @Param("aftertype")Integer aftertype);
 
 }

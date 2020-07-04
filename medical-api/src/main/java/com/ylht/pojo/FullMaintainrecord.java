@@ -7,27 +7,23 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Transient;
-import java.io.Serializable;
 import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Accessors(chain = true)//链式写法
-public class Payareturnvisit  implements Serializable {
-    @Id
-    private Integer pid;
-    private String pname;
-    private String way;
-    @Column(name = "`describe`")
-    private String describe;
-    private Integer  operator;
+public class FullMaintainrecord {
+    private Integer rid;
+    private Integer operator;
+    private String address;
+    private String beforeinstallation;
+    private String afterinstallation;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
-    private Date writetime;
-    private Integer aftertype;
-    @Transient
+    private Date installationtime;
+    private String assess;
+    private Integer status;
+    private String coding;
     private String realname;
 }

@@ -1,8 +1,0 @@
-2020-07-02 09:35:47,952 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-02 09:35:48,142 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? OR d.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
-2020-07-02 09:35:48,143 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 长(String), 长(String)
-2020-07-02 09:35:48,145 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-02 09:35:48,350 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? OR d.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
-2020-07-02 09:35:48,436 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 长(String), 长(String)
-2020-07-02 09:35:48,438 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-02 09:35:50,050 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 

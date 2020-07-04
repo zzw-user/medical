@@ -1,8 +1,0 @@
-2020-07-02 20:44:28,827 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
-2020-07-02 20:44:28,835 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-02 20:45:03,469 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? 
-2020-07-02 20:45:03,470 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
-2020-07-02 20:45:03,473 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
-2020-07-02 20:45:09,505 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? OR c.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
-2020-07-02 20:45:09,507 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 張(String), 張(String)
-2020-07-02 20:45:09,512 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

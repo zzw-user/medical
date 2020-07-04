@@ -29,7 +29,6 @@ public class WarehouseController {
 
     @RequestMapping("addWarehouse")
     public boolean addWarehouse(Warehouse warehouse){
-        warehouse.setCreationtime(new Date());
         Integer a=service.add(warehouse);
         if (a>0){
             return true;

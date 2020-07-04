@@ -15,9 +15,9 @@ public class RepairbackServiceImpl implements RepairbackService {
     @Autowired
     private RepairbackMapper mapper;
 
-    public PageInfo<Payareturnvisit> selePayareturnvisit(String pname, String way, Integer pageNo, Integer pageSize) {
+    public PageInfo<Payareturnvisit> selePayareturnvisit(String pname, String way, Integer aftertype, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo, pageSize);
-        List<Payareturnvisit> list=mapper.selePayareturnvisit(pname,way);
+        List<Payareturnvisit> list=mapper.selePayareturnvisit(pname,way,aftertype);
         PageInfo<Payareturnvisit> page=new PageInfo<Payareturnvisit>(list);
         return page;
     }

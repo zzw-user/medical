@@ -8,3 +8,12 @@
 2020-07-05 06:05:29,283 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cid,operator,address,cost,sparepartcost,dataentryclerk,inputtime,aftertype,coding,phone,longitude,latitude FROM cost 
 2020-07-05 06:05:29,284 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
 2020-07-05 06:05:29,284 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 06:46:29,964 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-0HIOB9P with PID 2288 (D:\medical1\medical-web\target\classes started by liujian in D:\medical1)
+2020-07-05 06:46:29,964 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 06:46:29,964 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-05 06:46:45,598 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-0HIOB9P with PID 2288 (D:\medical1\medical-web\target\classes started by liujian in D:\medical1)
+2020-07-05 06:46:45,599 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 06:46:45,599 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-05 06:46:54,395 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-0HIOB9P with PID 2288 (D:\medical1\medical-web\target\classes started by liujian in D:\medical1)
+2020-07-05 06:46:54,396 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 06:46:54,396 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

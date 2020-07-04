@@ -1,8 +1,0 @@
-2020-07-02 10:40:46,153 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 5.618 seconds (JVM running for 7.167)
-2020-07-02 10:40:50,314 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 
-2020-07-02 10:40:50,331 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
-2020-07-02 10:40:50,347 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2020-07-02 10:41:06,973 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? OR d.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
-2020-07-02 10:41:06,975 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 张(String), 张(String)
-2020-07-02 10:41:06,978 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
-2020-07-02 10:41:23,517 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 
