@@ -36,7 +36,15 @@ public class CostServiceImpl implements CostService {
     }
 
     public Integer upd(Cost cost) {
-        return costMapper.updateByPrimaryKey(cost);
+        return costMapper.updateByPrimaryKeySelective(cost);
+    }
+
+    public List<Cost> getCost(Cost cost) {
+        return costMapper.getCost(cost);
+    }
+
+    public Cost getCostOne(Cost cost) {
+        return costMapper.getCostOne(cost);
     }
 
     public PageInfo<Cost> costpage(Integer pageNum, Integer pageSize, Cost cost) {

@@ -28,5 +28,7 @@ public class Delivery  implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date deliverytime;
     @Transient
+    private String moperator;//操作人 string 存储别表映射字段 原字段 operator
+    @Transient
     private String mname;
 }

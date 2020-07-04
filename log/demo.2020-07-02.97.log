@@ -1,0 +1,8 @@
+2020-07-02 20:36:39,846 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-02 20:36:39,849 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 20:36:39,851 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-02 20:36:40,932 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND d.aftertype=? 
+2020-07-02 20:36:40,933 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-02 20:38:42,709 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-E0OONUJ with PID 17452 (E:\IDEAProject\medical\medical-web\target\classes started by ZZW in E:\IDEAProject\medical)
+2020-07-02 20:38:42,728 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-02 20:38:42,731 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

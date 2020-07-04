@@ -1,12 +1,10 @@
-2020-07-03 13:40:25,464 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 11.532 seconds (JVM running for 15.084)
-2020-07-03 13:45:12,629 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 13:45:12,685 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 13:45:12,689 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 13:45:12,690 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 13:45:12,853 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 13:45:12,915 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 13:46:34,205 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 13:46:34,207 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 13:46:34,207 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 13:46:34,208 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 13:46:34,209 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 08:59:19,808 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 08:59:22,282 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.`realname` AS moperator FROM payareturnvisit p,mpuser m WHERE p.operator=m.`mpid` AND p.pid=? 
+2020-07-03 08:59:22,283 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-03 08:59:22,307 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:04:41,289 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.`realname` AS moperator FROM payareturnvisit p,mpuser m WHERE p.operator=m.`mpid` 
+2020-07-03 09:04:41,290 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:04:41,292 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 09:05:27,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.`realname` AS moperator FROM payareturnvisit p,mpuser m WHERE p.operator=m.`mpid` AND p.pid=? 
+2020-07-03 09:05:27,643 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:05:27,645 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

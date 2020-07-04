@@ -1,0 +1,9 @@
+2020-07-02 21:24:02,196 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 
+2020-07-02 21:24:02,203 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-02 21:24:02,206 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 21:24:03,349 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` 
+2020-07-02 21:24:03,351 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 21:24:03,353 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 21:25:27,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` OR d.address LIKE concat ('%',?,'%') OR m.realname LIKE concat ('%',?,'%') 
+2020-07-02 21:25:27,331 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 1(String)
+2020-07-02 21:25:27,337 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

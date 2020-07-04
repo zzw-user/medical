@@ -1,12 +1,11 @@
-2020-07-03 15:30:42,600 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 15:30:42,650 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:30:42,651 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:30:42,653 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 15:31:56,940 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:31:56,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:31:56,942 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 15:31:56,947 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 15:31:56,948 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:31:56,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 15:31:58,340 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:31:58,341 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:11:19,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:11:19,019 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:11:23,282 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-03 09:11:23,283 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:11:23,285 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:11:23,292 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.realname as moperator FROM delivery d,mpuser m WHERE d.operator=m.mpid AND d.did = ? 
+2020-07-03 09:11:23,292 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Integer)
+2020-07-03 09:11:23,295 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:11:31,138 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 
+2020-07-03 09:11:31,138 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:11:31,141 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

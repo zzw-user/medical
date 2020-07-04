@@ -1,12 +1,10 @@
-2020-07-03 16:09:09,273 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 16:09:09,293 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:09:09,295 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 16:09:09,314 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 16:09:09,315 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:09:09,316 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 16:09:38,584 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 16:09:38,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:09:38,587 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 16:09:38,639 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 16:09:38,639 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:09:38,640 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 09:29:57,858 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:29:57,862 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 09:31:04,513 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-03 09:31:04,514 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:31:04,516 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 09:32:33,006 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-03 09:32:33,007 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:32:33,010 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 09:33:15,678 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-03 09:33:15,680 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

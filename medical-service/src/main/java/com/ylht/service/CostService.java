@@ -1,8 +1,10 @@
 package com.ylht.service;
 
-import com.github.pagehelper.PageInfo;
 import com.ylht.pojo.Cost;
 
-public interface CostService extends DataService<Cost>{
+import java.util.List;
 
+public interface CostService extends DataService<Cost>{
+    List<Cost> getCost(Cost cost);
+    Cost getCostOne(Cost cost);
 }

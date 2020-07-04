@@ -33,6 +33,14 @@ public class PayareturnvisitServiceImpl implements PayareturnvisitService {
     }
 
     public Integer upd(Payareturnvisit payareturnvisit) {
-        return payareturnvisitMapper.updateByPrimaryKey(payareturnvisit);
+        return payareturnvisitMapper.updateByPrimaryKeySelective(payareturnvisit);
+    }
+
+    public List<Payareturnvisit> getPayare(Payareturnvisit payareturnvisit) {
+        return payareturnvisitMapper.getPayare(payareturnvisit);
+    }
+
+    public Payareturnvisit getPayareOne(Payareturnvisit payareturnvisit) {
+        return payareturnvisitMapper.getPayareOne(payareturnvisit);
     }
 }

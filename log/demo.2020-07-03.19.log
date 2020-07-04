@@ -1,12 +1,10 @@
-2020-07-03 15:47:13,059 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 15:47:13,090 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:47:13,091 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:47:13,092 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 15:47:36,599 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:47:36,600 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:47:36,602 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 15:47:36,614 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 15:47:36,615 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:47:36,619 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 15:47:52,036 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 15:47:52,037 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:17:02,424 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:17:02,426 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.cid=? 
+2020-07-03 09:17:02,429 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-03 09:17:02,431 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:17:11,306 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? 
+2020-07-03 09:17:11,306 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:17:11,309 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:17:12,621 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 
+2020-07-03 09:17:12,622 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:17:12,623 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

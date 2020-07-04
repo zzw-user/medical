@@ -29,5 +29,5 @@ public class Payareturnvisit  implements Serializable {
     private Date writetime;
     private Integer aftertype;
     @Transient
-    private String mname;
+    private String moperator;//操作人员姓名
 }

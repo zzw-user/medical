@@ -1,10 +1,8 @@
-2020-07-03 16:22:16,556 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 16:22:16,550 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 16:22:16,675 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:22:16,675 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:22:16,676 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 16:22:16,676 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 16:32:32,997 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 14984 (D:\medical\medical-web\target\classes started by PC in D:\medical)
-2020-07-03 16:32:32,998 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-07-03 16:32:32,998 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-07-03 16:32:40,986 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 8.293 seconds (JVM running for 10373.755)
+2020-07-03 11:38:23,911 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 3.164 seconds (JVM running for 3097.554)
+2020-07-03 11:39:31,707 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE password = ? AND phone = ? 
+2020-07-03 11:39:31,708 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 122(String), 15588856652(String)
+2020-07-03 11:39:31,710 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-03 11:39:45,857 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE password = ? AND phone = ? 
+2020-07-03 11:39:45,859 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 122(String), 18244726551(String)
+2020-07-03 11:39:45,861 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-07-03 11:39:50,889 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser WHERE password = ? AND phone = ? 

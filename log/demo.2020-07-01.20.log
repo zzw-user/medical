@@ -1,0 +1,10 @@
+2020-07-01 10:48:57,476 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-01 10:48:57,479 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-01 10:48:57,481 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-01 10:49:18,449 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-01 10:49:18,451 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-01 10:49:18,453 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-01 10:50:13,860 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` AND i.rid=? 
+2020-07-01 10:50:13,861 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-01 10:50:13,863 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-01 10:51:20,589 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` AND i.rid=? 

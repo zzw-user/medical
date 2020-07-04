@@ -1,12 +1,10 @@
-2020-07-03 16:08:10,374 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 16:08:10,378 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:08:10,379 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 16:08:10,412 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 16:08:10,413 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:08:10,416 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 16:08:42,316 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 16:08:42,317 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:08:42,319 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 16:08:42,322 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 16:08:42,323 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 16:08:42,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 09:29:34,199 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 
+2020-07-03 09:29:34,203 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:29:34,204 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 09:29:53,864 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-03 09:29:53,865 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:29:53,866 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:29:53,871 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` AND i.rid=? 
+2020-07-03 09:29:53,873 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:29:53,875 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:29:57,857 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT i.*,m.`realname` as moperator FROM installrecord i,mpuser m WHERE i.operator=m.`mpid` 

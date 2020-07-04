@@ -1,0 +1,12 @@
+2020-07-02 21:09:10,739 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 21:09:10,756 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 21:09:10,770 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 21:09:10,771 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 21:09:14,700 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.cid=? 
+2020-07-02 21:09:14,700 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-07-02 21:09:14,701 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 21:09:14,718 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-02 21:09:14,718 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-02 21:09:14,719 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-02 21:09:15,361 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.cid=? 
+2020-07-02 21:09:15,362 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)

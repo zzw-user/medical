@@ -1,12 +1,10 @@
-2020-07-03 15:13:56,962 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 4.817 seconds (JVM running for 5649.731)
-2020-07-03 15:13:58,383 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 15:13:58,385 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:13:58,397 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 15:14:40,525 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 15:14:40,526 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:14:40,529 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 15:14:40,547 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:14:40,548 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:14:40,550 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 15:15:26,201 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 15:15:26,203 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:07:54,707 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:07:54,715 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:10:04,067 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT p.*,m.`realname` AS moperator FROM payareturnvisit p,mpuser m WHERE p.operator=m.`mpid` 
+2020-07-03 09:10:04,069 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:10:04,072 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 09:10:05,623 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.aftertype=? 
+2020-07-03 09:10:05,625 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:10:05,628 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:10:07,691 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT c.*,m.`realname` AS mname,p.`coding` AS pname FROM cost c,mpuser m,product p WHERE c.operator = m.`mpid` AND c.pid=p.`pid` AND c.cid=? 
+2020-07-03 09:10:07,692 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)

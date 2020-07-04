@@ -1,12 +1,10 @@
-2020-07-03 15:48:40,077 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 15:48:40,150 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:48:40,151 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:48:40,153 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 15:52:48,240 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:52:48,242 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:52:48,243 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
-2020-07-03 15:52:48,251 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
-2020-07-03 15:52:48,252 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
-2020-07-03 15:52:48,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
-2020-07-03 15:56:28,295 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
-2020-07-03 15:56:28,296 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:17:27,730 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-07-03 09:17:29,144 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.`realname` AS moperator FROM delivery d,mpuser m WHERE d.`operator`=m.`mpid` AND d.aftertype=? 
+2020-07-03 09:17:29,145 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-03 09:17:29,147 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:17:30,398 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT mpid,mname,realname,password,phone,mailbox,birthday,wechatid,qq,sex,address,roleid FROM mpuser 
+2020-07-03 09:17:30,399 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 09:17:30,401 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 09:17:30,406 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,m.realname as moperator FROM delivery d,mpuser m WHERE d.operator=m.mpid AND d.did = ? 
+2020-07-03 09:17:30,406 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Integer)
+2020-07-03 09:17:30,409 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
