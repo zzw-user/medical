@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ylht.mapper.BjMapper">
+    <select id="selectBj" resultType="Arpart">
+        SELECT a.*,w.`wname` AS wname,t.`tname` AS tname FROM arpart a,`type` t ,warehouse w WHERE a.`tid`=t.`tid` AND a.`wid`=w.`wid`
+        <if test="coding!=null and coding!=''">
+            AND a.`coding` like concat('%',#{coding},'%')
+        </if>
+        <if test="aname!=null and aname!=''">
+            AND a.`aname`  like concat('%',#{aname},'%')
+        </if>
+        <if test="tid!=null and tid!=0">
+            and a.tid=#{tid}
+        </if>
+
+    </select>
+</mapper>

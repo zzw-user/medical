@@ -26,7 +26,6 @@ public class Cost  implements Serializable {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date inputtime;
-    private Integer pid;
     private Integer aftertype;
     private String coding;
     private String phone;

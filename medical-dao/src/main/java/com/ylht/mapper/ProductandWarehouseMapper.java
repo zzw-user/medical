@@ -12,6 +12,6 @@ public interface ProductandWarehouseMapper {
     Product selectProductOne(Integer pid);
     List<Orderforms> selectOrderform(@Param("serialnumber")String serialnumber,@Param("operator")Integer operator,@Param("coding")String coding);
     List<Product> productAndInventory(@Param("pname") String pname);
-    List<Arparts> arpartAndInventory(String aname);
+    List<Arparts> arpartAndInventory(@Param("aname") String aname);
 
 }

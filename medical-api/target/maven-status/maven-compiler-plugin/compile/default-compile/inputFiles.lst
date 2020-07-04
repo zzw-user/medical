@@ -18,12 +18,14 @@ D:\medical\medical-api\src\main\java\com\ylht\service\DataService.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Arpart.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Maintainrecord.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Orderform.java
+D:\medical\medical-api\src\main\java\com\ylht\pojo\Areafaultanalysis.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Arpartrecord.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Delivery.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\DeliveryAndMpuser.java
 D:\medical\medical-api\src\main\java\com\ylht\util\ApiResponse.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Amendrecord.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Role.java
+D:\medical\medical-api\src\main\java\com\ylht\pojo\Orderforms.java
 D:\medical\medical-api\src\main\java\com\ylht\util\JwtUtil.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\District.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Product.java
@@ -31,4 +33,6 @@ D:\medical\medical-api\src\main\java\com\ylht\pojo\Information.java
 D:\medical\medical-api\src\main\java\com\ylht\util\ApiResponseUtil.java
 D:\medical\medical-api\src\main\java\com\ylht\util\CrosFilter.java
 D:\medical\medical-api\src\main\java\com\ylht\pojo\Mpuser.java
+D:\medical\medical-api\src\main\java\com\ylht\pojo\Arparts.java
 D:\medical\medical-api\src\main\java\com\ylht\util\ResultMap.java
+D:\medical\medical-api\src\main\java\com\ylht\pojo\Costs.java

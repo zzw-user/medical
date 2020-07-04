@@ -1,5 +1,7 @@
 com\ylht\mapper\ArpartrecordMapper.class
+com\ylht\mapper\BjMapper.class
 com\ylht\mapper\ProductMapper.class
+com\ylht\mapper\FaulttypeMapper.class
 com\ylht\mapper\OrderformMapper.class
 com\ylht\mapper\xzh\RepairbackMapper.class
 com\ylht\mapper\DistrictMapper.class
@@ -13,12 +15,14 @@ com\ylht\mapper\ProductandWarehouseMapper.class
 com\ylht\mapper\xzh\WarehousesMapper.class
 com\ylht\mapper\MaintainrecordMapper.class
 com\ylht\mapper\ClientMapper.class
+com\ylht\mapper\FaultanalysisMapper.class
 com\ylht\mapper\ArpartMapper.class
 com\ylht\mapper\InstallrecordMapper.class
 com\ylht\mapper\NavigationMapper.class
 com\ylht\mapperzxz\DeliveryAndMpuserMapper.class
 com\ylht\mapper\DeliveryMapper.class
 com\ylht\mapper\NavMapper.class
+com\ylht\mapper\ProducttypeMapper.class
 com\ylht\mapper\xzh\MaintenancecostsMapper.class
 com\ylht\mapper\InformationMapper.class
 com\ylht\mapper\RoleMapper.class
