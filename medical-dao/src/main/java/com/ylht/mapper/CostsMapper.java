@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface CostsMapper {
     List<Costs> costselect(@Param("inputtime")Date inputtime,@Param("aftertype")Integer aftertype);
+    List<Cost> selectCost(@Param("mname")String mname , @Param("address") String address);
+
 }

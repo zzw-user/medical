@@ -1,5 +1,7 @@
 package com.ylht.serviceImpl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.ylht.mapper.ClientMapper;
 import com.ylht.pojo.Client;
 import com.ylht.service.ClientService;
@@ -34,5 +36,12 @@ public class ClientServiceImpl implements ClientService {
 
     public Integer upd(Client client) {
         return clientMapper.updateByPrimaryKey(client);
+    }
+
+    public PageInfo<Client> getClientAll(String cname,String phone, Integer pageNo, Integer pageSize) {
+        PageHelper.startPage(pageNo,pageSize);
+        List<Client> list =clientMapper.getClientAll(cname,phone);
+        PageInfo<Client> pageInfo=new PageInfo<Client>(list);
+        return pageInfo;
     }
 }

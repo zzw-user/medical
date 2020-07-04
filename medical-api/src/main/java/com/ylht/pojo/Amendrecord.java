@@ -11,6 +11,9 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 @AllArgsConstructor
@@ -32,10 +35,12 @@ public class Amendrecord implements Serializable {
     private Integer status;
     private String arpartcoding;
     private String assess;
-    @Column(name = "`analyze`")
+    @Column(name="`analyze`")
     private String analyze;
     private Integer did;
     private String faulttype;
     private String faultdescription;
     private String productcoding;
+    @Transient
+    private String realname;
 }

@@ -16,7 +16,12 @@ public class CrosFilter implements Filter {
         HttpServletResponse res = (HttpServletResponse) servletResponse;
         //*号表示对所有请求都允许跨域访问
         res.addHeader("Access-Control-Allow-Origin", "*");
-        res.addHeader("Access-Control-Allow-Methods", "*");
+        res.setHeader("Access-Control-Allow-Credentials", "true");
+        res.addHeader("Access-Control-Allow-Methods","*");
+        res.addHeader("Access-Control-Allow-Headers", "Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild,token");
+        res.setHeader("Access-Control-Expose-Headers", "*");
+        res.addHeader("X-Powered-By"," 3.2.1");
+        res.addHeader("Content-Type", "application/json;charset=utf-8");
         filterChain.doFilter(servletRequest, servletResponse);
     }
 

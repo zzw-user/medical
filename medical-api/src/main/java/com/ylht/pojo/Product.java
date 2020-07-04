@@ -22,11 +22,15 @@ public class Product  implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer pid;
     private Integer wid;
+    private Integer operator;
     private Integer typeid;
     private String pname;
     private String coding;
     private String model;
     private String bomname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    private Date operationtime;
     private String inmoney;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")

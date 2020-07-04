@@ -1,0 +1,10 @@
+2020-07-03 16:32:55,394 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:32:55,415 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:32:55,421 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 16:32:55,484 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:32:55,508 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:32:55,509 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 16:34:30,995 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on DESKTOP-KMIJRQS with PID 14984 (D:\medical\medical-web\target\classes started by PC in D:\medical)
+2020-07-03 16:34:30,996 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-03 16:34:30,996 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-03 16:34:35,011 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 4.242 seconds (JVM running for 10487.781)

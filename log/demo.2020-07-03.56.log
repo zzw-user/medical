@@ -1,0 +1,12 @@
+2020-07-03 17:03:35,244 INFO (StartupInfoLogger.java:59)- Started MedicalApplication in 9.332 seconds (JVM running for 12.74)
+2020-07-03 17:03:40,514 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 17:03:40,515 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 17:03:40,543 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 17:03:40,543 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 17:03:40,576 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 17:03:40,601 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 17:03:46,139 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role WHERE rid = ? 
+2020-07-03 17:03:46,156 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer)
+2020-07-03 17:03:46,157 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-03 17:03:46,158 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 17:03:46,159 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 

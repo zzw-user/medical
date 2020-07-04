@@ -1,0 +1,12 @@
+2020-07-03 16:19:53,598 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:19:53,608 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:19:53,610 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:19:53,592 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:19:53,612 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:19:53,613 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-07-03 16:22:13,077 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nid,title,href,fatherid FROM navigation 
+2020-07-03 16:22:13,078 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:22:13,081 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 78
+2020-07-03 16:22:13,091 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT rid,rname,jurisdiction,hierarchy FROM role 
+2020-07-03 16:22:13,093 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-07-03 16:22:13,094 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
