@@ -81,7 +81,7 @@ public class MaintainrecordController {
         //File f = new File("E:/IdeaProjects/medicalfrontend/static/img/");
         //System.out.println("path"+path);
         //判断该路径是否存在
-        File file1 = new File("E:/IdeaProjects/medicalfrontend/static/img/");
+        File file1 = new File("D:/medicalfrontend/static/img/");
         if (!file1.exists()) {
             file1.mkdirs();
         }
@@ -90,7 +90,7 @@ public class MaintainrecordController {
         String uuid = UUID.randomUUID().toString().replace("-", "");
         String saveName = uuid + "_" + filename.substring(filename.lastIndexOf(File.separator) + 1);
         //file.transferTo(new File(path, saveName));
-        uploadImg(file,"E:/IdeaProjects/medicalfrontend/static/img/",saveName);
+        uploadImg(file,"D:/medicalfrontend/static/img/",saveName);
         return "{\"code\":0,\"msg\":\""+saveName+"\"}";
     }
 }

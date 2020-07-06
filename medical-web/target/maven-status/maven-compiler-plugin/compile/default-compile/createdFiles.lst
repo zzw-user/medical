@@ -1,6 +1,7 @@
 com\ylht\xzhcontroller\MaintenancerecordController.class
 com\ylht\controller\cjh\UserManagementController.class
 com\ylht\controller\cyh\NavController.class
+com\ylht\controllerzxz\MaintainrecordController.class
 com\ylht\controller\cjh\ClientController.class
 com\ylht\controller\zzw\ZzwMpuserController.class
 com\ylht\controller\zd\ZdCostController.class
@@ -20,6 +21,7 @@ com\ylht\liujiancontroller\costController.class
 com\ylht\xzhcontroller\WarehouseController.class
 com\ylht\liujiancontroller\pageinfoproductAndInventoryController.class
 com\ylht\controller\zd\DeliveryController.class
+com\ylht\controllerzxz\infoController.class
 com\ylht\MedicalApplication.class
 com\ylht\cos\dto\ImageObjectRuten.class
 com\ylht\controller\zzw\ZzwAmendrecordController.class
@@ -28,6 +30,7 @@ com\ylht\controllerzxz\SendaSingleInstallationController.class
 com\ylht\controller\Demo.class
 com\ylht\cos\biz\impl\TencentCosBizServiceImpl.class
 com\ylht\controller\cjh\NavgitonController.class
+com\ylht\xzhcontroller\RepairbackController.class
 com\ylht\controller\cyh\MapFinancialAnalsis.class
 com\ylht\controller\zzw\ZzwPayareturnvisitController.class
 com\ylht\controllerzxz\InstallationRecordEvaluationController.class

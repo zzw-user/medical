@@ -32,8 +32,6 @@ public class Cost  implements Serializable {
 
     private String coding;
     private String phone;
-    private String longitude;
-    private String latitude;
     @Transient
     private String realname;
     @Transient

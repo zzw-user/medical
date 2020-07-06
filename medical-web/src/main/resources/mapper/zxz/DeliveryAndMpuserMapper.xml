@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.ylht.mapperzxz.DeliveryAndMpuserMapper">
-    <select id="getDeliveryAndMpuser" resultType="DeliveryAndMpuser">
+    <select id="getDeliveryAndMpus" resultType="DeliveryAndMpuser">
         SELECT m.realname,m.mname,d.* FROM mpuser m,delivery d WHERE m.`mpid`=d.`operator`
         <if test="realname!=null and realname!=''">
             AND m.`realname` like concat('%',#{realname},'%')
@@ -15,7 +15,7 @@
         and d.aftertype = #{aftertype}
     </select>
     
-    <select id="getproductByCoding" resultType="Product">
+    <select id="getproductByCod" resultType="Product">
         select * from product where coding=#{coding}
     </select>
 </mapper>
