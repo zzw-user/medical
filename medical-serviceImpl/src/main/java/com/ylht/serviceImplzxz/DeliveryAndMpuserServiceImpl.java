@@ -18,18 +18,18 @@ public class DeliveryAndMpuserServiceImpl implements DeliveryAndMpuserService {
 
 
     public List<DeliveryAndMpuser> getDeliveryAndMpuser(Integer aftertype,String realname, String address, String coding, Integer pageNo, Integer pageSize) {
-        return deliveryAndMpuserMapper.getDeliveryAndMpuser(aftertype,realname, address, coding, pageNo, pageSize);
+        return deliveryAndMpuserMapper.getDeliveryAndMpus(aftertype,realname, address, coding, pageNo, pageSize);
     }
 
     public PageInfo<DeliveryAndMpuser> pageInfoDeliveryAndMpuser(Integer aftertype,String realname, String address, String coding, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo,pageSize);
-        List<DeliveryAndMpuser> list = deliveryAndMpuserMapper.getDeliveryAndMpuser(aftertype,realname, address, coding, pageNo, pageSize);
+        List<DeliveryAndMpuser> list = deliveryAndMpuserMapper.getDeliveryAndMpus(aftertype,realname, address, coding, pageNo, pageSize);
         PageInfo<DeliveryAndMpuser> page = new PageInfo<DeliveryAndMpuser>(list);
         return page;
     }
 
     public Product getproductByCoding(String coding) {
-        return deliveryAndMpuserMapper.getproductByCoding(coding);
+        return deliveryAndMpuserMapper.getproductByCod(coding);
     }
 
 }

@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import tk.mybatis.spring.annotation.MapperScan;
 
-@MapperScan("com.ylht.mapper")
+@MapperScan({"com.ylht.mapper","com.ylht.mapperzxz"})
 @SpringBootApplication
 public class MedicalApplication {
     public static void main(String[] args) {
