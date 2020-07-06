@@ -1,0 +1,17 @@
+2020-07-05 02:50:32,972 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-07-05 02:50:33,065 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-07-05 07:44:45,988 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 18164 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-05 07:44:46,021 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 07:44:46,084 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-05 07:46:06,634 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 12588 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-05 07:46:06,643 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 07:46:06,651 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-05 07:47:48,420 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 12276 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-05 07:47:48,433 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 07:47:48,437 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-05 07:57:30,352 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 5680 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-05 07:57:30,359 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 07:57:30,363 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-07-05 08:05:48,854 INFO (StartupInfoLogger.java:50)- Starting MedicalApplication on WIN-QT0S34JCSRR with PID 10344 (E:\IdeaProjects\medical\medical-web\target\classes started by Administrator in E:\IdeaProjects\medical)
+2020-07-05 08:05:48,861 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-07-05 08:05:48,864 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

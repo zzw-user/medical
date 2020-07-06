@@ -14,7 +14,7 @@
         </if>
         and d.aftertype = #{aftertype}
     </select>
-    
+
     <select id="getproductByCoding" resultType="Product">
         select * from product where coding=#{coding}
     </select>
