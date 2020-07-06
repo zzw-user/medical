@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.ylht.mapperzxz.InstallationRecordEvaluationMapper">
-    <select id="getInstallationRecordEvaluat" resultType="InstallationRecordEvaluation">
-        SELECT i.*,m.realname FROM installrecord i,mpuser m WHERE m.`mpid`=i.operator
+<mapper namespace="com.ylht.mapperzxz.FullMapper">
+    <select id="getFull" resultType="FullMaintainrecord">
+        SELECT i.*,m.realname FROM maintainrecord i,mpuser m WHERE m.`mpid`=i.operator
         <if test="address!=null and address!=''">
             and i.address like concat('%',#{address},'%')
         </if>
@@ -16,7 +16,7 @@
             and m.realname like concat('%',#{realname},'%')
         </if>
     </select>
-    <update id="updateInstallrecordBy" parameterType="Installrecord">
-        update installrecord set assess=#{assess} where rid=#{rid}
+    <update id="updateMaintainrecordByRid" parameterType="Maintainrecord">
+        update maintainrecord set assess=#{assess} where rid=#{rid}
     </update>
 </mapper>

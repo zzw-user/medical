@@ -16,9 +16,9 @@ public class CostsSerivceImpl implements CostsSerivce {
     @Autowired
     private CostsMapper costsMapper;
 
-    public PageInfo<Cost> selectCost(String mname, String address, Integer pageNo, Integer pageSize) {
+    public PageInfo<Cost> selectCost(String realname, String address,Integer aftertype, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo, pageSize);
-        List<Cost> list=costsMapper.selectCost(mname,address);
+        List<Cost> list=costsMapper.selectCost(realname,address,aftertype);
         PageInfo<Cost> page=new PageInfo<Cost>(list);
         return page;
     }

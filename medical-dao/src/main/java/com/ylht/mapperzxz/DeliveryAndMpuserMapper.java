@@ -10,7 +10,6 @@ import java.util.List;
 @Mapper
 public interface DeliveryAndMpuserMapper {
     List<DeliveryAndMpuser> getDeliveryAndMpus(@Param("aftertype") Integer aftertype,@Param("realname") String realname,@Param("address") String address,
-                                                 @Param("coding")String coding,
-                                                 @Param("pageNo") Integer pageNo,@Param("pageSize") Integer pageSize);
+                                                 @Param("coding")String coding);
     Product getproductByCod(@Param("coding") String coding);
 }

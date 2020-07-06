@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
-<mapper namespace="com.ylht.mapper.CostMapper">
+<mapper namespace="com.ylht.mapper.CostsMapper">
     <select id="selectCost" resultType="Cost">
         SELECT c.*,realname,pname FROM cost c,mpuser m,product p WHERE c.`operator`=m.mpid AND c.`coding`=p.`coding`
         <if test="realname!=null and realname!=''">
-            AND realname LIKE CONCAT('%',#{realname},'%')
+            AND m.realname like concat('%',#{realname},'%')
         </if>
         <if test="address!=null and address!=''">
             AND c.address LIKE CONCAT('%',#{address},'%')
         </if>
+        AND c.aftertype=#{aftertype}
     </select>
 
 </mapper>

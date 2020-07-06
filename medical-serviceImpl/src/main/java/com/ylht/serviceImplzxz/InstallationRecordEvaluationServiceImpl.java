@@ -20,12 +20,12 @@ public class InstallationRecordEvaluationServiceImpl implements InstallationReco
 
     public PageInfo<InstallationRecordEvaluation> pageInstallationRecordEvaluation(String address, Integer status, String coding, String realname, Integer pageNo, Integer pageSize) {
         PageHelper.startPage(pageNo,pageSize);
-        List<InstallationRecordEvaluation> list = installationRecordEvaluationMapper.getInstallationRecordEvaluation(address, status, coding, realname);
+        List<InstallationRecordEvaluation> list = installationRecordEvaluationMapper.getInstallationRecordEvaluat(address, status, coding, realname);
         PageInfo<InstallationRecordEvaluation> pageInfo = new PageInfo<InstallationRecordEvaluation>(list);
         return pageInfo;
     }
 
     public int updateInstallrecordByRid(Installrecord installrecord) {
-        return installationRecordEvaluationMapper.updateInstallrecordByRid(installrecord);
+        return installationRecordEvaluationMapper.updateInstallrecordBy(installrecord);
     }
 }

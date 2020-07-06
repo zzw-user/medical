@@ -25,6 +25,7 @@ public class RepairbackController {
     public ResultMap<List<Payareturnvisit>> selePayareturnvisit(String pname, String way,Integer aftertype, Integer page, Integer limit){
         System.out.println(aftertype);
         PageInfo<Payareturnvisit> pages=services.selePayareturnvisit(pname, way,aftertype, page, limit);
+        System.out.println(pages.getList());
         return new ResultMap<List<Payareturnvisit>>("",pages.getList(),0,pages.getTotal());
     }
 

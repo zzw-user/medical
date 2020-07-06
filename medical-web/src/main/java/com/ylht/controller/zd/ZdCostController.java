@@ -30,8 +30,8 @@ private MpuserService mpuserService;
     public ProductService productService;
 
     @RequestMapping("getCost")
-    public ResultMap<List<Cost>> demo(String mname, String address, Integer page, Integer limit){
-        PageInfo<Cost> pages=costsSerivce.selectCost(mname,address,page,limit);
+    public ResultMap<List<Cost>> demo(String realname, String address,Integer aftertype, Integer page, Integer limit){
+        PageInfo<Cost> pages=costsSerivce.selectCost(realname,address,aftertype,page,limit);
         System.out.println("我的值是"+pages);
         System.out.println();
         return new ResultMap<List<Cost>>("",pages.getList(),0,pages.getTotal());
